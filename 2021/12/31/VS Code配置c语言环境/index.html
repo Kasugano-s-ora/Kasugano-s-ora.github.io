@@ -67,17 +67,135 @@
         <div class="content markdown">
             <p>Visual Studio Code（简称“VS Code”）是 Microsoft 在2015年4月30日Build开发者大会上正式宣布一个运行于 Mac OS X、 Windows 和 Linux 之上的，针对于编写现代Web和 云应用 的跨平台源代码编辑器，可在桌面上运行，并且可用于Windows，macOS和Linux。 它具有对 JavaScript，TypeScript 和 Node.js 的内置支持，并具有丰富的其他语言（例如 C++ ， C＃ ， Java ， Python ， PHP ， Go ）和运行时（例如.NET 和 Unity ）扩展的生态系统。</p>
 <h2 id="在本章中给出对c语言的环境配置"><a href="#在本章中给出对c语言的环境配置" class="headerlink" title="在本章中给出对c语言的环境配置"></a>在本章中给出对c语言的环境配置</h2><ul>
-<li><h3 id="安装和下载软件及运行库"><a href="#安装和下载软件及运行库" class="headerlink" title="安装和下载软件及运行库"></a>安装和下载软件及运行库</h3></li>
+<li><h3 id="下载软件及运行库"><a href="#下载软件及运行库" class="headerlink" title="下载软件及运行库"></a>下载软件及运行库</h3></li>
 </ul>
 <ol>
 <li><h5 id="首先下载Visual-Studio-Code"><a href="#首先下载Visual-Studio-Code" class="headerlink" title="首先下载Visual Studio Code"></a>首先下载Visual Studio Code</h5><p>官网：<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
-<img src="E:\download\网页捕获_2-1-2022_155042_code.visualstudio.com.jpeg" alt="网页捕获_2-1-2022_155042_code.visualstudio.com"  /></li>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E5%AE%98%E7%BD%91%E4%B8%8B%E8%BD%BD.jpeg"></p>
+</li>
 <li><h5 id="下载c语言的gcc运行库（mingw64）"><a href="#下载c语言的gcc运行库（mingw64）" class="headerlink" title="下载c语言的gcc运行库（mingw64）"></a>下载c语言的gcc运行库（mingw64）</h5></li>
 </ol>
 <p>​    本人在网上下载了好多次运行库，好多都配置不上，不知道是哪个环节出问题了，我哥哥给我的教程，里面的运行库能用而且直接配置成功，我就把他存下来当个宝了。</p>
 <pre><code>下载地址—百度网盘：链接：https://pan.baidu.com/s/1BHafnJXhVva-DptQDuxpNw 
 </code></pre>
 <p>提取码：mybk</p>
+<ul>
+<li><h3 id="安装软件-解压运行库"><a href="#安装软件-解压运行库" class="headerlink" title="安装软件-解压运行库"></a>安装软件-解压运行库</h3><p>找个你想要安装的盘，这里我选择的是D盘</p>
+<p>安装我就省略了，没有什么需要额外设置的，只需要改个安装路径就行了</p>
+<p>我的建议是在D盘里新建一个叫做 “ VScode ” 的文件夹</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.jpg"></p>
+<h4 id="把软件和压缩包都安装-解压到这个文件夹，不用担心会弄混，安装的时候它会自己在这里新建文件夹的——完成之后就是这样的"><a href="#把软件和压缩包都安装-解压到这个文件夹，不用担心会弄混，安装的时候它会自己在这里新建文件夹的——完成之后就是这样的" class="headerlink" title="把软件和压缩包都安装/解压到这个文件夹，不用担心会弄混，安装的时候它会自己在这里新建文件夹的——完成之后就是这样的"></a>把软件和压缩包都安装/解压到这个文件夹，不用担心会弄混，安装的时候它会自己在这里新建文件夹的——完成之后就是这样的</h4><p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%96%87%E4%BB%B6%E5%AE%8C%E6%88%90.jpg"></p>
+</li>
+</ul>
+<ul>
+<li><p>配置环境变量</p>
+<p>首先我们打开mingw64目录——打开里面的bin目录</p>
+<p>单击上面的地址框，把他复制下来方便我们等会填写环境变量</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E5%A4%8D%E5%88%B6%E8%B7%AF%E5%BE%84.jpg"></p>
+<h4 id="右键此电脑—属性—高级系统设置—环境变量"><a href="#右键此电脑—属性—高级系统设置—环境变量" class="headerlink" title="右键此电脑—属性—高级系统设置—环境变量"></a>右键此电脑—属性—高级系统设置—环境变量</h4><p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F01.jpg"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F02.jpg"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F03.jpg"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F04.jpg"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F05.jpg"></p>
+</li>
+</ul>
+<p>到这里我们变量已经配置完了该进入软件设置了</p>
+<ul>
+<li><h2 id="VS-Code插件安装与设置"><a href="#VS-Code插件安装与设置" class="headerlink" title="VS Code插件安装与设置"></a>VS Code插件安装与设置</h2><ol>
+<li><p>选择插件的图标</p>
+</li>
+<li><p>搜索<strong>code runner、c/c++<strong>设置中文的话再加上</strong>chinese</strong></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%8F%92%E4%BB%B6%E4%B8%8B%E8%BD%BD01.jpg"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%8F%92%E4%BB%B6%E4%B8%8B%E8%BD%BD02.jpg"></p>
+</li>
+<li><p>对插件进行设置</p>
+<p>选择插件的图标，找到刚才安装好的code runner，右击选择<strong>Extension Settings</strong></p>
+<p>往下翻找到图中的选项并勾选。</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE01.jpg"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE02.jpg"></p>
+<p>下载中文插件的小伙伴别忘了重启一下软件</p>
+</li>
+</ol>
+</li>
+<li><h2 id="配置c语言所需文件"><a href="#配置c语言所需文件" class="headerlink" title="配置c语言所需文件"></a>配置c语言所需文件</h2></li>
+</ul>
+<p>在你想要的路径上新建一个文件夹（我在D盘新建了名叫CWORK的文件夹）</p>
+<p>使用VS Code打开这个文件夹</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE01.PNG"></p>
+<p>打开这个文件夹之后，软件会重新弹出页面</p>
+<ol>
+<li><p>选择刚才创建的文件夹名</p>
+</li>
+<li><p>点击新建文件（New File）</p>
+</li>
+<li><p>输入hello.c这个.c一定要输上去，因为我们创建的是c文件</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE02.PNG"></p>
+</li>
+<li><p>输入代码</p>
+<p><code>#include&lt;stdio.h&gt;</code></p>
+<p><code>int main()</code></p>
+<p><code>&#123;</code></p>
+<p>  <code>printf(&quot;hello world&quot;);</code></p>
+<p>  <code>return 0;</code></p>
+<p><code>&#125;</code></p>
+</li>
+<li><p>点击终端—配置任务</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE03.png"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE04.png"></p>
+<p>在这里VS Code新建了一个.vscode的文件夹，这个文件夹就存放着这些配置文件，不能删除或重命名，选择完成后会自动配置一个tasks.json的文件。</p>
+<p>回到“hello.c”文件，右键选择“Run Code”即可运行代码。</p>
+<p>运行结果会在下方终端显示</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE05.png"></p>
+</li>
+</ol>
+<ul>
+<li><h2 id="调试代码"><a href="#调试代码" class="headerlink" title="调试代码"></a>调试代码</h2></li>
+</ul>
+<p>点击运行—启动调试—按照图片选择即可完成json文件的新建</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE06.png"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE07.png"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE08.png"></p>
+<p>到这里已经配置完了，我们改一下代码，并增加1个断点试一下</p>
+<p><code>#include&lt;stdio.h&gt;</code></p>
+<p><code>int main()</code></p>
+<p><code>&#123;</code>  </p>
+<p>  <code>int a,b,sum;</code></p>
+<p><code>printf(&quot;Enter two numbers&quot;);</code></p>
+<p>  <code>scanf(&quot;%d,%d&quot;,&amp;a,&amp;b);</code></p>
+<p>  <code>sum=a+b;</code></p>
+<p>  <code>printf(&quot;%d&quot;,sum);</code></p>
+<p>  <code>return 0;</code></p>
+<p><code>&#125;</code></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%8100.PNG"></p>
+<p>运行到这里我们输入数字</p>
+<p>点击单步调试，就会运行下一行代码</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%8101.PNG"></p>
+<p>输入3,4在左侧可以看到a、b的值变化，点击下一步可以看到sum=a+b的值</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%8102.PNG"></p>
+<ul>
+<li><h2 id="编码方式"><a href="#编码方式" class="headerlink" title="编码方式"></a>编码方式</h2></li>
+</ul>
+<p>这个我还没有搞明白，只知道编译器直接如果编码不一致，中文输 入\出 就会出现乱码，我使用VS Code都是使用GBK的编码模式，VS Code修改编码模式也是很简单，就在右下角</p>
+<p>这是默认的utf-8的模式</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%BC%96%E7%A0%8100.PNG"></p>
+<p>中文出现乱码，这种情况我们只需要更改编码模式即可</p>
+<ol>
+<li><p>找到右下角UTF-8</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%BC%96%E7%A0%8101.PNG"></p>
+</li>
+<li><p>点击选项</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%BC%96%E7%A0%8102.PNG"></p>
+</li>
+<li><p>输入GBK(gbk也可以)</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%BC%96%E7%A0%8103.PNG"></p>
+</li>
+</ol>
+<ul>
+<li><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>到这里整个配置就结束了，配置出现意料之外的问题时，确认步骤没有问题，可以重启软件和电脑试试。我配置好几次基本是没遇到过，里面需要注意的是最好不要随意修改工作文件的路径，否则就会出现无法编译等问题，里面.vscode的文件一定不要改。</p>
+<p>在最后配置完成后，新建一个.c文件，打好头文件后，试试直接输入main看看</p>
+<h2 id><a href="#" class="headerlink" title></a></h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2></li>
+</ul>
+<p>​                    知乎教程：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/354400717">VS Code配置C语言开发环境的超详细教程 - 知乎 (zhihu.com)</a></p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">

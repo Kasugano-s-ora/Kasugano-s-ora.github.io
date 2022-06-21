@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>方法递归 - 穹仁的博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="java的个人学习笔记,方法递归概述
+方法直接调用自己或间接调用自己的形式称为方法递归（recursion）
+递归作为一种算法在程序设计语言中广泛应用
+
+递归的形式
+直接递归：方法自己调用自己
+间接递归：方法调用其他方法，,"> 
+    <meta name="author" content="Kasugano-S-ora"> 
+    <link rel="alternative" href="atom.xml" title="穹仁的博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="方法递归 - 穹仁的博客"/>
+    <meta name="twitter:description" content="java的个人学习笔记,方法递归概述
+方法直接调用自己或间接调用自己的形式称为方法递归（recursion）
+递归作为一种算法在程序设计语言中广泛应用
+
+递归的形式
+直接递归：方法自己调用自己
+间接递归：方法调用其他方法，,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="穹仁的博客"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="方法递归 - 穹仁的博客"/>
+    <meta property="og:description" content="java的个人学习笔记,方法递归概述
+方法直接调用自己或间接调用自己的形式称为方法递归（recursion）
+递归作为一种算法在程序设计语言中广泛应用
+
+递归的形式
+直接递归：方法自己调用自己
+间接递归：方法调用其他方法，,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">穹仁的博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">方法递归</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">方法递归</h1>
+        <div class="stuff">
+            <span>十月 12, 2016</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%96%B9%E6%B3%95%E9%80%92%E5%BD%92/" rel="tag">方法递归</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="方法递归"><a href="#方法递归" class="headerlink" title="方法递归"></a>方法递归</h1><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ul>
+<li>方法直接调用自己或间接调用自己的形式称为方法递归（recursion）</li>
+<li>递归作为一种算法在程序设计语言中广泛应用</li>
+</ul>
+<h3 id="递归的形式"><a href="#递归的形式" class="headerlink" title="递归的形式"></a>递归的形式</h3><ul>
+<li>直接递归：方法自己调用自己</li>
+<li>间接递归：方法调用其他方法，其他方法又回调方法自己</li>
+</ul>
+<h3 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h3><ul>
+<li>如果没有控制好终止，就会出现递归死循环，导致栈内存溢出</li>
+</ul>
+<h3 id="递归算法的三大要素"><a href="#递归算法的三大要素" class="headerlink" title="递归算法的三大要素"></a>递归算法的三大要素</h3><ol>
+<li>递归的公式：f(n)=f(n-1)*n</li>
+<li>递归的终结点：f(1)</li>
+<li>递归的方向必须走向终结点</li>
+</ol>
+<h3 id="使用递归做文件搜索"><a href="#使用递归做文件搜索" class="headerlink" title="使用递归做文件搜索"></a>使用递归做文件搜索</h3><ul>
+<li>需求<ul>
+<li>文件搜索，从盘中找出某个文件名称并输出绝对路径</li>
+</ul>
+</li>
+<li>分析：<ol>
+<li>先定位出的应该是一级文件对象</li>
+<li>遍历全部一级文件对象，判断是否是文件</li>
+<li>如果是文件，判断是否是自己想要的</li>
+<li>如果是文件夹，需要继续递归进去重复上述过程</li>
+</ol>
+</li>
+</ul>
+<h1 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h1><ul>
+<li>GBK集<ul>
+<li>在GBK编码中，英文数字占1个字节，中文占2个字节</li>
+</ul>
+</li>
+<li>UTF-8集<ul>
+<li>UTF-8中，英文数字占1个字节，中文占3个字节</li>
+</ul>
+</li>
+<li>英文数字在存储中为正数，而中文在存储中为负数</li>
+</ul>
+<h3 id="编码与解码"><a href="#编码与解码" class="headerlink" title="编码与解码"></a>编码与解码</h3><ul>
+<li><p>编码</p>
+<ul>
+<li><p>.getBytes——-以默认字符集进行编码，返回Bytes数组以接受</p>
+<ul>
+<li>```java<br>byte[]  bytes=name.getBytes();//括号中可直接指定编码格式<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 解码</span><br><span class="line"></span><br><span class="line">  - 编码前和编码后的字符集必须一致，否则乱码</span><br><span class="line"></span><br><span class="line">  - String(bytes);</span><br><span class="line"></span><br><span class="line">    - String rs = new String(bytes);</span><br><span class="line"></span><br><span class="line">      - ```java</span><br><span class="line">        String rs = new String(bytes，&quot;编码格式&quot;);//进行指定编码解码</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

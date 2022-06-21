@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>File类 - 穹仁的博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="java的个人学习笔记,File
+File类可以定义文件：进行删除、获取文本本身信息等操作。
+但是不能读写文件内容
+
+创建file对象1File f=new File（“文件/文件夹/绝对路径/相对路径”）;
+
+路径写法1,"> 
+    <meta name="author" content="Kasugano-S-ora"> 
+    <link rel="alternative" href="atom.xml" title="穹仁的博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="File类 - 穹仁的博客"/>
+    <meta name="twitter:description" content="java的个人学习笔记,File
+File类可以定义文件：进行删除、获取文本本身信息等操作。
+但是不能读写文件内容
+
+创建file对象1File f=new File（“文件/文件夹/绝对路径/相对路径”）;
+
+路径写法1,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="穹仁的博客"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="File类 - 穹仁的博客"/>
+    <meta property="og:description" content="java的个人学习笔记,File
+File类可以定义文件：进行删除、获取文本本身信息等操作。
+但是不能读写文件内容
+
+创建file对象1File f=new File（“文件/文件夹/绝对路径/相对路径”）;
+
+路径写法1,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">穹仁的博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">File类</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">File类</h1>
+        <div class="stuff">
+            <span>六月 21, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/File%E7%B1%BB/" rel="tag">File类</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="File"><a href="#File" class="headerlink" title="File"></a>File</h1><ul>
+<li>File类可以定义文件：进行删除、获取文本本身信息等操作。</li>
+<li>但是不能读写文件内容</li>
+</ul>
+<h3 id="创建file对象"><a href="#创建file对象" class="headerlink" title="创建file对象"></a>创建file对象</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">File f=<span class="keyword">new</span> File（“文件/文件夹/绝对路径/相对路径”）;</span><br></pre></td></tr></table></figure>
+
+<h3 id="路径写法"><a href="#路径写法" class="headerlink" title="路径写法"></a>路径写法</h3><p>1.D:\\abc<br>2.D:/abc<br>3.File.separator（自动获取分隔符）</p>
+<h3 id="绝对路径和相对路径"><a href="#绝对路径和相对路径" class="headerlink" title="绝对路径和相对路径"></a>绝对路径和相对路径</h3><ul>
+<li><p>File支持绝对路径和相对路径</p>
+<ul>
+<li><p>绝对路径：从盘符开始</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">File f=<span class="keyword">new</span> File(“D:\\abc\\a.txt”);</span><br></pre></td></tr></table></figure></li>
+<li><p>相对路径：不带盘符，默认直接到当前工程下的目录寻找文件</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">File f=<span class="keyword">new</span> File(“模块名\\a.txt”);</span><br></pre></td></tr></table></figure>
+
+<p>相对路径一般定位模块，相对到工程下</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="常用api"><a href="#常用api" class="headerlink" title="常用api"></a>常用api</h3><ul>
+<li><h5 id="判断文件类型、获取文件信息"><a href="#判断文件类型、获取文件信息" class="headerlink" title="判断文件类型、获取文件信息"></a>判断文件类型、获取文件信息</h5><ul>
+<li><p>.getAbsolutePath—–获取绝对路径</p>
+</li>
+<li><p>.getPath——获取文件定义时候的路径</p>
+</li>
+<li><p>.getName——-获取文件名称，带后缀</p>
+</li>
+<li><p>.length——-获取文件大小，字节数</p>
+</li>
+<li><p>.exists———判断文件/文件夹 是否存在</p>
+</li>
+<li><p>.lastModified—–获取文件最后修改时间，获取的是时间毫秒值</p>
+</li>
+<li><p>.isFile、.isDirectory—–判断是文件还是文件夹</p>
+</li>
+</ul>
+</li>
+<li><h5 id="创建文件"><a href="#创建文件" class="headerlink" title="创建文件"></a>创建文件</h5><ul>
+<li>.createNewFlie—–创建新文件，成功返回true（几乎不用）</li>
+<li>.mkdir—-创建一级目录——mkdirs可以创建多级目录</li>
+</ul>
+</li>
+<li><h5 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h5><ul>
+<li>.delete—–删除文件    <ul>
+<li>占用一样可以删除</li>
+<li>只能删除空文件夹</li>
+<li>删除不进回收站</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h5 id="遍历功能"><a href="#遍历功能" class="headerlink" title="遍历功能"></a>遍历功能</h5><ul>
+<li><p>.list</p>
+<ul>
+<li>获取当前目录下所有<strong>“一级文件名称”</strong>到一个字符串数组中去返回</li>
+</ul>
+</li>
+<li><p>.listFiles</p>
+<ul>
+<li>（常用）获取当前目录下所有<strong>“一级文件对象”</strong>到一个文件对象数组中去返回</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>listFiles方法注意事项</p>
+<ol>
+<li>当调用者不存在时，返回null</li>
+<li>当调用者是一个文件时，返回null</li>
+<li>当调用者是一个空文件夹时，返回一个长度为0的数组</li>
+<li>当调用者是一个有内容的文件夹时，将里面所有的文件和文件夹路径放在File数组中返回</li>
+<li>当调用者是一个有隐藏文件的文件夹时，将里面所有的文件和文件夹的路径放在File数组中返回，包含隐藏内容</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>File类这些方法只能读取一级文件，多级需要通过方法递归</li>
+</ul>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

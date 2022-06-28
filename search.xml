@@ -399,7 +399,7 @@
   </entry>
   <entry>
     <title>方法递归</title>
-    <url>/2016/10/12/%E6%96%B9%E6%B3%95%E9%80%92%E5%BD%92/</url>
+    <url>/2022/06/22/%E6%96%B9%E6%B3%95%E9%80%92%E5%BD%92/</url>
     <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ul>
 <li>方法直接调用自己或间接调用自己的形式称为方法递归（recursion）</li>
 <li>递归作为一种算法在程序设计语言中广泛应用</li>

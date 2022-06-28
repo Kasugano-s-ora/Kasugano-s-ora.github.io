@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>穹仁的博客</title>
-    <url>/2021/12/31/1%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p>苟日新，日日新，又日新。<br>技术永远都在不断的进步，所以每天要学会更新自己的技术。精益求精才是IT发展的动力。</p>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>File类</title>
     <url>/2022/06/21/File%E7%B1%BB/</url>
     <content><![CDATA[<h1 id="File"><a href="#File" class="headerlink" title="File"></a>File</h1><ul>
@@ -103,154 +91,15 @@
       </tags>
   </entry>
   <entry>
-    <title>I/O流</title>
-    <url>/2022/06/21/IO%E6%B5%81/</url>
-    <content><![CDATA[<h3 id="字节流"><a href="#字节流" class="headerlink" title="字节流"></a>字节流</h3><h4 id="文件字节输入流"><a href="#文件字节输入流" class="headerlink" title="文件字节输入流"></a>文件字节输入流</h4><ul>
-<li><p>InputStream(抽象类)</p>
-<ul>
-<li>实现类——FileInputStream</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InputStream is=<span class="keyword">new</span> FileInputStream(<span class="string">&quot;文件相对路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
-<li><h4 id="每次读取一个字节"><a href="#每次读取一个字节" class="headerlink" title="每次读取一个字节"></a>每次读取一个字节</h4><ul>
-<li>.read——读取一个字节返回，每次读取一滴水，读取完毕返回-1</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> b1=is.read();</span><br><span class="line">System.out.println((<span class="keyword">char</span>)b1);</span><br></pre></td></tr></table></figure></li>
-<li><h5 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h5><ul>
-<li>性能较慢</li>
-<li>读取中文字符输出无法避免乱码情况</li>
-</ul>
-</li>
-<li><h4 id="每次读取一个字节数组"><a href="#每次读取一个字节数组" class="headerlink" title="每次读取一个字节数组"></a>每次读取一个字节<strong>数组</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">- <span class="keyword">byte</span>[] buffer=<span class="keyword">new</span> <span class="keyword">byte</span>[读取的字节数];</span><br><span class="line">- is.read =is.read(buffer);<span class="comment">//可以将这个字节数组当作为水桶</span></span><br><span class="line">String rs =<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len2)<span class="comment">//解码，读取多少倒多少</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>改进使用循环，优化性能</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">byte</span>[] buffer=<span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">3</span>];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="keyword">while</span>((len=is.read(buffer))!=-<span class="number">1</span>)&#123;</span><br><span class="line">	System.out.print(<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>读取中文字符输出无法避免出现乱码</p>
-</li>
-</ul>
-<ul>
-<li><h4 id="每次读取完全部字节"><a href="#每次读取完全部字节" class="headerlink" title="每次读取完全部字节"></a>每次读取完全部字节</h4></li>
-<li><p>解决字节流输出中文乱码问题</p>
-<ul>
-<li><p>方法一：定义的字节数组与文件大小刚刚好一样大</p>
-</li>
-<li><p>方法二：官方api—-is.readAllBytes();</p>
-</li>
-</ul>
-</li>
-<li><p>如果文件过大，定义的字节数组可能会引起内存溢出</p>
-</li>
-</ul>
-<h4 id="文件字节输出流"><a href="#文件字节输出流" class="headerlink" title="文件字节输出流"></a>文件字节输出流</h4><ul>
-<li><p>OutputStream(抽象类)</p>
-<ul>
-<li>FileOutputStream(实现类)</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">OutputStream os =<span class="keyword">new</span> FileOutputStream(<span class="string">&quot;路径&quot;</span>)<span class="comment">//没有文件会自动创建</span></span><br></pre></td></tr></table></figure></li>
-<li><h4 id="一个字节写入-write方法"><a href="#一个字节写入-write方法" class="headerlink" title="一个字节写入(write方法)"></a>一个字节写入(write方法)</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">os.write(<span class="string">&quot;写入字节&quot;</span>);<span class="comment">//默认是写1个字节</span></span><br><span class="line">os.flush;<span class="comment">//写数据需要刷新</span></span><br><span class="line">os.close;<span class="comment">//释放资源，包含刷新，关闭后流就不可以使用了</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>因为默认1个，所有直接写入中文会是乱码</li>
-</ul>
-</li>
-<li><h4 id="写入一个字节数组"><a href="#写入一个字节数组" class="headerlink" title="写入一个字节数组"></a>写入一个字节数组</h4><ul>
-<li>可以通过写入字节数组，将字节数组传入解决</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">byte</span>[] buffer=<span class="string">&quot;中文输入&quot;</span>.getBytes();</span><br><span class="line">os.write(buffer);</span><br></pre></td></tr></table></figure></li>
-<li><h4 id="写入字节数组的一部分"><a href="#写入字节数组的一部分" class="headerlink" title="写入字节数组的一部分"></a>写入字节数组的一部分</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">os.write(buffer,<span class="number">0</span>,<span class="number">3</span>);<span class="comment">//输入字符数组0-3的内容,按字节计算</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li><h4 id="需要注意的点"><a href="#需要注意的点" class="headerlink" title="需要注意的点"></a>需要注意的点</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">os.write(<span class="string">&quot;\r\n&quot;</span>.getBytes());<span class="comment">//使用\r\n的兼容性更好</span></span><br></pre></td></tr></table></figure>
-
-<p> 它会先清空之前的数据，写入新数据</p>
-<ul>
-<li>追加文件api</li>
-</ul>
-   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">OutputStream os =new FileOutputStream(&quot;路径&quot;,true)//路径后加true就追加</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="文件拷贝"><a href="#文件拷贝" class="headerlink" title="文件拷贝"></a>文件拷贝</h3><ol>
-<li>创建一个字节输入管道与原文件相通</li>
-<li>创建一个字节输出管道与目标文件相通</li>
-<li>定义一个字节数组转移数据</li>
-<li>关闭流</li>
-</ol>
-<ul>
-<li>可以拷贝所有文件</li>
-</ul>
-<h1 id="资源释放"><a href="#资源释放" class="headerlink" title="资源释放"></a>资源释放</h1><ul>
-<li><h4 id="try-catch-finally"><a href="#try-catch-finally" class="headerlink" title="try-catch-finally"></a>try-catch-finally</h4><ul>
-<li><p>被finally控制的语句最终一定会执行，除非JVM终止</p>
-<ul>
-<li>在try外部申明流为空，在内部赋予数值</li>
-<li>在finally里面加入两个try-catch对输入与输出流释放，并经行非空校验(if判断)</li>
-</ul>
-</li>
-<li><p>finally内不要放return，他会抢掉try-catch的return</p>
-</li>
-</ul>
-</li>
-<li><h4 id="try-catch-resouce"><a href="#try-catch-resouce" class="headerlink" title="try-catch-resouce"></a>try-catch-resouce</h4><ul>
-<li>try后面放置资源对象，他会自动调用源对象的close方法</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>(资源对象)&#123;</span><br><span class="line"><span class="comment">//实现Closeable/AutoCloseable接口的类对象才是资源</span></span><br><span class="line">&#125;<span class="keyword">catch</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="字符流"><a href="#字符流" class="headerlink" title="字符流"></a>字符流</h3><h4 id="文件字符输入流"><a href="#文件字符输入流" class="headerlink" title="文件字符输入流"></a>文件字符输入流</h4><ul>
-<li><p>Reader(抽象类)</p>
-<ul>
-<li>FileReader(实现类)</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Reader fr=<span class="keyword">new</span> FileReader(<span class="string">&quot;路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
-<li><h4 id="每次读取一个字符"><a href="#每次读取一个字符" class="headerlink" title="每次读取一个字符"></a>每次读取一个字符</h4><ul>
-<li>.read——读取一个字符返回，每次读取一滴水，读取完毕返回-1</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> b1=is.read();</span><br><span class="line">System.out.println((<span class="keyword">char</span>)b1);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>可以使用循环优化</li>
-</ul>
-</li>
-<li><h5 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h5><ul>
-<li>性能较慢</li>
-<li>读取中文字符不会乱码情况</li>
-</ul>
-</li>
-<li><h4 id="每次读取一个字符数组"><a href="#每次读取一个字符数组" class="headerlink" title="每次读取一个字符数组"></a>每次读取一个字符<strong>数组</strong></h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">- <span class="keyword">char</span>[] buffer=<span class="keyword">new</span> <span class="keyword">char</span>[读取的字节数];</span><br><span class="line">- fr.read =fr.read(buffer);<span class="comment">//可以将这个字节数组当作为水桶</span></span><br><span class="line">String rs =<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len2)<span class="comment">//解码，读取多少倒多少</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>改进使用循环，优化性能</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">char</span>[] buffer=<span class="keyword">new</span> <span class="keyword">char</span>[<span class="number">3</span>];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="keyword">while</span>((len=fr.read(buffer))!=-<span class="number">1</span>)&#123;</span><br><span class="line">	System.out.print(<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h4 id="文件字符输出流"><a href="#文件字符输出流" class="headerlink" title="文件字符输出流"></a>文件字符输出流</h4><ul>
-<li><p>Writer(抽象类)</p>
-<ul>
-<li>FileWriter(实现类)</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Writer fw =<span class="keyword">new</span> FileWriter(<span class="string">&quot;路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li><h4 id="一个字符写入-write方法"><a href="#一个字符写入-write方法" class="headerlink" title="一个字符写入(write方法)"></a>一个字符写入(write方法)</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">fw.write(<span class="string">&quot;写入字节&quot;</span>);<span class="comment">//默认是写1个字节</span></span><br><span class="line">fw.flush;<span class="comment">//写数据需要刷新</span></span><br><span class="line">fw.close;<span class="comment">//释放资源，包含刷新，关闭后流就不可以使用了</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li><h4 id="写入一个字符串"><a href="#写入一个字符串" class="headerlink" title="写入一个字符串"></a>写入一个字符串</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">fw.write(<span class="string">&quot;字符串内容&quot;</span>);</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li><h4 id="写入一个字符数组"><a href="#写入一个字符数组" class="headerlink" title="写入一个字符数组"></a>写入一个字符数组</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">char</span>[] chars=<span class="string">&quot;字符串内容&quot;</span>.tochatArray();</span><br><span class="line">fw.write(chars);</span><br></pre></td></tr></table></figure></li>
-<li><h4 id="写入字符数组的一部分"><a href="#写入字符数组的一部分" class="headerlink" title="写入字符数组的一部分"></a>写入字符数组的一部分</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">fw.write(buffer,<span class="number">0</span>,<span class="number">3</span>);<span class="comment">//输入字符数组0-3的内容，按字符算</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h1 id="字节流、字符流如何选择使用"><a href="#字节流、字符流如何选择使用" class="headerlink" title="字节流、字符流如何选择使用"></a>字节流、字符流如何选择使用</h1><ul>
-<li>字节流适合做文字的拷贝(音视频，文本)</li>
-<li>字节流不适合读取中文内容输出</li>
-<li>字符流适合做文本文件的操作(读，写)</li>
-</ul>
+    <title>穹仁的博客</title>
+    <url>/2022/06/28/1%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>苟日新，日日新，又日新。<br>技术永远都在不断的进步，所以每天要学会更新自己的技术。精益求精才是IT发展的动力。</p>
 ]]></content>
       <categories>
-        <category>java</category>
-        <category>I/O流</category>
+        <category>博客</category>
       </categories>
       <tags>
-        <tag>I/O流</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
   <entry>
@@ -469,6 +318,157 @@
       </categories>
       <tags>
         <tag>方法递归</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>I/O流</title>
+    <url>/2022/06/21/IO%E6%B5%81/</url>
+    <content><![CDATA[<h3 id="字节流"><a href="#字节流" class="headerlink" title="字节流"></a>字节流</h3><h4 id="文件字节输入流"><a href="#文件字节输入流" class="headerlink" title="文件字节输入流"></a>文件字节输入流</h4><ul>
+<li><p>InputStream(抽象类)</p>
+<ul>
+<li>实现类——FileInputStream</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InputStream is=<span class="keyword">new</span> FileInputStream(<span class="string">&quot;文件相对路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+<li><h4 id="每次读取一个字节"><a href="#每次读取一个字节" class="headerlink" title="每次读取一个字节"></a>每次读取一个字节</h4><ul>
+<li>.read——读取一个字节返回，每次读取一滴水，读取完毕返回-1</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> b1=is.read();</span><br><span class="line">System.out.println((<span class="keyword">char</span>)b1);</span><br></pre></td></tr></table></figure></li>
+<li><h5 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h5><ul>
+<li>性能较慢</li>
+<li>读取中文字符输出无法避免乱码情况</li>
+</ul>
+</li>
+<li><h4 id="每次读取一个字节数组"><a href="#每次读取一个字节数组" class="headerlink" title="每次读取一个字节数组"></a>每次读取一个字节<strong>数组</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">- <span class="keyword">byte</span>[] buffer=<span class="keyword">new</span> <span class="keyword">byte</span>[读取的字节数];</span><br><span class="line">- is.read =is.read(buffer);<span class="comment">//可以将这个字节数组当作为水桶</span></span><br><span class="line">String rs =<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len2)<span class="comment">//解码，读取多少倒多少</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>改进使用循环，优化性能</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">byte</span>[] buffer=<span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">3</span>];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="keyword">while</span>((len=is.read(buffer))!=-<span class="number">1</span>)&#123;</span><br><span class="line">	System.out.print(<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>读取中文字符输出无法避免出现乱码</p>
+</li>
+</ul>
+<ul>
+<li><h4 id="每次读取完全部字节"><a href="#每次读取完全部字节" class="headerlink" title="每次读取完全部字节"></a>每次读取完全部字节</h4></li>
+<li><p>解决字节流输出中文乱码问题</p>
+<ul>
+<li><p>方法一：定义的字节数组与文件大小刚刚好一样大</p>
+</li>
+<li><p>方法二：官方api—-is.readAllBytes();</p>
+</li>
+</ul>
+</li>
+<li><p>如果文件过大，定义的字节数组可能会引起内存溢出</p>
+</li>
+</ul>
+<h4 id="文件字节输出流"><a href="#文件字节输出流" class="headerlink" title="文件字节输出流"></a>文件字节输出流</h4><ul>
+<li><p>OutputStream(抽象类)</p>
+<ul>
+<li>FileOutputStream(实现类)</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">OutputStream os =<span class="keyword">new</span> FileOutputStream(<span class="string">&quot;路径&quot;</span>)<span class="comment">//没有文件会自动创建</span></span><br></pre></td></tr></table></figure></li>
+<li><h4 id="一个字节写入-write方法"><a href="#一个字节写入-write方法" class="headerlink" title="一个字节写入(write方法)"></a>一个字节写入(write方法)</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">os.write(<span class="string">&quot;写入字节&quot;</span>);<span class="comment">//默认是写1个字节</span></span><br><span class="line">os.flush;<span class="comment">//写数据需要刷新</span></span><br><span class="line">os.close;<span class="comment">//释放资源，包含刷新，关闭后流就不可以使用了</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>因为默认1个，所有直接写入中文会是乱码</li>
+</ul>
+</li>
+<li><h4 id="写入一个字节数组"><a href="#写入一个字节数组" class="headerlink" title="写入一个字节数组"></a>写入一个字节数组</h4><ul>
+<li>可以通过写入字节数组，将字节数组传入解决</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">byte</span>[] buffer=<span class="string">&quot;中文输入&quot;</span>.getBytes();</span><br><span class="line">os.write(buffer);</span><br></pre></td></tr></table></figure></li>
+<li><h4 id="写入字节数组的一部分"><a href="#写入字节数组的一部分" class="headerlink" title="写入字节数组的一部分"></a>写入字节数组的一部分</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">os.write(buffer,<span class="number">0</span>,<span class="number">3</span>);<span class="comment">//输入字符数组0-3的内容,按字节计算</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li><h4 id="需要注意的点"><a href="#需要注意的点" class="headerlink" title="需要注意的点"></a>需要注意的点</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">os.write(<span class="string">&quot;\r\n&quot;</span>.getBytes());<span class="comment">//使用\r\n的兼容性更好</span></span><br></pre></td></tr></table></figure>
+
+<p> 它会先清空之前的数据，写入新数据</p>
+<ul>
+<li>追加文件api</li>
+</ul>
+   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">OutputStream os =new FileOutputStream(&quot;路径&quot;,true)//路径后加true就追加</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="文件拷贝"><a href="#文件拷贝" class="headerlink" title="文件拷贝"></a>文件拷贝</h3><ol>
+<li>创建一个字节输入管道与原文件相通</li>
+<li>创建一个字节输出管道与目标文件相通</li>
+<li>定义一个字节数组转移数据</li>
+<li>关闭流</li>
+</ol>
+<ul>
+<li>可以拷贝所有文件</li>
+</ul>
+<h1 id="资源释放"><a href="#资源释放" class="headerlink" title="资源释放"></a>资源释放</h1><ul>
+<li><h4 id="try-catch-finally"><a href="#try-catch-finally" class="headerlink" title="try-catch-finally"></a>try-catch-finally</h4><ul>
+<li><p>被finally控制的语句最终一定会执行，除非JVM终止</p>
+<ul>
+<li>在try外部申明流为空，在内部赋予数值</li>
+<li>在finally里面加入两个try-catch对输入与输出流释放，并经行非空校验(if判断)</li>
+</ul>
+</li>
+<li><p>finally内不要放return，他会抢掉try-catch的return</p>
+</li>
+</ul>
+</li>
+<li><h4 id="try-catch-resouce"><a href="#try-catch-resouce" class="headerlink" title="try-catch-resouce"></a>try-catch-resouce</h4><ul>
+<li>try后面放置资源对象，他会自动调用源对象的close方法</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>(资源对象)&#123;</span><br><span class="line"><span class="comment">//实现Closeable/AutoCloseable接口的类对象才是资源</span></span><br><span class="line">&#125;<span class="keyword">catch</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="字符流"><a href="#字符流" class="headerlink" title="字符流"></a>字符流</h3><h4 id="文件字符输入流"><a href="#文件字符输入流" class="headerlink" title="文件字符输入流"></a>文件字符输入流</h4><ul>
+<li><p>Reader(抽象类)</p>
+<ul>
+<li>FileReader(实现类)</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Reader fr=<span class="keyword">new</span> FileReader(<span class="string">&quot;路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+<li><h4 id="每次读取一个字符"><a href="#每次读取一个字符" class="headerlink" title="每次读取一个字符"></a>每次读取一个字符</h4><ul>
+<li>.read——读取一个字符返回，每次读取一滴水，读取完毕返回-1</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> b1=is.read();</span><br><span class="line">System.out.println((<span class="keyword">char</span>)b1);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>可以使用循环优化</li>
+</ul>
+</li>
+<li><h5 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h5><ul>
+<li>性能较慢</li>
+<li>读取中文字符不会乱码情况</li>
+</ul>
+</li>
+<li><h4 id="每次读取一个字符数组"><a href="#每次读取一个字符数组" class="headerlink" title="每次读取一个字符数组"></a>每次读取一个字符<strong>数组</strong></h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">- <span class="keyword">char</span>[] buffer=<span class="keyword">new</span> <span class="keyword">char</span>[读取的字节数];</span><br><span class="line">- fr.read =fr.read(buffer);<span class="comment">//可以将这个字节数组当作为水桶</span></span><br><span class="line">String rs =<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len2)<span class="comment">//解码，读取多少倒多少</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>改进使用循环，优化性能</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">char</span>[] buffer=<span class="keyword">new</span> <span class="keyword">char</span>[<span class="number">3</span>];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="keyword">while</span>((len=fr.read(buffer))!=-<span class="number">1</span>)&#123;</span><br><span class="line">	System.out.print(<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="文件字符输出流"><a href="#文件字符输出流" class="headerlink" title="文件字符输出流"></a>文件字符输出流</h4><ul>
+<li><p>Writer(抽象类)</p>
+<ul>
+<li>FileWriter(实现类)</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Writer fw =<span class="keyword">new</span> FileWriter(<span class="string">&quot;路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li><h4 id="一个字符写入-write方法"><a href="#一个字符写入-write方法" class="headerlink" title="一个字符写入(write方法)"></a>一个字符写入(write方法)</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">fw.write(<span class="string">&quot;写入字节&quot;</span>);<span class="comment">//默认是写1个字节</span></span><br><span class="line">fw.flush;<span class="comment">//写数据需要刷新</span></span><br><span class="line">fw.close;<span class="comment">//释放资源，包含刷新，关闭后流就不可以使用了</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li><h4 id="写入一个字符串"><a href="#写入一个字符串" class="headerlink" title="写入一个字符串"></a>写入一个字符串</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">fw.write(<span class="string">&quot;字符串内容&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li><h4 id="写入一个字符数组"><a href="#写入一个字符数组" class="headerlink" title="写入一个字符数组"></a>写入一个字符数组</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">char</span>[] chars=<span class="string">&quot;字符串内容&quot;</span>.tochatArray();</span><br><span class="line">fw.write(chars);</span><br></pre></td></tr></table></figure></li>
+<li><h4 id="写入字符数组的一部分"><a href="#写入字符数组的一部分" class="headerlink" title="写入字符数组的一部分"></a>写入字符数组的一部分</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">fw.write(buffer,<span class="number">0</span>,<span class="number">3</span>);<span class="comment">//输入字符数组0-3的内容，按字符算</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="字节流、字符流如何选择使用"><a href="#字节流、字符流如何选择使用" class="headerlink" title="字节流、字符流如何选择使用"></a>字节流、字符流如何选择使用</h1><ul>
+<li>字节流适合做文字的拷贝(音视频，文本)</li>
+<li>字节流不适合读取中文内容输出</li>
+<li>字符流适合做文本文件的操作(读，写)</li>
+</ul>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>I/O流</category>
+      </categories>
+      <tags>
+        <tag>I/O流</tag>
       </tags>
   </entry>
 </search>

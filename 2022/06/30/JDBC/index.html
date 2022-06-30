@@ -1,0 +1,449 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>JDBC、数据库连接池 - 穹仁的博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="简介JDBC概念：
+
+就是使用java语言操作关系数据库的一套API
+
+JDBC本质
+
+官方定义的一套操作所有关系型数据库的规则，即接口
+各数据库厂商去实现这套接口，提供数据库驱动jar包
+我们可以,"> 
+    
+    <link rel="alternative" href="atom.xml" title="穹仁的博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="JDBC、数据库连接池 - 穹仁的博客"/>
+    <meta name="twitter:description" content="简介JDBC概念：
+
+就是使用java语言操作关系数据库的一套API
+
+JDBC本质
+
+官方定义的一套操作所有关系型数据库的规则，即接口
+各数据库厂商去实现这套接口，提供数据库驱动jar包
+我们可以,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="穹仁的博客"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="JDBC、数据库连接池 - 穹仁的博客"/>
+    <meta property="og:description" content="简介JDBC概念：
+
+就是使用java语言操作关系数据库的一套API
+
+JDBC本质
+
+官方定义的一套操作所有关系型数据库的规则，即接口
+各数据库厂商去实现这套接口，提供数据库驱动jar包
+我们可以,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+
+
+<body class="loading">
+    <span id="config-title" style="display:none">穹仁的博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">JDBC、数据库连接池</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">JDBC、数据库连接池</h1>
+        <div class="stuff">
+            <span>六月 30, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Druid/" rel="tag">Druid</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/JDBC/" rel="tag">JDBC</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Java-Web/" rel="tag">Java Web</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/" rel="tag">数据库连接</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>JDBC概念：</p>
+<ul>
+<li>就是使用java语言操作关系数据库的一套API</li>
+</ul>
+<p>JDBC本质</p>
+<ul>
+<li>官方定义的一套操作所有关系型数据库的规则，即接口</li>
+<li>各数据库厂商去实现这套接口，提供数据库驱动jar包</li>
+<li>我们可以使用这套接口(JDBC)编程，真正执行的代码是驱动jar包中的实现类</li>
+</ul>
+<p>JDBC好处</p>
+<ul>
+<li>各数据库厂商使用相同的接口，java代码不需要针对不同数据库分别开发</li>
+<li>可以随时替换底层数据库，访问数据库的java代码基本不变</li>
+</ul>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><p>0.创建工程，导入驱动jar包</p>
+<p>1.注册驱动</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class.forName(<span class="string">&quot;com.mysql.jdbc.Driver&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>2.获取连接</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Connection conn = DriverManager.getConnection(url,username,password);</span><br></pre></td></tr></table></figure>
+
+<p>3.定义SQL语句</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String sql =<span class="string">&quot;update...&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>4.获取执行SQL对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Statement stmt =conn.createStatement();</span><br></pre></td></tr></table></figure>
+
+<p>5.执行SQL</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">stmt.executeUpdate(sql);</span><br></pre></td></tr></table></figure>
+
+<p>6.处理返回结果</p>
+<p>7.释放资源</p>
+<h1 id="API详解"><a href="#API详解" class="headerlink" title="API详解"></a>API详解</h1><h2 id="DriverManager"><a href="#DriverManager" class="headerlink" title="DriverManager"></a>DriverManager</h2><ul>
+<li>(驱动管理类)作用<ol>
+<li>注册驱动</li>
+<li>获取数据库连接</li>
+</ol>
+</li>
+<li>注册驱动</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class.forName(<span class="string">&quot;com.mysql.jdbc.Driver&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>获取连接</p>
+<ol>
+<li><p>url:连接路径</p>
+<p>语法：jdbc：mysql://ip地址(域名):端口号/数据库名称?参数键值对1&amp;参数键值对2…</p>
+</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jdbc:mysql:<span class="comment">//127.0.0.1:3306/db1</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>禁用安全连接</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jdbc:mysql:<span class="comment">//127.0.0.1:3306/db1?useSSL=false;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String url=<span class="string">&quot;jdbc:mysql://127.0.0.1:3306/db1&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Connection"><a href="#Connection" class="headerlink" title="Connection"></a>Connection</h2><ul>
+<li><p>数据库连接对象：</p>
+<ol>
+<li><p>获取执行SQL的对象</p>
+<ul>
+<li>普通执行SQL对象</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Statement <span class="title">cteateStatement</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>预编译SQL的执行SQL对象：防止SQL注入</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">PreparedStatement <span class="title">prepareStatement</span><span class="params">(sql)</span></span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>执行存储过程的对象</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">CallableStatement <span class="title">prepareCall</span><span class="params">(sql)</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>管理事务</p>
+<ul>
+<li>MySQL事务管理</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">开启事务:BEGIN;/START TRANSACTION;</span><br><span class="line">提交事务:COMMIT;</span><br><span class="line">回滚事务:ROLLBACK;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>JDBC事务管理：Connection接口中定义了3个对应的方法</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">开启事务:setAutoCommit(boolean autoCommit):true为自动提交事务;false为手动提交事务，即为开启事务</span><br><span class="line">提交事务:commit()</span><br><span class="line">回滚事务:rollback()</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ul>
+<h2 id="Statement"><a href="#Statement" class="headerlink" title="Statement"></a>Statement</h2><p>执行SQL语句</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int executeUpdate(sql):执行DML、DDL语句</span><br><span class="line">//返回值：(1)DML语句影响的行数(2)DDL语句执行后，执行成功也可能返回0</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ResultSet executeQuery(sql):执行DQL语句</span><br><span class="line">//返回值：ResultSet结果集对象</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>获取statement对象</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Statement stmt = conn.reeateStatement();</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="ResultSet"><a href="#ResultSet" class="headerlink" title="ResultSet"></a>ResultSet</h2><ul>
+<li><p>结果集对象</p>
+<ol>
+<li>分装了DQL查询语句的结果</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ResultSet stmt.executeQuery(sql):执行DQL语句，返回ResultSet对象</span><br></pre></td></tr></table></figure></li>
+<li><p>获取查询结果</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">boolean next():	(1)将光标从当前位置向前移动一行(2)判断当前行是否为有效行</span><br></pre></td></tr></table></figure>
+
+<p>返回值:</p>
+<ul>
+<li>true:有效行，当前行有数据</li>
+<li>false:无效行，当前行没有数据</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxx getXxx(参数):获取数据</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>xxx:数据类型；如：int getInt(参数); String getString(参数);</li>
+<li>参数:<ul>
+<li>int: 类的编号，从1开始</li>
+<li>String：列的名称</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>使用步骤：</p>
+<ol>
+<li>游标向下移动一行，并判断该行是否有数据：next()</li>
+<li>获取数据：getXxx(参数)</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//循环判断游标是否是最后一行末尾</span></span><br><span class="line"><span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">	<span class="comment">//获取数据</span></span><br><span class="line">	rs,getXxx(参数);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>执行sql</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ResultSet rs = stmt.executeQuery(sql);</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="PreparedStatement"><a href="#PreparedStatement" class="headerlink" title="PreparedStatement"></a>PreparedStatement</h2><ul>
+<li>作用</li>
+</ul>
+<p>​    预编译SQL语句并执行：预防SQL注入问题</p>
+<ul>
+<li>SQL注入</li>
+</ul>
+<p>​    是通过操作输入来修改事先定义好的SQL语句，用以达到执行代码对服务进行攻击的方法</p>
+<ul>
+<li>开启预编译功能</li>
+</ul>
+<p>在获取连接时加入<code>useServerPrepStmts=true</code>命令</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String url=<span class="string">&quot;jdbc:mysql://127.0.0.1:3306/db1?useServerPrepStmts=true&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2></li>
+</ul>
+<ol>
+<li><p>获取PreparedStatement对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//SQL语句中的参数值，使用?占位符替代</span></span><br><span class="line">String sql =<span class="string">&quot;select * from user where username= ? and password =?&quot;</span>;</span><br><span class="line"><span class="comment">//通过Connection对象获取，并传入对应的sql语句</span></span><br><span class="line">PreparedStatement pstmt = conn.prepareStatement(sql);</span><br></pre></td></tr></table></figure></li>
+<li><p>设置参数值</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">preparedStatement对象: setXxx(参数<span class="number">1</span>,参数<span class="number">2</span>):给?赋值</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Xxx：数据类型；如setInt(参数1,参数2)</li>
+<li>参数：<ul>
+<li>参数1：?的位置编号，从1开始</li>
+<li>参数2：?的值</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>执行SQL</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">executeUpdate();  /executeQuery(); :不需要再传递sql</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><h2 id="使用案例"><a href="#使用案例" class="headerlink" title="使用案例"></a>使用案例</h2></li>
+</ul>
+<ol>
+<li><p>定义sql</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string sql = <span class="string">&quot;select * from tb_user where username = ? and password = ?&quot;</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>获取pstmt对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PreparedStatement pstmt =conn.prepateStatement(sql);</span><br></pre></td></tr></table></figure></li>
+<li><p>设置<code>?</code>的值</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pstmt.setString(<span class="number">1</span>,name);</span><br><span class="line">pstmt.setString(<span class="number">2</span>,pwd);</span><br></pre></td></tr></table></figure></li>
+<li><p>执行sql</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ResultSet rs = patmt.executeQuery();</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h1 id="数据库连接池-Druid"><a href="#数据库连接池-Druid" class="headerlink" title="数据库连接池(Druid)"></a>数据库连接池(Druid)</h1><h2 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h2><ul>
+<li>数据库连接池是一个容器，负责分配、管理数据库连接</li>
+<li>它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个；</li>
+<li>释放空间时间超过最大空闲时间的数据库连接来避免因为没有释放数据库连接而引起的数据库连接遗漏</li>
+</ul>
+<h2 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h2><ul>
+<li>资源重用</li>
+<li>提升系统响应速度</li>
+<li>避免数据库连接遗漏</li>
+</ul>
+<h2 id="数据库连接池实现"><a href="#数据库连接池实现" class="headerlink" title="数据库连接池实现"></a>数据库连接池实现</h2><ul>
+<li>标准接口(DataSource)<ul>
+<li>官方提供的数据库连接池标准接口，由第三方组织实现此接口</li>
+<li>功能：获取连接</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Connection <span class="title">getConnection</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>常见的数据库连接池<ul>
+<li>DBCP</li>
+<li>C3P0</li>
+<li>Druid</li>
+</ul>
+</li>
+<li>Druid(德鲁伊)<ul>
+<li>是阿里巴巴开源的数据库连接池项目</li>
+<li>功能强大，性能优秀，是java语言最好的数据库连接池之一</li>
+</ul>
+</li>
+</ul>
+<h2 id="Druid使用步骤"><a href="#Druid使用步骤" class="headerlink" title="Druid使用步骤"></a>Druid使用步骤</h2><ol>
+<li><p>导入jar包</p>
+</li>
+<li><p>定义配置文件</p>
+<ul>
+<li>driverClassName值基本不变</li>
+<li>url的值需要注意，<code>jdbc:mysql:</code>后面跟的是数据库连接<code>ip地址：端口号 需要使用的数据库名称</code></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//保存名为：druid.properties </span><br><span class="line">//导入到src目录</span><br><span class="line">driverClassName=com.mysql.jdbc.Driver</span><br><span class="line">url=jdbc:mysql:///db1?useSSL=false&amp;useServerPrepStmts=true</span><br><span class="line">username=root</span><br><span class="line">password=205205</span><br><span class="line"># 初始化连接数量</span><br><span class="line">initialSize=5</span><br><span class="line"># 最大连接数</span><br><span class="line">maxActive=10</span><br><span class="line"># 最大等待时间</span><br><span class="line">maxWait=3000</span><br></pre></td></tr></table></figure></li>
+<li><p>加载配置文件</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Properties prop = <span class="keyword">new</span> Properties();</span><br><span class="line">prop.load(<span class="keyword">new</span> FileInputStream(<span class="string">&quot;src/druid.properties&quot;</span>));</span><br></pre></td></tr></table></figure></li>
+<li><p>获取数据库连接池对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DataSource dataSource = DruidDataSourceFactory.cteateDataSoutce(prop);</span><br></pre></td></tr></table></figure></li>
+<li><p>获取连接</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Connection connection = dataSource.getConnection();</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>​    </p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

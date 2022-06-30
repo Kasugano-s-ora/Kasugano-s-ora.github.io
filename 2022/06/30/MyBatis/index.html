@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MyBatis持久层框架 - 穹仁的博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="
+MyBatis是一款**持久层框架**，用于简化JDBC开发
+是Apache公司的开源项目iBatis之后改名MyBatis并迁移到Github
+官网：https://mybatis.org/my,"> 
+    
+    <link rel="alternative" href="atom.xml" title="穹仁的博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="MyBatis持久层框架 - 穹仁的博客"/>
+    <meta name="twitter:description" content="
+MyBatis是一款**持久层框架**，用于简化JDBC开发
+是Apache公司的开源项目iBatis之后改名MyBatis并迁移到Github
+官网：https://mybatis.org/my,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="穹仁的博客"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="MyBatis持久层框架 - 穹仁的博客"/>
+    <meta property="og:description" content="
+MyBatis是一款**持久层框架**，用于简化JDBC开发
+是Apache公司的开源项目iBatis之后改名MyBatis并迁移到Github
+官网：https://mybatis.org/my,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+
+
+<body class="loading">
+    <span id="config-title" style="display:none">穹仁的博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">MyBatis持久层框架</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">MyBatis持久层框架</h1>
+        <div class="stuff">
+            <span>六月 30, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/JDBC/" rel="tag">JDBC</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Java-Web/" rel="tag">Java Web</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/" rel="tag">数据库连接</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id><a href="#" class="headerlink" title></a></h1><ul>
+<li>MyBatis是一款**<code>持久层框架</code>**，用于简化JDBC开发</li>
+<li>是Apache公司的开源项目iBatis之后改名MyBatis并迁移到Github</li>
+<li>官网：<a target="_blank" rel="noopener" href="https://mybatis.org/mybatis-3/zh/index.html">https://mybatis.org/mybatis-3/zh/index.html</a></li>
+</ul>
+<h1 id="持久层"><a href="#持久层" class="headerlink" title="持久层"></a>持久层</h1><ul>
+<li>负责将数据到保存到数据库的那一层代码</li>
+<li>JavaEE三层架构：表现层、业务层、持久层</li>
+</ul>
+<h1 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h1><ul>
+<li>框架就是一个半成品软件，是一套可重用的、通用的、软件基础代码模型</li>
+<li>在框架的基础上之上构建软件更加高效、规范、通用、可扩展。</li>
+</ul>
+<h1 id="Mapper代理开发"><a href="#Mapper代理开发" class="headerlink" title="Mapper代理开发"></a>Mapper代理开发</h1><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="视频教程"><a href="#视频教程" class="headerlink" title="视频教程"></a>视频教程</h3><ol>
+<li>定义与SQL映射文件同名的Mapper接口，并且将Mapper接口和SQL映射文件放置在同一目录下</li>
+<li>设置SQL映射文件的namespace属性为Mapper接口全限定名</li>
+<li>在Mapper接口中定义方法，方法名就是SQL映射文件中sql语句的id，并保持参数类型和返回值类型一致</li>
+<li>编码<ol>
+<li>通过SqlSession的getMapper方法获取 Mapper接口的代理对象</li>
+<li>调用对应方法完成sql的执行</li>
+</ol>
+</li>
+</ol>
+<h3 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h3><h4 id="1-在maven项目的main包下"><a href="#1-在maven项目的main包下" class="headerlink" title="1.在maven项目的main包下"></a>1.在maven项目的<code>main</code>包下</h4><ol>
+<li>代码部分（java包）创建mapper目录，里面放的是Mapper接口</li>
+<li>依赖部分（resources包）同样创建mapper目录，里面放的是SQL映射文件</li>
+<li><em><strong>需要注意的是：接口与映射文件名称要一致</strong></em></li>
+<li>在编译时他是在一个目录下的，不必担心</li>
+</ol>
+<h4 id="2-创建实现类"><a href="#2-创建实现类" class="headerlink" title="2.创建实现类"></a>2.创建实现类</h4><ol>
+<li>在main包下创建pojo文件包</li>
+<li>在pojo文件包下，创建与数据库字段对应的get，set，toString方法</li>
+</ol>
+<h4 id="3-SQL映射文件"><a href="#3-SQL映射文件" class="headerlink" title="3.SQL映射文件"></a>3.SQL映射文件</h4><ol>
+<li><p><strong>SQL映射文件就是依赖里面的—文件名Mapper.xml</strong></p>
+</li>
+<li><p>创建完映射文件名后，可以到官网查看相关内容（mabais官网——入门——探究以映射的SQL语句）</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- you&#x27;xi --&gt;</span></span><br><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">mapper</span></span></span><br><span class="line"><span class="meta">  <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">  <span class="meta-string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;org.mybatis.example.BlogMapper&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectBlog&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;Blog&quot;</span>&gt;</span></span><br><span class="line">    select * from Blog where id = #&#123;id&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>复制下来，粘贴到你的映射文件</p>
+</li>
+<li><p>修改标签<code>namespace</code>为接口的全限定名（也就是项目路径，例如：mapper目录下的UserMapper，它的全限定名就是mapper.UserMapper）</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;mapper.UserMapper&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="4-对应使用"><a href="#4-对应使用" class="headerlink" title="4.对应使用"></a>4.对应使用</h4><ol>
+<li>接口中定义的方法，一一对应着映射文件</li>
+<li>接口中的方法名，对应映射文件的<code>id</code>属性</li>
+<li>在映射文件标签内，写SQL语句</li>
+<li>例如代码片段：</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//接口片段</span><br><span class="line">List<span class="tag">&lt;<span class="name">Brand</span>&gt;</span> selectAll();</span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 映射文件片段 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;Brand&quot;</span>&gt;</span></span><br><span class="line">        select * from tb_brand;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="4-编码使用"><a href="#4-编码使用" class="headerlink" title="4.编码使用"></a>4.编码使用</h4><ol>
+<li><p>配置完成这些后，就可以使用mapper代理方式运行sql语句</p>
+</li>
+<li><p>最后的使用与JDBC相似</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">String resource = <span class="string">&quot;mybatis-config.xml&quot;</span>;</span><br><span class="line">       InputStream inputStream = Resources.getResourceAsStream(resource);</span><br><span class="line">       SqlSessionFactory sqlSessionFactory = <span class="keyword">new</span> SqlSessionFactoryBuilder().build(inputStream);</span><br><span class="line">  </span><br><span class="line">       SqlSession sqlSession = sqlSessionFactory.openSession();</span><br><span class="line">  		<span class="comment">//获取sqlsession</span></span><br><span class="line">       UserMapper userMapper = sqlSession.getMapper(UserMapper.class);</span><br><span class="line">  		<span class="comment">//执行sql</span></span><br><span class="line">       User user=userMapper.selectById(<span class="number">1</span>);</span><br><span class="line">       System.out.println(user);</span><br><span class="line">       sqlSession.close();</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="mybatis核心文件配置"><a href="#mybatis核心文件配置" class="headerlink" title="mybatis核心文件配置"></a>mybatis核心文件配置</h2><ul>
+<li><p>到官网入门有xml的配置信息</p>
+<ul>
+<li>推荐按照官网的给的名字创建文件，文件名<code>mybatis-config.xml</code></li>
+</ul>
+</li>
+<li><p>粘贴到文件内（官网的文件，有修改）</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">configuration</span></span></span><br><span class="line"><span class="meta">        <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//mybatis.org//DTD Config 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="meta-string">&quot;http://mybatis.org/dtd/mybatis-3-config.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span>		<span class="comment">&lt;!-- 这里是起别名，用于sql映射文件的resultType --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;pojo&quot;</span>/&gt;</span>	</span><br><span class="line">    <span class="tag">&lt;/<span class="name">typeAliases</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">environments</span> <span class="attr">default</span>=<span class="string">&quot;development&quot;</span>&gt;</span>	<span class="comment">&lt;!-- default选哪个id就使用哪个配置 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">environment</span> <span class="attr">id</span>=<span class="string">&quot;development&quot;</span>&gt;</span>		<span class="comment">&lt;!-- 这个标签可以有多个，在上面选择 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">transactionManager</span> <span class="attr">type</span>=<span class="string">&quot;JDBC&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dataSource</span> <span class="attr">type</span>=<span class="string">&quot;POOLED&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;driver&quot;</span> <span class="attr">value</span>=<span class="string">&quot;com.mysql.jdbc.Driver&quot;</span>/&gt;</span>	<span class="comment">&lt;!-- 基本不变 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;url&quot;</span> <span class="attr">value</span>=<span class="string">&quot;jdbc:mysql://127.0.0.1:3306/jdbc_practice?useSSl=false&quot;</span>/&gt;</span></span><br><span class="line">       <span class="comment">&lt;!-- 设置mysql地址与库 jdbc:mysql://数据库ip地址：端口/数据库名?数据库规则 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">value</span>=<span class="string">&quot;root&quot;</span>/&gt;</span>	<span class="comment">&lt;!-- 账户 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> <span class="attr">value</span>=<span class="string">&quot;205205&quot;</span>/&gt;</span>	<span class="comment">&lt;!-- 密码 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dataSource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environments</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--        &lt;mapper resource=&quot;mapper/UserMapper.xml&quot;/&gt;--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;mapper&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="mybatis关键词"><a href="#mybatis关键词" class="headerlink" title="mybatis关键词"></a>mybatis关键词</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span>&gt;</span><span class="tag">&lt;/<span class="name">select</span>&gt;</span> 					<span class="comment">&lt;!-- SQL代码块 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;xxx&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">select</span>&gt;</span> 			<span class="comment">&lt;!-- SQL代码块的对应接口名xxx --&gt;</span></span><br><span class="line">id =#&#123;id&#125;; 							<span class="comment">&lt;!-- 占位符#&#123;名&#125;，id=? --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">where</span>&gt;</span><span class="tag">&lt;/<span class="name">where</span>&gt;</span>						<span class="comment">&lt;!-- 可以代替SQL语句的where解决语句问题 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">if</span>&gt;</span><span class="tag">&lt;/<span class="name">if</span>&gt;</span> 							<span class="comment">&lt;!-- 判断，可以用于and运算，解决语句问题 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">choose</span>&gt;</span>							<span class="comment">&lt;!-- 等同于switch --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">when</span> <span class="attr">test</span>=<span class="string">&quot;条件&quot;</span>&gt;</span>				<span class="comment">&lt;!-- 等同于case --&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;/<span class="name">when</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">otherwise</span>&gt;</span>						<span class="comment">&lt;!-- 等同于default --&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;/<span class="name">otherwise</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">choose</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">set</span>&gt;</span><span class="tag">&lt;/<span class="name">set</span>&gt;</span>							<span class="comment">&lt;!-- 解决原本sql的语句问题 --&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

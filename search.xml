@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>穹仁的博客</title>
+    <url>/2022/06/30/1%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>苟日新，日日新，又日新。<br>技术永远都在不断的进步，所以每天要学会更新自己的技术。精益求精才是IT发展的动力。</p>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>File类</title>
     <url>/2022/06/21/File%E7%B1%BB/</url>
     <content><![CDATA[<h1 id="File"><a href="#File" class="headerlink" title="File"></a>File</h1><ul>
@@ -83,241 +95,86 @@
 </ul>
 ]]></content>
       <categories>
-        <category>java</category>
-        <category>File类</category>
+        <category>Java</category>
       </categories>
       <tags>
+        <tag>Java SE</tag>
+        <tag>Java</tag>
         <tag>File类</tag>
       </tags>
   </entry>
   <entry>
-    <title>穹仁的博客</title>
-    <url>/2022/06/28/1%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p>苟日新，日日新，又日新。<br>技术永远都在不断的进步，所以每天要学会更新自己的技术。精益求精才是IT发展的动力。</p>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用VS Code配置c语言环境</title>
-    <url>/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/</url>
-    <content><![CDATA[<p>Visual Studio Code（简称“VS Code”）是 Microsoft 在2015年4月30日Build开发者大会上正式宣布一个运行于 Mac OS X、 Windows 和 Linux 之上的，针对于编写现代Web和 云应用 的跨平台源代码编辑器，可在桌面上运行，并且可用于Windows，macOS和Linux。 它具有对 JavaScript，TypeScript 和 Node.js 的内置支持，并具有丰富的其他语言（例如 C++ ， C＃ ， Java ， Python ， PHP ， Go ）和运行时（例如.NET 和 Unity ）扩展的生态系统。</p>
-<h2 id="在本章中给出对c语言的环境配置"><a href="#在本章中给出对c语言的环境配置" class="headerlink" title="在本章中给出对c语言的环境配置"></a>在本章中给出对c语言的环境配置</h2><ul>
-<li><h3 id="下载软件及运行库"><a href="#下载软件及运行库" class="headerlink" title="下载软件及运行库"></a>下载软件及运行库</h3></li>
-</ul>
-<ol>
-<li><h5 id="首先下载Visual-Studio-Code"><a href="#首先下载Visual-Studio-Code" class="headerlink" title="首先下载Visual Studio Code"></a>首先下载Visual Studio Code</h5><p>官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E5%AE%98%E7%BD%91%E4%B8%8B%E8%BD%BD.jpeg"></p>
-</li>
-<li><h5 id="下载c语言的gcc运行库（mingw64）"><a href="#下载c语言的gcc运行库（mingw64）" class="headerlink" title="下载c语言的gcc运行库（mingw64）"></a>下载c语言的gcc运行库（mingw64）</h5></li>
-</ol>
-<p>​    本人在网上下载了好多次运行库，好多都配置不上，不知道是哪个环节出问题了，我哥哥给我的教程，里面的运行库能用而且直接配置成功，我就把他存下来当个宝了。</p>
-<pre><code>下载地址—百度网盘：链接：https://pan.baidu.com/s/1BHafnJXhVva-DptQDuxpNw 
-</code></pre>
-<p>提取码：mybk</p>
+    <title>IDEA的下载安装</title>
+    <url>/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h1 id><a href="#" class="headerlink" title></a></h1><p>IDEA的社区版本是免费使用的</p>
+<p>下载地址：<a href="https://www.jetbrains.com/zh-cn/idea/download/">https://www.jetbrains.com/zh-cn/idea/download/</a></p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513104247684.png" alt="image-20220513104247684"></p>
+<p>下载完成后，进行安装，选择安装路径</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513121700061.png" alt="image-20220513121700061"></p>
+<p>进行如下的勾选，一般都是64位的操作系统。</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513121853684.png" alt="image-20220513121853684"></p>
+<p>接着Install，到下一步</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513121943732.png" alt="image-20220513121943732"></p>
+<p>点击finish，完成安装。</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513122021675.png" alt="image-20220513122021675"></p>
+<h1 id="创建java程序"><a href="#创建java程序" class="headerlink" title="创建java程序"></a>创建java程序</h1><p>打开IDEA，点击New Project</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513122444327.png" alt="image-20220513122444327"></p>
+<p>选择模块并添加JDK，如果提前配置好了JDK，他也会识别，打开折叠选项选中</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513122624562.png" alt="image-20220513122624562"></p>
+<p>在这个折叠选项里面可以选择下载JDK,idea会给你自动建立下载</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513122857294.png" alt="image-20220513122857294"></p>
+<p>输入简单的程序运行</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513155100592.png" alt="image-20220513155100592"></p>
+<h1 id="JDK的下载与安装配置"><a href="#JDK的下载与安装配置" class="headerlink" title="JDK的下载与安装配置"></a>JDK的下载与安装配置</h1><p>java程序的编写运行是需要JDK才能使用的</p>
+<p>IDEA非常方便，软件内部有着JDK的下载与安装，在上面有说</p>
+<p>你也可以选择自己下载JDK使用，并配置环境变量</p>
+<p>官网下载地址：<a href="https://www.oracle.com/java/technologies/downloads/">https://www.oracle.com/java/technologies/downloads/</a></p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513151910412.png" alt="image-20220513151910412"></p>
 <ul>
-<li><h3 id="安装软件-解压运行库"><a href="#安装软件-解压运行库" class="headerlink" title="安装软件-解压运行库"></a>安装软件-解压运行库</h3><p>找个你想要安装的盘，这里我选择的是D盘</p>
-<p>安装我就省略了，没有什么需要额外设置的，只需要改个安装路径就行了</p>
-<p>我的建议是在D盘里新建一个叫做 “ VScode ” 的文件夹</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.jpg"></p>
-<h4 id="把软件和压缩包都安装-解压到这个文件夹，不用担心会弄混，安装的时候它会自己在这里新建文件夹的——完成之后就是这样的"><a href="#把软件和压缩包都安装-解压到这个文件夹，不用担心会弄混，安装的时候它会自己在这里新建文件夹的——完成之后就是这样的" class="headerlink" title="把软件和压缩包都安装/解压到这个文件夹，不用担心会弄混，安装的时候它会自己在这里新建文件夹的——完成之后就是这样的"></a>把软件和压缩包都安装/解压到这个文件夹，不用担心会弄混，安装的时候它会自己在这里新建文件夹的——完成之后就是这样的</h4><p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%96%87%E4%BB%B6%E5%AE%8C%E6%88%90.jpg"></p>
+<li><p>这两种下载形式任选其一就可以了</p>
+<ul>
+<li><p>路径下不能有中文和空格</p>
+</li>
+<li><p>第一个是压缩包的形式</p>
+<ul>
+<li>解压到你想要放置的文件位置</li>
+</ul>
+</li>
+<li><p>第二个是安装程序</p>
+<ul>
+<li>更改安装路径</li>
+</ul>
 </li>
 </ul>
-<ul>
+</li>
 <li><p>配置环境变量</p>
-<p>首先我们打开mingw64目录——打开里面的bin目录</p>
-<p>单击上面的地址框，把他复制下来方便我们等会填写环境变量</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E5%A4%8D%E5%88%B6%E8%B7%AF%E5%BE%84.jpg"></p>
-<h4 id="右键此电脑—属性—高级系统设置—环境变量"><a href="#右键此电脑—属性—高级系统设置—环境变量" class="headerlink" title="右键此电脑—属性—高级系统设置—环境变量"></a>右键此电脑—属性—高级系统设置—环境变量</h4><p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F01.jpg"></p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F02.jpg"></p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F03.jpg"></p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F04.jpg"></p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F05.jpg"></p>
-</li>
-</ul>
-<p>到这里我们变量已经配置完了该进入软件设置了</p>
 <ul>
-<li><h2 id="VS-Code插件安装与设置"><a href="#VS-Code插件安装与设置" class="headerlink" title="VS Code插件安装与设置"></a>VS Code插件安装与设置</h2><ol>
-<li><p>选择插件的图标</p>
-</li>
-<li><p>搜索<strong>code runner、c/c++<strong>设置中文的话再加上</strong>chinese</strong></p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%8F%92%E4%BB%B6%E4%B8%8B%E8%BD%BD01.jpg"></p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%8F%92%E4%BB%B6%E4%B8%8B%E8%BD%BD02.jpg"></p>
-</li>
-<li><p>对插件进行设置</p>
-<p>选择插件的图标，找到刚才安装好的code runner，右击选择<strong>Extension Settings</strong></p>
-<p>往下翻找到图中的选项并勾选。</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE01.jpg"></p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE02.jpg"></p>
-<p>下载中文插件的小伙伴别忘了重启一下软件</p>
-</li>
-</ol>
-</li>
-<li><h2 id="配置c语言所需文件"><a href="#配置c语言所需文件" class="headerlink" title="配置c语言所需文件"></a>配置c语言所需文件</h2></li>
+<li>首先复制你安装路径下，文件夹内的bin目录文件</li>
 </ul>
-<p>在你想要的路径上新建一个文件夹（我在D盘新建了名叫CWORK的文件夹）</p>
-<p>使用VS Code打开这个文件夹</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE01.PNG"></p>
-<p>打开这个文件夹之后，软件会重新弹出页面</p>
-<ol>
-<li><p>选择刚才创建的文件夹名</p>
-</li>
-<li><p>点击新建文件（New File）</p>
-</li>
-<li><p>输入hello.c这个.c一定要输上去，因为我们创建的是c文件</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE02.PNG"></p>
-</li>
-<li><p>输入代码</p>
-<p><code>#include&lt;stdio.h&gt;</code></p>
-<p><code>int main()</code></p>
-<p><code>&#123;</code></p>
-<p>  <code>printf(&quot;hello world&quot;);</code></p>
-<p>  <code>return 0;</code></p>
-<p><code>&#125;</code></p>
-</li>
-<li><p>点击终端—配置任务</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE03.png"></p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE04.png"></p>
-<p>在这里VS Code新建了一个.vscode的文件夹，这个文件夹就存放着这些配置文件，不能删除或重命名，选择完成后会自动配置一个tasks.json的文件。</p>
-<p>回到“hello.c”文件，右键选择“Run Code”即可运行代码。</p>
-<p>运行结果会在下方终端显示</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE05.png"></p>
-</li>
-</ol>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513153524589.png" alt="image-20220513153524589"></p>
 <ul>
-<li><h2 id="调试代码"><a href="#调试代码" class="headerlink" title="调试代码"></a>调试代码</h2></li>
+<li>右键此电脑依次打开，属性——高级系统设置——环境变量</li>
 </ul>
-<p>点击运行—启动调试—按照图片选择即可完成json文件的新建</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE06.png"></p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE07.png"></p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE08.png"></p>
-<p>到这里已经配置完了，我们改一下代码，并增加1个断点试一下</p>
-<p><code>#include&lt;stdio.h&gt;</code></p>
-<p><code>int main()</code></p>
-<p><code>&#123;</code>  </p>
-<p>  <code>int a,b,sum;</code></p>
-<p><code>printf(&quot;Enter two numbers&quot;);</code></p>
-<p>  <code>scanf(&quot;%d,%d&quot;,&amp;a,&amp;b);</code></p>
-<p>  <code>sum=a+b;</code></p>
-<p>  <code>printf(&quot;%d&quot;,sum);</code></p>
-<p>  <code>return 0;</code></p>
-<p><code>&#125;</code></p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%8100.PNG"></p>
-<p>运行到这里我们输入数字</p>
-<p>点击单步调试，就会运行下一行代码</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%8101.PNG"></p>
-<p>输入3,4在左侧可以看到a、b的值变化，点击下一步可以看到sum=a+b的值</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%8102.PNG"></p>
-<ul>
-<li><h2 id="编码方式"><a href="#编码方式" class="headerlink" title="编码方式"></a>编码方式</h2></li>
+</li>
 </ul>
-<p>这个我还没有搞明白，只知道编译器直接如果编码不一致，中文输 入\出 就会出现乱码，我使用VS Code都是使用GBK的编码模式，VS Code修改编码模式也是很简单，就在右下角</p>
-<p>这是默认的utf-8的模式</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%BC%96%E7%A0%8100.PNG"></p>
-<p>中文出现乱码，这种情况我们只需要更改编码模式即可</p>
-<ol>
-<li><p>找到右下角UTF-8</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%BC%96%E7%A0%8101.PNG"></p>
-</li>
-<li><p>点击选项</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%BC%96%E7%A0%8102.PNG"></p>
-</li>
-<li><p>输入GBK(gbk也可以)</p>
-<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%BC%96%E7%A0%8103.PNG"></p>
-</li>
-</ol>
-<ul>
-<li><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>到这里整个配置就结束了，配置出现意料之外的问题时，确认步骤没有问题，可以重启软件和电脑试试。我配置好几次基本是没遇到过，里面需要注意的是最好不要随意修改工作文件的路径，否则就会出现无法编译等问题，里面.vscode的文件一定不要改。</p>
-<p>在最后配置完成后，新建一个.c文件，打好头文件后，试试直接输入main看看</p>
-<h2 id><a href="#" class="headerlink" title></a></h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2></li>
-</ul>
-<p>​                    知乎教程：<a href="https://zhuanlan.zhihu.com/p/354400717">VS Code配置C语言开发环境的超详细教程 - 知乎 (zhihu.com)</a></p>
+<p>​            <img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513153149064.png" alt="image-20220513153149064"></p>
+<p>在系统变量中新建一个变量 <code>JAVA_HOME</code>值为路径</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513154026836.png" alt="image-20220513154026836"></p>
+<p>在系统变量<code>Path</code>中新建值<code>%JAVA_Home%\bin</code></p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513154326520.png" alt="image-20220513154326520"></p>
+<p>完成后点应用，确定，保存环境配置</p>
+<p>最后在命令行中输入<code>java -version</code>即可查看是否成功，输出版本号</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513154654438.png" alt="image-20220513154654438"></p>
+<h1 id="IDEA设置中文"><a href="#IDEA设置中文" class="headerlink" title="IDEA设置中文"></a>IDEA设置中文</h1><p>按<code>ctrl+Alt+s</code>进入设置</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513160033457.png" alt="image-20220513160033457"></p>
+<p>下载完成后会提示你重启idea就完成了汉化插件</p>
 ]]></content>
       <categories>
-        <category>c语言</category>
         <category>配置教程</category>
       </categories>
       <tags>
-        <tag>VS Code</tag>
-        <tag>c语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>方法递归</title>
-    <url>/2022/06/22/%E6%96%B9%E6%B3%95%E9%80%92%E5%BD%92/</url>
-    <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ul>
-<li>方法直接调用自己或间接调用自己的形式称为方法递归（recursion）</li>
-<li>递归作为一种算法在程序设计语言中广泛应用</li>
-</ul>
-<h3 id="递归的形式"><a href="#递归的形式" class="headerlink" title="递归的形式"></a>递归的形式</h3><ul>
-<li>直接递归：方法自己调用自己</li>
-<li>间接递归：方法调用其他方法，其他方法又回调方法自己</li>
-</ul>
-<h3 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h3><ul>
-<li>如果没有控制好终止，就会出现递归死循环，导致栈内存溢出</li>
-</ul>
-<h3 id="递归算法的三大要素"><a href="#递归算法的三大要素" class="headerlink" title="递归算法的三大要素"></a>递归算法的三大要素</h3><ol>
-<li>递归的公式：f(n)=f(n-1)*n</li>
-<li>递归的终结点：f(1)</li>
-<li>递归的方向必须走向终结点</li>
-</ol>
-<h3 id="使用递归做文件搜索"><a href="#使用递归做文件搜索" class="headerlink" title="使用递归做文件搜索"></a>使用递归做文件搜索</h3><ul>
-<li>需求<ul>
-<li>文件搜索，从盘中找出某个文件名称并输出绝对路径</li>
-</ul>
-</li>
-<li>分析：<ol>
-<li>先定位出的应该是一级文件对象</li>
-<li>遍历全部一级文件对象，判断是否是文件</li>
-<li>如果是文件，判断是否是自己想要的</li>
-<li>如果是文件夹，需要继续递归进去重复上述过程</li>
-</ol>
-</li>
-</ul>
-<h1 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h1><ul>
-<li>GBK集<ul>
-<li>在GBK编码中，英文数字占1个字节，中文占2个字节</li>
-</ul>
-</li>
-<li>UTF-8集<ul>
-<li>UTF-8中，英文数字占1个字节，中文占3个字节</li>
-</ul>
-</li>
-<li>英文数字在存储中为正数，而中文在存储中为负数</li>
-</ul>
-<h3 id="编码与解码"><a href="#编码与解码" class="headerlink" title="编码与解码"></a>编码与解码</h3><ul>
-<li><p>编码</p>
-<ul>
-<li><p>.getBytes——-以默认字符集进行编码，返回Bytes数组以接受</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">byte</span>[]  bytes=name.getBytes();<span class="comment">//括号中可直接指定编码格式</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><p>解码</p>
-<ul>
-<li><p>编码前和编码后的字符集必须一致，否则乱码</p>
-</li>
-<li><p>String(bytes);</p>
-<ul>
-<li><p>String rs = new String(bytes);</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String rs = <span class="keyword">new</span> String(bytes，<span class="string">&quot;编码格式&quot;</span>);<span class="comment">//进行指定编码解码</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>方法递归</category>
-      </categories>
-      <tags>
-        <tag>方法递归</tag>
+        <tag>Java</tag>
+        <tag>IDEA</tag>
       </tags>
   </entry>
   <entry>
@@ -464,11 +321,1558 @@
 </ul>
 ]]></content>
       <categories>
-        <category>java</category>
-        <category>I/O流</category>
+        <category>Java</category>
       </categories>
       <tags>
+        <tag>Java SE</tag>
+        <tag>Java</tag>
         <tag>I/O流</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JDBC、数据库连接池</title>
+    <url>/2022/06/30/JDBC/</url>
+    <content><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>JDBC概念：</p>
+<ul>
+<li>就是使用java语言操作关系数据库的一套API</li>
+</ul>
+<p>JDBC本质</p>
+<ul>
+<li>官方定义的一套操作所有关系型数据库的规则，即接口</li>
+<li>各数据库厂商去实现这套接口，提供数据库驱动jar包</li>
+<li>我们可以使用这套接口(JDBC)编程，真正执行的代码是驱动jar包中的实现类</li>
+</ul>
+<p>JDBC好处</p>
+<ul>
+<li>各数据库厂商使用相同的接口，java代码不需要针对不同数据库分别开发</li>
+<li>可以随时替换底层数据库，访问数据库的java代码基本不变</li>
+</ul>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><p>0.创建工程，导入驱动jar包</p>
+<p>1.注册驱动</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Class.forName(<span class="string">&quot;com.mysql.jdbc.Driver&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>2.获取连接</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Connection conn = DriverManager.getConnection(url,username,password);</span><br></pre></td></tr></table></figure>
+
+<p>3.定义SQL语句</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String sql =<span class="string">&quot;update...&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>4.获取执行SQL对象</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Statement stmt =conn.createStatement();</span><br></pre></td></tr></table></figure>
+
+<p>5.执行SQL</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">stmt.executeUpdate(sql);</span><br></pre></td></tr></table></figure>
+
+<p>6.处理返回结果</p>
+<p>7.释放资源</p>
+<h1 id="API详解"><a href="#API详解" class="headerlink" title="API详解"></a>API详解</h1><h2 id="DriverManager"><a href="#DriverManager" class="headerlink" title="DriverManager"></a>DriverManager</h2><ul>
+<li>(驱动管理类)作用<ol>
+<li>注册驱动</li>
+<li>获取数据库连接</li>
+</ol>
+</li>
+<li>注册驱动</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Class.forName(<span class="string">&quot;com.mysql.jdbc.Driver&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>获取连接</p>
+<ol>
+<li><p>url:连接路径</p>
+<p>语法：jdbc：mysql://ip地址(域名):端口号/数据库名称?参数键值对1&amp;参数键值对2…</p>
+</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">jdbc:mysql:<span class="comment">//127.0.0.1:3306/db1</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>禁用安全连接</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">jdbc:mysql:<span class="comment">//127.0.0.1:3306/db1?useSSL=false;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String url=<span class="string">&quot;jdbc:mysql://127.0.0.1:3306/db1&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Connection"><a href="#Connection" class="headerlink" title="Connection"></a>Connection</h2><ul>
+<li><p>数据库连接对象：</p>
+<ol>
+<li><p>获取执行SQL的对象</p>
+<ul>
+<li>普通执行SQL对象</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">Statement <span class="title">cteateStatement</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>预编译SQL的执行SQL对象：防止SQL注入</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">PreparedStatement <span class="title">prepareStatement</span><span class="params">(sql)</span></span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>执行存储过程的对象</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">CallableStatement <span class="title">prepareCall</span><span class="params">(sql)</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>管理事务</p>
+<ul>
+<li>MySQL事务管理</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">开启事务:BEGIN;/START TRANSACTION;</span><br><span class="line">提交事务:COMMIT;</span><br><span class="line">回滚事务:ROLLBACK;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>JDBC事务管理：Connection接口中定义了3个对应的方法</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">开启事务:setAutoCommit(boolean autoCommit):true为自动提交事务;false为手动提交事务，即为开启事务</span><br><span class="line">提交事务:commit()</span><br><span class="line">回滚事务:rollback()</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ul>
+<h2 id="Statement"><a href="#Statement" class="headerlink" title="Statement"></a>Statement</h2><p>执行SQL语句</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int executeUpdate(sql):执行DML、DDL语句</span><br><span class="line">//返回值：(1)DML语句影响的行数(2)DDL语句执行后，执行成功也可能返回0</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ResultSet executeQuery(sql):执行DQL语句</span><br><span class="line">//返回值：ResultSet结果集对象</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>获取statement对象</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Statement stmt = conn.reeateStatement();</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="ResultSet"><a href="#ResultSet" class="headerlink" title="ResultSet"></a>ResultSet</h2><ul>
+<li><p>结果集对象</p>
+<ol>
+<li>分装了DQL查询语句的结果</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ResultSet stmt.executeQuery(sql):执行DQL语句，返回ResultSet对象</span><br></pre></td></tr></table></figure></li>
+<li><p>获取查询结果</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">boolean next():	(1)将光标从当前位置向前移动一行(2)判断当前行是否为有效行</span><br></pre></td></tr></table></figure>
+
+<p>返回值:</p>
+<ul>
+<li>true:有效行，当前行有数据</li>
+<li>false:无效行，当前行没有数据</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xxx getXxx(参数):获取数据</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>xxx:数据类型；如：int getInt(参数); String getString(参数);</li>
+<li>参数:<ul>
+<li>int: 类的编号，从1开始</li>
+<li>String：列的名称</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>使用步骤：</p>
+<ol>
+<li>游标向下移动一行，并判断该行是否有数据：next()</li>
+<li>获取数据：getXxx(参数)</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//循环判断游标是否是最后一行末尾</span></span><br><span class="line"><span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">	<span class="comment">//获取数据</span></span><br><span class="line">	rs,getXxx(参数);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>执行sql</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ResultSet rs = stmt.executeQuery(sql);</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="PreparedStatement"><a href="#PreparedStatement" class="headerlink" title="PreparedStatement"></a>PreparedStatement</h2><ul>
+<li>作用</li>
+</ul>
+<p>​    预编译SQL语句并执行：预防SQL注入问题</p>
+<ul>
+<li>SQL注入</li>
+</ul>
+<p>​    是通过操作输入来修改事先定义好的SQL语句，用以达到执行代码对服务进行攻击的方法</p>
+<ul>
+<li>开启预编译功能</li>
+</ul>
+<p>在获取连接时加入<code>useServerPrepStmts=true</code>命令</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String url=<span class="string">&quot;jdbc:mysql://127.0.0.1:3306/db1?useServerPrepStmts=true&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2></li>
+</ul>
+<ol>
+<li><p>获取PreparedStatement对象</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//SQL语句中的参数值，使用?占位符替代</span></span><br><span class="line">String sql =<span class="string">&quot;select * from user where username= ? and password =?&quot;</span>;</span><br><span class="line"><span class="comment">//通过Connection对象获取，并传入对应的sql语句</span></span><br><span class="line">PreparedStatement pstmt = conn.prepareStatement(sql);</span><br></pre></td></tr></table></figure></li>
+<li><p>设置参数值</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">preparedStatement对象: setXxx(参数<span class="number">1</span>,参数<span class="number">2</span>):给?赋值</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Xxx：数据类型；如setInt(参数1,参数2)</li>
+<li>参数：<ul>
+<li>参数1：?的位置编号，从1开始</li>
+<li>参数2：?的值</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>执行SQL</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">executeUpdate();  /executeQuery(); :不需要再传递sql</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><h2 id="使用案例"><a href="#使用案例" class="headerlink" title="使用案例"></a>使用案例</h2></li>
+</ul>
+<ol>
+<li><p>定义sql</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">string sql = <span class="string">&quot;select * from tb_user where username = ? and password = ?&quot;</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>获取pstmt对象</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">PreparedStatement pstmt =conn.prepateStatement(sql);</span><br></pre></td></tr></table></figure></li>
+<li><p>设置<code>?</code>的值</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">pstmt.setString(<span class="number">1</span>,name);</span><br><span class="line">pstmt.setString(<span class="number">2</span>,pwd);</span><br></pre></td></tr></table></figure></li>
+<li><p>执行sql</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ResultSet rs = patmt.executeQuery();</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h1 id="数据库连接池-Druid"><a href="#数据库连接池-Druid" class="headerlink" title="数据库连接池(Druid)"></a>数据库连接池(Druid)</h1><h2 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h2><ul>
+<li>数据库连接池是一个容器，负责分配、管理数据库连接</li>
+<li>它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个；</li>
+<li>释放空间时间超过最大空闲时间的数据库连接来避免因为没有释放数据库连接而引起的数据库连接遗漏</li>
+</ul>
+<h2 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h2><ul>
+<li>资源重用</li>
+<li>提升系统响应速度</li>
+<li>避免数据库连接遗漏</li>
+</ul>
+<h2 id="数据库连接池实现"><a href="#数据库连接池实现" class="headerlink" title="数据库连接池实现"></a>数据库连接池实现</h2><ul>
+<li>标准接口(DataSource)<ul>
+<li>官方提供的数据库连接池标准接口，由第三方组织实现此接口</li>
+<li>功能：获取连接</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">Connection <span class="title">getConnection</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>常见的数据库连接池<ul>
+<li>DBCP</li>
+<li>C3P0</li>
+<li>Druid</li>
+</ul>
+</li>
+<li>Druid(德鲁伊)<ul>
+<li>是阿里巴巴开源的数据库连接池项目</li>
+<li>功能强大，性能优秀，是java语言最好的数据库连接池之一</li>
+</ul>
+</li>
+</ul>
+<h2 id="Druid使用步骤"><a href="#Druid使用步骤" class="headerlink" title="Druid使用步骤"></a>Druid使用步骤</h2><ol>
+<li><p>导入jar包</p>
+</li>
+<li><p>定义配置文件</p>
+<ul>
+<li>driverClassName值基本不变</li>
+<li>url的值需要注意，<code>jdbc:mysql:</code>后面跟的是数据库连接<code>ip地址：端口号 需要使用的数据库名称</code></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//保存名为：druid.properties </span><br><span class="line">//导入到src目录</span><br><span class="line">driverClassName=com.mysql.jdbc.Driver</span><br><span class="line">url=jdbc:mysql:///db1?useSSL=false&amp;useServerPrepStmts=true</span><br><span class="line">username=root</span><br><span class="line">password=205205</span><br><span class="line"># 初始化连接数量</span><br><span class="line">initialSize=5</span><br><span class="line"># 最大连接数</span><br><span class="line">maxActive=10</span><br><span class="line"># 最大等待时间</span><br><span class="line">maxWait=3000</span><br></pre></td></tr></table></figure></li>
+<li><p>加载配置文件</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Properties prop = <span class="keyword">new</span> Properties();</span><br><span class="line">prop.load(<span class="keyword">new</span> FileInputStream(<span class="string">&quot;src/druid.properties&quot;</span>));</span><br></pre></td></tr></table></figure></li>
+<li><p>获取数据库连接池对象</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">DataSource dataSource = DruidDataSourceFactory.cteateDataSoutce(prop);</span><br></pre></td></tr></table></figure></li>
+<li><p>获取连接</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Connection connection = dataSource.getConnection();</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>​    </p>
+]]></content>
+      <categories>
+        <category>Java Web</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Java Web</tag>
+        <tag>JDBC</tag>
+        <tag>Druid</tag>
+        <tag>数据库连接</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Maven</title>
+    <url>/2022/06/30/Maven/</url>
+    <content><![CDATA[<ul>
+<li>Maven是专门用于管理和构建Java项目的工具，它的主要功能有：<ul>
+<li>提供了一套标准化的项目结构</li>
+<li>提供了一套标准化的构建流程</li>
+<li>提供了一套依赖管理机制</li>
+</ul>
+</li>
+</ul>
+<h1 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h1><ol>
+<li><p>解压到目录即安装完成</p>
+</li>
+<li><p>配置环境变量 MAVEN_HOME为安装路径的bin目录</p>
+</li>
+<li><p>配置本地仓库：修改<code>conf/settings.xml</code>中的<code>&lt;localRepository&gt;</code>为一个指定目录</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;localRepository&gt;你自己创建的路径&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>例如，但是别忘了复制出来，在源文件中是被注释掉的</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;localRepository&gt;D:\Maven\mvn_resp&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>配置阿里云私服：修改<code>conf/settings.xml</code>中的<code>&lt;mirrors&gt;</code>标签，为其添加如下子标签：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">	&lt;id&gt;alimaven&lt;/id&gt;</span><br><span class="line">	&lt;name&gt;aliyun maven&lt;/name&gt;</span><br><span class="line">	&lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span><br><span class="line">	&lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="下载命令包"><a href="#下载命令包" class="headerlink" title="下载命令包"></a>下载命令包</h2><ol>
+<li>在安装好相应环境，与完成配置后</li>
+<li>在使用Maven所创建的项目文件夹，里面有<code>pom.xml</code>路径下，按shift加右键，打开shell窗口</li>
+<li>执行<code>mvn compile</code>、<code>mvn clean</code> 等常用命令，就会开始下载</li>
+</ol>
+<h1 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h1><h2 id="Maven常用命令"><a href="#Maven常用命令" class="headerlink" title="Maven常用命令"></a>Maven常用命令</h2><ul>
+<li>compile:编译</li>
+<li>clean：清理</li>
+<li>test：测试</li>
+<li>package：打包</li>
+<li>install：安装</li>
+</ul>
+<h2 id="Maven生命周期"><a href="#Maven生命周期" class="headerlink" title="Maven生命周期"></a>Maven生命周期</h2><ul>
+<li>Maven构建项目生命周期描述的是一次构建过程经历了多少个事件</li>
+<li>Maven对项目的生命周期划分为3套<ul>
+<li>clean：清理工作</li>
+<li>default：核心工作，如编译、测试、打包、安装等</li>
+<li>site：产生报告，发布站点等</li>
+</ul>
+</li>
+</ul>
+<h1 id="Maven坐标详解"><a href="#Maven坐标详解" class="headerlink" title="Maven坐标详解"></a>Maven坐标详解</h1><ul>
+<li>什么是坐标？<ul>
+<li>Maven中的坐标是资源的唯一标识</li>
+<li>使用坐标来定义项目或引入项目中需要的依赖</li>
+</ul>
+</li>
+<li>Maven坐标主要组成<ul>
+<li><code>groupld</code>：定义当前Maven项目隶属组织名称(通常是域名反写)</li>
+<li><code>artifactld</code>：定义当前Maven项目名称(通常是模块名称)</li>
+<li><code>version</code>：定义当前项目版本号</li>
+</ul>
+</li>
+</ul>
+<h1 id="IDEA配置Maven"><a href="#IDEA配置Maven" class="headerlink" title="IDEA配置Maven"></a>IDEA配置Maven</h1><ol>
+<li>选择IDEA中的File–&gt;Setting</li>
+<li>搜索maven</li>
+<li>设置IDEA使用本地安装的Maven，并修改配置文件路径</li>
+</ol>
+<h1 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h1><h2 id="使用坐标导入jar包"><a href="#使用坐标导入jar包" class="headerlink" title="使用坐标导入jar包"></a>使用坐标导入jar包</h2><ol>
+<li><p>在<code>pom.xml</code>中编写<code>&lt;dependencies&gt;</code>标签</p>
+</li>
+<li><p>在<code>&lt;dependencies&gt;</code>标签中使用<code>&lt;dependency&gt;</code>引入坐标</p>
+</li>
+<li><p>定义坐标的<code>groupld,artifactld,version</code></p>
+<ul>
+<li>在<code>artifactld</code>中输入你需要的jar外部依赖包</li>
+</ul>
+</li>
+<li><p>点击刷新按钮，使坐标生效</p>
+</li>
+</ol>
+<h2 id="依赖范围"><a href="#依赖范围" class="headerlink" title="依赖范围"></a>依赖范围</h2><ul>
+<li>通过设置坐标的依赖(scope)，可以设置对应jar包的作用范围：编译环境、测试环境、运行环境</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java Web</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Java Web</tag>
+        <tag>Maven</tag>
+        <tag>项目结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MyBatis持久层框架</title>
+    <url>/2022/06/30/MyBatis/</url>
+    <content><![CDATA[<h1 id><a href="#" class="headerlink" title></a></h1><ul>
+<li>MyBatis是一款**<code>持久层框架</code>**，用于简化JDBC开发</li>
+<li>是Apache公司的开源项目iBatis之后改名MyBatis并迁移到Github</li>
+<li>官网：<a href="https://mybatis.org/mybatis-3/zh/index.html">https://mybatis.org/mybatis-3/zh/index.html</a></li>
+</ul>
+<h1 id="持久层"><a href="#持久层" class="headerlink" title="持久层"></a>持久层</h1><ul>
+<li>负责将数据到保存到数据库的那一层代码</li>
+<li>JavaEE三层架构：表现层、业务层、持久层</li>
+</ul>
+<h1 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h1><ul>
+<li>框架就是一个半成品软件，是一套可重用的、通用的、软件基础代码模型</li>
+<li>在框架的基础上之上构建软件更加高效、规范、通用、可扩展。</li>
+</ul>
+<h1 id="Mapper代理开发"><a href="#Mapper代理开发" class="headerlink" title="Mapper代理开发"></a>Mapper代理开发</h1><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="视频教程"><a href="#视频教程" class="headerlink" title="视频教程"></a>视频教程</h3><ol>
+<li>定义与SQL映射文件同名的Mapper接口，并且将Mapper接口和SQL映射文件放置在同一目录下</li>
+<li>设置SQL映射文件的namespace属性为Mapper接口全限定名</li>
+<li>在Mapper接口中定义方法，方法名就是SQL映射文件中sql语句的id，并保持参数类型和返回值类型一致</li>
+<li>编码<ol>
+<li>通过SqlSession的getMapper方法获取 Mapper接口的代理对象</li>
+<li>调用对应方法完成sql的执行</li>
+</ol>
+</li>
+</ol>
+<h3 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h3><h4 id="1-在maven项目的main包下"><a href="#1-在maven项目的main包下" class="headerlink" title="1.在maven项目的main包下"></a>1.在maven项目的<code>main</code>包下</h4><ol>
+<li>代码部分（java包）创建mapper目录，里面放的是Mapper接口</li>
+<li>依赖部分（resources包）同样创建mapper目录，里面放的是SQL映射文件</li>
+<li><em><strong>需要注意的是：接口与映射文件名称要一致</strong></em></li>
+<li>在编译时他是在一个目录下的，不必担心</li>
+</ol>
+<h4 id="2-创建实现类"><a href="#2-创建实现类" class="headerlink" title="2.创建实现类"></a>2.创建实现类</h4><ol>
+<li>在main包下创建pojo文件包</li>
+<li>在pojo文件包下，创建与数据库字段对应的get，set，toString方法</li>
+</ol>
+<h4 id="3-SQL映射文件"><a href="#3-SQL映射文件" class="headerlink" title="3.SQL映射文件"></a>3.SQL映射文件</h4><ol>
+<li><p><strong>SQL映射文件就是依赖里面的—文件名Mapper.xml</strong></p>
+</li>
+<li><p>创建完映射文件名后，可以到官网查看相关内容（mabais官网——入门——探究以映射的SQL语句）</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- you&#x27;xi --&gt;</span></span><br><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">mapper</span></span></span><br><span class="line"><span class="meta">  <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">  <span class="meta-string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;org.mybatis.example.BlogMapper&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectBlog&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;Blog&quot;</span>&gt;</span></span><br><span class="line">    select * from Blog where id = #&#123;id&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>复制下来，粘贴到你的映射文件</p>
+</li>
+<li><p>修改标签<code>namespace</code>为接口的全限定名（也就是项目路径，例如：mapper目录下的UserMapper，它的全限定名就是mapper.UserMapper）</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;mapper.UserMapper&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="4-对应使用"><a href="#4-对应使用" class="headerlink" title="4.对应使用"></a>4.对应使用</h4><ol>
+<li>接口中定义的方法，一一对应着映射文件</li>
+<li>接口中的方法名，对应映射文件的<code>id</code>属性</li>
+<li>在映射文件标签内，写SQL语句</li>
+<li>例如代码片段：</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">//接口片段</span><br><span class="line">List<span class="tag">&lt;<span class="name">Brand</span>&gt;</span> selectAll();</span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 映射文件片段 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectAll&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;Brand&quot;</span>&gt;</span></span><br><span class="line">        select * from tb_brand;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="4-编码使用"><a href="#4-编码使用" class="headerlink" title="4.编码使用"></a>4.编码使用</h4><ol>
+<li><p>配置完成这些后，就可以使用mapper代理方式运行sql语句</p>
+</li>
+<li><p>最后的使用与JDBC相似</p>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String resource = <span class="string">&quot;mybatis-config.xml&quot;</span>;</span><br><span class="line">       InputStream inputStream = Resources.getResourceAsStream(resource);</span><br><span class="line">       SqlSessionFactory sqlSessionFactory = <span class="keyword">new</span> SqlSessionFactoryBuilder().build(inputStream);</span><br><span class="line">  </span><br><span class="line">       SqlSession sqlSession = sqlSessionFactory.openSession();</span><br><span class="line">  		<span class="comment">//获取sqlsession</span></span><br><span class="line">       UserMapper userMapper = sqlSession.getMapper(UserMapper.class);</span><br><span class="line">  		<span class="comment">//执行sql</span></span><br><span class="line">       User user=userMapper.selectById(<span class="number">1</span>);</span><br><span class="line">       System.out.println(user);</span><br><span class="line">       sqlSession.close();</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="mybatis核心文件配置"><a href="#mybatis核心文件配置" class="headerlink" title="mybatis核心文件配置"></a>mybatis核心文件配置</h2><ul>
+<li><p>到官网入门有xml的配置信息</p>
+<ul>
+<li>推荐按照官网的给的名字创建文件，文件名<code>mybatis-config.xml</code></li>
+</ul>
+</li>
+<li><p>粘贴到文件内（官网的文件，有修改）</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">configuration</span></span></span><br><span class="line"><span class="meta">        <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//mybatis.org//DTD Config 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="meta-string">&quot;http://mybatis.org/dtd/mybatis-3-config.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span>		<span class="comment">&lt;!-- 这里是起别名，用于sql映射文件的resultType --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;pojo&quot;</span>/&gt;</span>	</span><br><span class="line">    <span class="tag">&lt;/<span class="name">typeAliases</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">environments</span> <span class="attr">default</span>=<span class="string">&quot;development&quot;</span>&gt;</span>	<span class="comment">&lt;!-- default选哪个id就使用哪个配置 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">environment</span> <span class="attr">id</span>=<span class="string">&quot;development&quot;</span>&gt;</span>		<span class="comment">&lt;!-- 这个标签可以有多个，在上面选择 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">transactionManager</span> <span class="attr">type</span>=<span class="string">&quot;JDBC&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dataSource</span> <span class="attr">type</span>=<span class="string">&quot;POOLED&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;driver&quot;</span> <span class="attr">value</span>=<span class="string">&quot;com.mysql.jdbc.Driver&quot;</span>/&gt;</span>	<span class="comment">&lt;!-- 基本不变 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;url&quot;</span> <span class="attr">value</span>=<span class="string">&quot;jdbc:mysql://127.0.0.1:3306/jdbc_practice?useSSl=false&quot;</span>/&gt;</span></span><br><span class="line">       <span class="comment">&lt;!-- 设置mysql地址与库 jdbc:mysql://数据库ip地址：端口/数据库名?数据库规则 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">value</span>=<span class="string">&quot;root&quot;</span>/&gt;</span>	<span class="comment">&lt;!-- 账户 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> <span class="attr">value</span>=<span class="string">&quot;205205&quot;</span>/&gt;</span>	<span class="comment">&lt;!-- 密码 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dataSource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environments</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--        &lt;mapper resource=&quot;mapper/UserMapper.xml&quot;/&gt;--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;mapper&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="mybatis关键词"><a href="#mybatis关键词" class="headerlink" title="mybatis关键词"></a>mybatis关键词</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span>&gt;</span><span class="tag">&lt;/<span class="name">select</span>&gt;</span> 					<span class="comment">&lt;!-- SQL代码块 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;xxx&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">select</span>&gt;</span> 			<span class="comment">&lt;!-- SQL代码块的对应接口名xxx --&gt;</span></span><br><span class="line">id =#&#123;id&#125;; 							<span class="comment">&lt;!-- 占位符#&#123;名&#125;，id=? --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">where</span>&gt;</span><span class="tag">&lt;/<span class="name">where</span>&gt;</span>						<span class="comment">&lt;!-- 可以代替SQL语句的where解决语句问题 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">if</span>&gt;</span><span class="tag">&lt;/<span class="name">if</span>&gt;</span> 							<span class="comment">&lt;!-- 判断，可以用于and运算，解决语句问题 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">choose</span>&gt;</span>							<span class="comment">&lt;!-- 等同于switch --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">when</span> <span class="attr">test</span>=<span class="string">&quot;条件&quot;</span>&gt;</span>				<span class="comment">&lt;!-- 等同于case --&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;/<span class="name">when</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">otherwise</span>&gt;</span>						<span class="comment">&lt;!-- 等同于default --&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;/<span class="name">otherwise</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">choose</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">set</span>&gt;</span><span class="tag">&lt;/<span class="name">set</span>&gt;</span>							<span class="comment">&lt;!-- 解决原本sql的语句问题 --&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Java Web</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Java Web</tag>
+        <tag>JDBC</tag>
+        <tag>数据库连接</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Request请求</title>
+    <url>/2022/06/30/Request/</url>
+    <content><![CDATA[<h1 id="Request获取请求数据"><a href="#Request获取请求数据" class="headerlink" title="Request获取请求数据"></a>Request获取请求数据</h1><h2 id="请求行"><a href="#请求行" class="headerlink" title="请求行"></a>请求行</h2><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">Get/request-demo/req1?username=zhangsan HTTP/1.1</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><code>String getMethod</code>:获取请求方式：GET</p>
+</li>
+<li><p><code>String getContextPath()</code>：获取虚拟目录(项目访问路径)：/request-demo</p>
+</li>
+<li><p><code>StringBuffer getRequestURL()</code>：获取URL(统一资源定位符)：</p>
+<p>​        <code>http://localhost:8080/request-demo/req1</code></p>
+</li>
+<li><p><code>String getRequsetURI()</code>：获取URI(统一资源标识符)：<code>/request-demo/req1</code></p>
+</li>
+<li><p><code>String getQueryString()</code>：获取请求参数(GET方式)：</p>
+<p>​        <code>username=zhangsan&amp;password=123</code></p>
+</li>
+</ul>
+<h2 id="请求头"><a href="#请求头" class="headerlink" title="请求头"></a>请求头</h2><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">User-Agent:Mozilla/5.0 Chrome/91.0.55.72.106</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>String getHeader(String name)</code> :根据请求头名称，获取值<ul>
+<li><code>user-agent</code>获取浏览器版本信息</li>
+</ul>
+</li>
+</ul>
+<h2 id="请求体"><a href="#请求体" class="headerlink" title="请求体"></a>请求体</h2><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">username=superbaby&amp;:password=123</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>SrtvletInputStream getInputStream()</code>:获取字节输入流</li>
+<li><code>BufferedReader getReader()</code>:获取字符输入流</li>
+</ul>
+<h1 id="Request-通用方式获取请求参数"><a href="#Request-通用方式获取请求参数" class="headerlink" title="Request 通用方式获取请求参数"></a>Request 通用方式获取请求参数</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//获取请求方式</span></span><br><span class="line">String method=<span class="keyword">this</span>.getMethod();</span><br><span class="line"><span class="comment">//判断</span></span><br><span class="line"><span class="keyword">if</span>(<span class="string">&quot;GET&quot;</span>.equals(method))&#123;</span><br><span class="line"><span class="comment">//GET方式获取请求参数</span></span><br><span class="line">	params=<span class="keyword">this</span>,getQueryString();</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(<span class="string">&quot;POST&quot;</span>.equals(method))&#123;</span><br><span class="line"><span class="comment">//POST方式获取请求参数</span></span><br><span class="line">	BufferedReader reader = <span class="keyword">this</span>,getReader();</span><br><span class="line">	params=reader.readLine();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在doPost里添加</p>
+<p>​    <code>this.doGet(rep,resh)</code></p>
+<p>因为这个获取参数两种都能用，所以在Post中添加即可</p>
+<h2 id="相关方法"><a href="#相关方法" class="headerlink" title="相关方法"></a>相关方法</h2><ul>
+<li><p>获取所有参数Map集合</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Map&lt;String,String[]&gt; getParameterMap()</span><br></pre></td></tr></table></figure></li>
+<li><p>根据名称获取参数值（数组）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String[] getParameterValues(String name)</span><br></pre></td></tr></table></figure></li>
+<li><p>根据名称获取参数值（单个值）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">String <span class="title">getParameter</span><span class="params">(String name)</span></span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="解决提交中文乱码"><a href="#解决提交中文乱码" class="headerlink" title="解决提交中文乱码"></a>解决提交中文乱码</h1><h2 id="POST方式"><a href="#POST方式" class="headerlink" title="POST方式"></a>POST方式</h2><p>设置字符输入流的编码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">request.setCharacterEncoding(<span class="string">&quot;UTF-8&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><em><strong>要先设置编码，再获取请求数据，也就是把这行放在前几行</strong></em></p>
+<h2 id="GET方式"><a href="#GET方式" class="headerlink" title="GET方式"></a>GET方式</h2><p><em><strong>也是通用代码,POST也可以使用</strong></em></p>
+<p>把乱码数据进行编码，转为字节数组</p>
+<p>tomcat默认且写死的编码是ISO-8859-1所以会中文乱码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">byte</span>[] bytes =username.getBytes(StandardCharsets.ISO_8859_1);</span><br></pre></td></tr></table></figure>
+
+<p>字节数组解码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">username=<span class="keyword">new</span> String(bytes,StandardCharsets.UTF-<span class="number">8</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="请求转发"><a href="#请求转发" class="headerlink" title="请求转发"></a>请求转发</h1><p>一种在服务器内部的资源跳转方式</p>
+<ul>
+<li><p>实现方式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">req.getRequestDispatcher(<span class="string">&quot;资源B路径&quot;</span>).forward(req,resp);</span><br></pre></td></tr></table></figure></li>
+<li><p>请求转发资源间共享数据：使用Request对象</p>
+<ul>
+<li>存储数据到request域中</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setAttribute</span><span class="params">(String name,Object o)</span></span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>根据key，获取值</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">Object <span class="title">getAttribute</span><span class="params">(String name)</span></span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>根据key，删除该键值对</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">removeAttribute</span><span class="params">(String name)</span></span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java Web</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Java Web</tag>
+        <tag>Request</tag>
+        <tag>数据请求</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Response响应</title>
+    <url>/2022/06/30/Response/</url>
+    <content><![CDATA[<h1 id="Response设置响应数据"><a href="#Response设置响应数据" class="headerlink" title="Response设置响应数据"></a>Response设置响应数据</h1><ul>
+<li><p>响应行<code>HTTP/1.1 200 OK</code></p>
+<ul>
+<li>设置响应状态码</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setStatus</span><span class="params">(<span class="keyword">int</span> sc)</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>响应头<code>Content-Type:text/html</code></p>
+<ul>
+<li>设置响应头键值对</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setHeader</span><span class="params">(String name,String value)</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>响应体</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">PrintWriter <span class="title">getWriter</span><span class="params">()</span>	<span class="comment">//获取字符输出流</span></span></span><br><span class="line"><span class="function">ServletOutputStream <span class="title">getOutputStream</span><span class="params">()</span>	<span class="comment">//获取字节输出流</span></span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="Response完成重定向"><a href="#Response完成重定向" class="headerlink" title="Response完成重定向"></a>Response完成重定向</h1><p>是一种资源跳转方式</p>
+<ul>
+<li><p>实现方式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">resp.setStayus(<span class="number">302</span>);		<span class="comment">//返回状态码302，响应页面，找别人处理</span></span><br><span class="line">resp.setHeader(<span class="string">&quot;location&quot;</span>,<span class="string">&quot;资源B的路径&quot;</span>);	<span class="comment">//告诉那个人的位置</span></span><br></pre></td></tr></table></figure></li>
+<li><p>简化方式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">response.sendRedirect(<span class="string">&quot;资源B的路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="动态获取虚拟目录"><a href="#动态获取虚拟目录" class="headerlink" title="动态获取虚拟目录"></a>动态获取虚拟目录</h1><p>在<code>pom.xml</code>中的<code>&lt;path&gt;&lt;/path&gt;</code>设置目录</p>
+<p>之后使用代码进行动态获取</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String contextPath = request.getContextPath();</span><br><span class="line">response.sendRedirect(contextPath+<span class="string">&quot;资源路径&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="响应字符数据"><a href="#响应字符数据" class="headerlink" title="响应字符数据"></a>响应字符数据</h1><ul>
+<li><p>通过Response对象获取字符输出流</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">PrintWriter writer = resp.getWriter();</span><br></pre></td></tr></table></figure></li>
+<li><p>写数据</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">writer.write(<span class="string">&quot;aaa&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+<li><p>添加解析html的信息</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">response.setHeader(<span class="string">&quot;content-type&quot;</span>,<span class="string">&quot;text/html&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+<li><p>解决中文乱码</p>
+<ul>
+<li><p>同时添加解析、写在获取对象前面</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">response.setContentType(<span class="string">&quot;text/html;charset=utf-8&quot;</span>); </span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>注意</strong></p>
+<ul>
+<li>流不需要手动关闭，随着响应结束，response对象销毁，由服务器关闭</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>示例</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">response.setContentType(<span class="string">&quot;text/html;charset=utf-8&quot;</span>); <span class="comment">//解决中文乱码问题，添加解析html</span></span><br><span class="line">PrintWriter writer = response.getWriter();</span><br><span class="line">response.setHeader(<span class="string">&quot;content-type&quot;</span>,<span class="string">&quot;text/html&quot;</span>); <span class="comment">//添加头部类型，解析html</span></span><br><span class="line">writer.write(<span class="string">&quot;你好&quot;</span>);		</span><br><span class="line">writer.write(<span class="string">&quot;&lt;h1&gt;aaa&lt;/h1&gt;&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="响应字节数据"><a href="#响应字节数据" class="headerlink" title="响应字节数据"></a>响应字节数据</h1><ul>
+<li><p>通过Response对象获取字符输出流</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ServletOutputStream outputStream = resp.getOutputStream</span><br></pre></td></tr></table></figure></li>
+<li><p>写数据</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">OutputStream.write(字节数据);</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java Web</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Java Web</tag>
+        <tag>Response</tag>
+        <tag>数据响应</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Servlet</title>
+    <url>/2022/06/30/Servlet/</url>
+    <content><![CDATA[<h1 id="Servlet快速入门"><a href="#Servlet快速入门" class="headerlink" title="Servlet快速入门"></a>Servlet快速入门</h1><ol>
+<li><p>创建web项目，导入Servlet依赖坐标</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.servlet<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>javax.servlet-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">version</span>&gt;</span>3.1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>provided<span class="tag">&lt;/<span class="name">scope</span>&gt;</span>		<span class="comment">&lt;!-- 这个依赖范围很重要，不加就会运行报错--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>创建：定义一个类，实现Servlet接口，并重写接口中的所有方法，并在service方法中输出一句话</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ServletDemo2</span> <span class="keyword">implements</span> <span class="title">Servlet</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> service&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Servlet hello world&quot;</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>启动Tomcat，浏览器输入URL访问该Servlet</p>
+</li>
+</ol>
+<h1 id="执行流程"><a href="#执行流程" class="headerlink" title="执行流程"></a>执行流程</h1><p><img src="/2022/06/30/Servlet/image-20220524103315253.png" alt="image-20220524103315253"></p>
+<h1 id="Serclet方法"><a href="#Serclet方法" class="headerlink" title="Serclet方法"></a>Serclet方法</h1><ul>
+<li><p>初始化方法，在Servlet被创建时执行，只执行一次</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">(ServletConfig config)</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>提供服务方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">service</span><span class="params">(ServletRequest req,ServletResponse res)</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>销毁方法，当Servlet被销毁时，调用该方法。在内存释放或服务器关闭时销毁Servlet</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>获取ServletConfig对象</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">ServletConfig <span class="title">getServletConfig</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>获取Sevrlet信息</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">String <span class="title">getServletinfo</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="Servlet-urlPattern配置"><a href="#Servlet-urlPattern配置" class="headerlink" title="Servlet urlPattern配置"></a>Servlet urlPattern配置</h1><p>就是<code>@webServlet</code>括号内的urlPattern属性</p>
+<h2 id="精确匹配"><a href="#精确匹配" class="headerlink" title="精确匹配"></a>精确匹配</h2><p>精确匹配就是配置路径是什么，访问路径就必须是这个</p>
+<ul>
+<li><p>配置路径： @webServlet(“<strong>/user/select</strong>“)</p>
+</li>
+<li><p>访问路径：localhost:8080/web-demo**<u>/user/select</u>**</p>
+</li>
+</ul>
+<h2 id="目录匹配"><a href="#目录匹配" class="headerlink" title="目录匹配"></a>目录匹配</h2><ul>
+<li>配置路径： @webServlet(“<strong>/user/</strong>*”)</li>
+<li>访问路径：localhost:8080/web-demo**<u>/user/aaa</u>**<ul>
+<li>localhost:8080/web-demo**<u>/user/bbb</u>**</li>
+</ul>
+</li>
+</ul>
+<h2 id="扩展名匹配"><a href="#扩展名匹配" class="headerlink" title="扩展名匹配"></a>扩展名匹配</h2><ul>
+<li>配置路径： @webServlet(“***.do**”)</li>
+<li>访问路径：localhost:8080/web-demo**/aaa.do**<ul>
+<li>localhost:8080/web-demo**/bbb.do**</li>
+</ul>
+</li>
+</ul>
+<h2 id="任意匹配"><a href="#任意匹配" class="headerlink" title="任意匹配"></a>任意匹配</h2><ul>
+<li>配置路径： @webServlet(“<strong>/</strong>“)<ul>
+<li>@webServlet(“<strong>/</strong>*”)</li>
+</ul>
+</li>
+<li>访问路径：localhost:8080/web-demo**/hehe**<ul>
+<li>localhost:8080/web-demo**/haha**</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java Web</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Java Web</tag>
+        <tag>Servlet</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tomcat安装配置</title>
+    <url>/2022/06/30/Tomcat/</url>
+    <content><![CDATA[<h1 id="Tomcat安装使用"><a href="#Tomcat安装使用" class="headerlink" title="Tomcat安装使用"></a>Tomcat安装使用</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>Tomcat下载是绿色版，直接解压至指定路径即可（非中文路径下）</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p><code>conf</code>目录下的<code>logging.properties</code>是Tomcat的设置</p>
+<p>解决控制台乱码可以在这个文件里，找到如下字段，并改为GBK格式即可</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">java.util.logging.ConsoleHandler.encoding = GBK</span><br></pre></td></tr></table></figure>
+
+
+
+<p><code>bin</code>目录下的s<code>tartup.bat</code>是Tomcat的启动文件</p>
+<ul>
+<li>后缀bat是windows的处理文件</li>
+<li>后缀sh是Liunx的处理文件</li>
+</ul>
+<h2 id="pom-xml相关标签配置信息"><a href="#pom-xml相关标签配置信息" class="headerlink" title="pom.xml相关标签配置信息"></a>pom.xml相关标签配置信息</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">packaging</span>&gt;</span>war<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span>	<span class="comment">&lt;!-- 将文件打包格式设置为war，默认jar 放在文件开头的version下面 -</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">&lt;configuration&gt;		&lt;!-- 放在插件信息version下面 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">port</span>&gt;</span>80<span class="tag">&lt;/<span class="name">port</span>&gt;</span>	<span class="comment">&lt;!-- 更改默认端口号 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">path</span>&gt;</span>/<span class="tag">&lt;/<span class="name">path</span>&gt;</span>	<span class="comment">&lt;!-- 更改网址默认的后缀路径 --&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="在IDEA中配置Tomcat"><a href="#在IDEA中配置Tomcat" class="headerlink" title="在IDEA中配置Tomcat"></a>在IDEA中配置Tomcat</h1><h2 id="通过骨架创建Tomcat"><a href="#通过骨架创建Tomcat" class="headerlink" title="通过骨架创建Tomcat"></a>通过骨架创建Tomcat</h2><p>创建新模块时，选择Maven，勾选从原型创建，找到<code>webapp</code>并创建</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">org.apache.maven.archetypes:maven-archetype-webapp</span><br></pre></td></tr></table></figure>
+
+<p>删除不需要的<code>pom.xml</code>里的内容</p>
+<p>在main包下补全目录，java目录，resources目录</p>
+<h2 id="通过Maven插件创建"><a href="#通过Maven插件创建" class="headerlink" title="通过Maven插件创建"></a>通过Maven插件创建</h2><p>创建Maven模块，在pom.xml中导入Tomcat插件</p>
+<p>可以使用快捷键alt+insert，选择插件模板，输入Tomcat依赖信息</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.tomcat.maven<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>tomcat7-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Java Web</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Java Web</tag>
+        <tag>Servlet容器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用VS Code配置c语言环境</title>
+    <url>/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<p>Visual Studio Code（简称“VS Code”）是 Microsoft 在2015年4月30日Build开发者大会上正式宣布一个运行于 Mac OS X、 Windows 和 Linux 之上的，针对于编写现代Web和 云应用 的跨平台源代码编辑器，可在桌面上运行，并且可用于Windows，macOS和Linux。 它具有对 JavaScript，TypeScript 和 Node.js 的内置支持，并具有丰富的其他语言（例如 C++ ， C＃ ， Java ， Python ， PHP ， Go ）和运行时（例如.NET 和 Unity ）扩展的生态系统。</p>
+<h2 id="在本章中给出对c语言的环境配置"><a href="#在本章中给出对c语言的环境配置" class="headerlink" title="在本章中给出对c语言的环境配置"></a>在本章中给出对c语言的环境配置</h2><ul>
+<li><h3 id="下载软件及运行库"><a href="#下载软件及运行库" class="headerlink" title="下载软件及运行库"></a>下载软件及运行库</h3></li>
+</ul>
+<ol>
+<li><h5 id="首先下载Visual-Studio-Code"><a href="#首先下载Visual-Studio-Code" class="headerlink" title="首先下载Visual Studio Code"></a>首先下载Visual Studio Code</h5><p>官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E5%AE%98%E7%BD%91%E4%B8%8B%E8%BD%BD.jpeg"></p>
+</li>
+<li><h5 id="下载c语言的gcc运行库（mingw64）"><a href="#下载c语言的gcc运行库（mingw64）" class="headerlink" title="下载c语言的gcc运行库（mingw64）"></a>下载c语言的gcc运行库（mingw64）</h5></li>
+</ol>
+<p>​    本人在网上下载了好多次运行库，好多都配置不上，不知道是哪个环节出问题了，我哥哥给我的教程，里面的运行库能用而且直接配置成功，我就把他存下来当个宝了。</p>
+<pre><code>下载地址—百度网盘：链接：https://pan.baidu.com/s/1BHafnJXhVva-DptQDuxpNw 
+</code></pre>
+<p>提取码：mybk</p>
+<ul>
+<li><h3 id="安装软件-解压运行库"><a href="#安装软件-解压运行库" class="headerlink" title="安装软件-解压运行库"></a>安装软件-解压运行库</h3><p>找个你想要安装的盘，这里我选择的是D盘</p>
+<p>安装我就省略了，没有什么需要额外设置的，只需要改个安装路径就行了</p>
+<p>我的建议是在D盘里新建一个叫做 “ VScode ” 的文件夹</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.jpg"></p>
+<h4 id="把软件和压缩包都安装-解压到这个文件夹，不用担心会弄混，安装的时候它会自己在这里新建文件夹的——完成之后就是这样的"><a href="#把软件和压缩包都安装-解压到这个文件夹，不用担心会弄混，安装的时候它会自己在这里新建文件夹的——完成之后就是这样的" class="headerlink" title="把软件和压缩包都安装/解压到这个文件夹，不用担心会弄混，安装的时候它会自己在这里新建文件夹的——完成之后就是这样的"></a>把软件和压缩包都安装/解压到这个文件夹，不用担心会弄混，安装的时候它会自己在这里新建文件夹的——完成之后就是这样的</h4><p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%96%87%E4%BB%B6%E5%AE%8C%E6%88%90.jpg"></p>
+</li>
+</ul>
+<ul>
+<li><p>配置环境变量</p>
+<p>首先我们打开mingw64目录——打开里面的bin目录</p>
+<p>单击上面的地址框，把他复制下来方便我们等会填写环境变量</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E5%A4%8D%E5%88%B6%E8%B7%AF%E5%BE%84.jpg"></p>
+<h4 id="右键此电脑—属性—高级系统设置—环境变量"><a href="#右键此电脑—属性—高级系统设置—环境变量" class="headerlink" title="右键此电脑—属性—高级系统设置—环境变量"></a>右键此电脑—属性—高级系统设置—环境变量</h4><p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F01.jpg"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F02.jpg"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F03.jpg"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F04.jpg"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F05.jpg"></p>
+</li>
+</ul>
+<p>到这里我们变量已经配置完了该进入软件设置了</p>
+<ul>
+<li><h2 id="VS-Code插件安装与设置"><a href="#VS-Code插件安装与设置" class="headerlink" title="VS Code插件安装与设置"></a>VS Code插件安装与设置</h2><ol>
+<li><p>选择插件的图标</p>
+</li>
+<li><p>搜索<strong>code runner、c/c++<strong>设置中文的话再加上</strong>chinese</strong></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%8F%92%E4%BB%B6%E4%B8%8B%E8%BD%BD01.jpg"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%8F%92%E4%BB%B6%E4%B8%8B%E8%BD%BD02.jpg"></p>
+</li>
+<li><p>对插件进行设置</p>
+<p>选择插件的图标，找到刚才安装好的code runner，右击选择<strong>Extension Settings</strong></p>
+<p>往下翻找到图中的选项并勾选。</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE01.jpg"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE02.jpg"></p>
+<p>下载中文插件的小伙伴别忘了重启一下软件</p>
+</li>
+</ol>
+</li>
+<li><h2 id="配置c语言所需文件"><a href="#配置c语言所需文件" class="headerlink" title="配置c语言所需文件"></a>配置c语言所需文件</h2></li>
+</ul>
+<p>在你想要的路径上新建一个文件夹（我在D盘新建了名叫CWORK的文件夹）</p>
+<p>使用VS Code打开这个文件夹</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE01.PNG"></p>
+<p>打开这个文件夹之后，软件会重新弹出页面</p>
+<ol>
+<li><p>选择刚才创建的文件夹名</p>
+</li>
+<li><p>点击新建文件（New File）</p>
+</li>
+<li><p>输入hello.c这个.c一定要输上去，因为我们创建的是c文件</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE02.PNG"></p>
+</li>
+<li><p>输入代码</p>
+<p><code>#include&lt;stdio.h&gt;</code></p>
+<p><code>int main()</code></p>
+<p><code>&#123;</code></p>
+<p>  <code>printf(&quot;hello world&quot;);</code></p>
+<p>  <code>return 0;</code></p>
+<p><code>&#125;</code></p>
+</li>
+<li><p>点击终端—配置任务</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE03.png"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE04.png"></p>
+<p>在这里VS Code新建了一个.vscode的文件夹，这个文件夹就存放着这些配置文件，不能删除或重命名，选择完成后会自动配置一个tasks.json的文件。</p>
+<p>回到“hello.c”文件，右键选择“Run Code”即可运行代码。</p>
+<p>运行结果会在下方终端显示</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE05.png"></p>
+</li>
+</ol>
+<ul>
+<li><h2 id="调试代码"><a href="#调试代码" class="headerlink" title="调试代码"></a>调试代码</h2></li>
+</ul>
+<p>点击运行—启动调试—按照图片选择即可完成json文件的新建</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE06.png"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE07.png"></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/c%E9%85%8D%E7%BD%AE08.png"></p>
+<p>到这里已经配置完了，我们改一下代码，并增加1个断点试一下</p>
+<p><code>#include&lt;stdio.h&gt;</code></p>
+<p><code>int main()</code></p>
+<p><code>&#123;</code>  </p>
+<p>  <code>int a,b,sum;</code></p>
+<p><code>printf(&quot;Enter two numbers&quot;);</code></p>
+<p>  <code>scanf(&quot;%d,%d&quot;,&amp;a,&amp;b);</code></p>
+<p>  <code>sum=a+b;</code></p>
+<p>  <code>printf(&quot;%d&quot;,sum);</code></p>
+<p>  <code>return 0;</code></p>
+<p><code>&#125;</code></p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%8100.PNG"></p>
+<p>运行到这里我们输入数字</p>
+<p>点击单步调试，就会运行下一行代码</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%8101.PNG"></p>
+<p>输入3,4在左侧可以看到a、b的值变化，点击下一步可以看到sum=a+b的值</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%8102.PNG"></p>
+<ul>
+<li><h2 id="编码方式"><a href="#编码方式" class="headerlink" title="编码方式"></a>编码方式</h2></li>
+</ul>
+<p>这个我还没有搞明白，只知道编译器直接如果编码不一致，中文输 入\出 就会出现乱码，我使用VS Code都是使用GBK的编码模式，VS Code修改编码模式也是很简单，就在右下角</p>
+<p>这是默认的utf-8的模式</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%BC%96%E7%A0%8100.PNG"></p>
+<p>中文出现乱码，这种情况我们只需要更改编码模式即可</p>
+<ol>
+<li><p>找到右下角UTF-8</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%BC%96%E7%A0%8101.PNG"></p>
+</li>
+<li><p>点击选项</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%BC%96%E7%A0%8102.PNG"></p>
+</li>
+<li><p>输入GBK(gbk也可以)</p>
+<p><img src="/2021/12/31/VS%20Code%E9%85%8D%E7%BD%AEc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/%E7%BC%96%E7%A0%8103.PNG"></p>
+</li>
+</ol>
+<ul>
+<li><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>到这里整个配置就结束了，配置出现意料之外的问题时，确认步骤没有问题，可以重启软件和电脑试试。我配置好几次基本是没遇到过，里面需要注意的是最好不要随意修改工作文件的路径，否则就会出现无法编译等问题，里面.vscode的文件一定不要改。</p>
+<p>在最后配置完成后，新建一个.c文件，打好头文件后，试试直接输入main看看</p>
+<h2 id><a href="#" class="headerlink" title></a></h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2></li>
+</ul>
+<p>​                    知乎教程：<a href="https://zhuanlan.zhihu.com/p/354400717">VS Code配置C语言开发环境的超详细教程 - 知乎 (zhihu.com)</a></p>
+]]></content>
+      <categories>
+        <category>配置教程</category>
+      </categories>
+      <tags>
+        <tag>VS Code</tag>
+        <tag>c语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>logback日志</title>
+    <url>/2022/06/30/logback%E6%97%A5%E5%BF%97/</url>
+    <content><![CDATA[<h1 id><a href="#" class="headerlink" title></a></h1><ul>
+<li><h5 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h5><p>记录程序运行过程中的信息，并可以永久存储</p>
+</li>
+</ul>
+<p>logback官网：<a href="https://logback.qos.ch/">Logback Home (qos.ch)</a></p>
+<p>slf4j官网：<a href="https://www.slf4j.org/">SLF4J</a></p>
+<ul>
+<li>在官网中需要下载，需要的二个模块与一个使用规范</li>
+</ul>
+<ol>
+<li>logback-classic.jar</li>
+<li>logback-core.jar</li>
+<li>slf4j-api.jar</li>
+</ol>
+<p>​        还需要有一个logback.xml的核心文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">链接：https://pan.baidu.com/s/1hHG6WN9QUCRCAxCl5AIVdw?pwd=sora </span><br><span class="line">提取码：sora </span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><h5 id="基本使用方法"><a href="#基本使用方法" class="headerlink" title="基本使用方法"></a>基本使用方法</h5></li>
+</ul>
+<ol>
+<li>在项目包下新建lib目录，将这三个文件放入该目录</li>
+<li>右键lib目录添加到库</li>
+<li>把logback.xml文件粘贴至src目录下，即可使用日志</li>
+</ol>
+<h2 id="编码部分"><a href="#编码部分" class="headerlink" title="编码部分"></a>编码部分</h2><ul>
+<li>在main方法外创建Logback的日志对象(多态形式)</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Logger LOGGER = LoggerFactory.getLogger(<span class="string">&quot;Test.class&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>使用LOGGER.调用</p>
+<p>LOGGER.trace(“信息”)；</p>
+</li>
+<li><p>日志分为5个日志级别（级别高就代表具有优先输出权）</p>
+</li>
+</ul>
+<p>​        TRACE——&gt;DEBUG——&gt;INFO——&gt;WARN——&gt;ERROR     |    ALL和OFF</p>
+<p>​        按照顺序分级TRACE为最低，ERROR为最高，ALL即为全部打印，OFF即关闭，默认为DEBUG</p>
+<ul>
+<li>日志输出级别设置</li>
+</ul>
+<p>​        在logback.xml中找到<code>&lt;root level=&quot;debug&quot;&gt;</code>(默认为debug)</p>
+<p>​        在双引号中修改等级</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java SE</tag>
+        <tag>Java</tag>
+        <tag>日志</tag>
+        <tag>SLF4J</tag>
+        <tag>logback</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>方法递归</title>
+    <url>/2022/06/22/%E6%96%B9%E6%B3%95%E9%80%92%E5%BD%92/</url>
+    <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ul>
+<li>方法直接调用自己或间接调用自己的形式称为方法递归（recursion）</li>
+<li>递归作为一种算法在程序设计语言中广泛应用</li>
+</ul>
+<h3 id="递归的形式"><a href="#递归的形式" class="headerlink" title="递归的形式"></a>递归的形式</h3><ul>
+<li>直接递归：方法自己调用自己</li>
+<li>间接递归：方法调用其他方法，其他方法又回调方法自己</li>
+</ul>
+<h3 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h3><ul>
+<li>如果没有控制好终止，就会出现递归死循环，导致栈内存溢出</li>
+</ul>
+<h3 id="递归算法的三大要素"><a href="#递归算法的三大要素" class="headerlink" title="递归算法的三大要素"></a>递归算法的三大要素</h3><ol>
+<li>递归的公式：f(n)=f(n-1)*n</li>
+<li>递归的终结点：f(1)</li>
+<li>递归的方向必须走向终结点</li>
+</ol>
+<h3 id="使用递归做文件搜索"><a href="#使用递归做文件搜索" class="headerlink" title="使用递归做文件搜索"></a>使用递归做文件搜索</h3><ul>
+<li>需求<ul>
+<li>文件搜索，从盘中找出某个文件名称并输出绝对路径</li>
+</ul>
+</li>
+<li>分析：<ol>
+<li>先定位出的应该是一级文件对象</li>
+<li>遍历全部一级文件对象，判断是否是文件</li>
+<li>如果是文件，判断是否是自己想要的</li>
+<li>如果是文件夹，需要继续递归进去重复上述过程</li>
+</ol>
+</li>
+</ul>
+<h1 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h1><ul>
+<li>GBK集<ul>
+<li>在GBK编码中，英文数字占1个字节，中文占2个字节</li>
+</ul>
+</li>
+<li>UTF-8集<ul>
+<li>UTF-8中，英文数字占1个字节，中文占3个字节</li>
+</ul>
+</li>
+<li>英文数字在存储中为正数，而中文在存储中为负数</li>
+</ul>
+<h3 id="编码与解码"><a href="#编码与解码" class="headerlink" title="编码与解码"></a>编码与解码</h3><ul>
+<li><p>编码</p>
+<ul>
+<li><p>.getBytes——-以默认字符集进行编码，返回Bytes数组以接受</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">byte</span>[]  bytes=name.getBytes();<span class="comment">//括号中可直接指定编码格式</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>解码</p>
+<ul>
+<li><p>编码前和编码后的字符集必须一致，否则乱码</p>
+</li>
+<li><p>String(bytes);</p>
+<ul>
+<li><p>String rs = new String(bytes);</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String rs = <span class="keyword">new</span> String(bytes，<span class="string">&quot;编码格式&quot;</span>);<span class="comment">//进行指定编码解码</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java SE</tag>
+        <tag>Java</tag>
+        <tag>方法递归</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>线程</title>
+    <url>/2022/06/30/%E7%BA%BF%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><ul>
+<li>指的是从软硬件实现多条执行流程的技术</li>
+</ul>
+<h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><ul>
+<li>线程(thread)是一个程序内部的一条执行路径</li>
+<li>main方法执行其实就是一条单独的执行路径</li>
+<li>程序中如果只有一条执行路径，那么这个程序就是单线程的程序</li>
+</ul>
+<h1 id="创建多线程"><a href="#创建多线程" class="headerlink" title="创建多线程"></a>创建多线程</h1><h2 id="方式一"><a href="#方式一" class="headerlink" title="方式一"></a>方式一</h2><ul>
+<li><h3 id="通过继承Thread类来代表线程"><a href="#通过继承Thread类来代表线程" class="headerlink" title="通过继承Thread类来代表线程"></a>通过继承Thread类来代表线程</h3></li>
+</ul>
+<ol>
+<li>定义一个子类继承线程类Thread</li>
+<li>重写run()方法</li>
+<li>创建线程对象</li>
+<li>调用线程对象的start()方法启动线程(启动后还是执行run方法的）</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">t</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Thread t = <span class="keyword">new</span> MyThread();	<span class="comment">//创建线程对象</span></span><br><span class="line">        t.start();<span class="comment">//启动线程</span></span><br><span class="line">        <span class="comment">//之所以不使用run是因为它会认为这是方法调用，不会当它是线程</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">extends</span> <span class="title">Thread</span></span>&#123;  <span class="comment">//继承Thread</span></span><br><span class="line">    <span class="meta">@Override</span><span class="comment">//重写run方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.run();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><ul>
+<li>优点：编码简单</li>
+<li>缺点：线程类已经继承Thread,无法继承其他类，不利于扩展</li>
+</ul>
+</li>
+<li><p>不要把主线程的内容放在子线程上面</p>
+<ul>
+<li>它会把主线程跑完才会开始启动子线程，相当于是单线程</li>
+</ul>
+</li>
+</ul>
+<h2 id="方式二"><a href="#方式二" class="headerlink" title="方式二"></a>方式二</h2><ul>
+<li><h2 id="实现Runnable接口"><a href="#实现Runnable接口" class="headerlink" title="实现Runnable接口"></a>实现Runnable接口</h2></li>
+</ul>
+<ol>
+<li>实现声明一个Runnable接口，重写run()方法</li>
+<li>创建一个MyRunnable任务对象</li>
+<li>把MyRunnable任务对象交给Thread处理</li>
+<li>调用线程对象的start方法启动线程</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">text</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//创建一个任务对象</span></span><br><span class="line">        Runnable target =<span class="keyword">new</span> MyRunnable();</span><br><span class="line">        <span class="comment">//把任务交给Thread处理</span></span><br><span class="line">        Thread t =<span class="keyword">new</span> Thread(target);</span><br><span class="line">        <span class="comment">//启动线程</span></span><br><span class="line">        t.start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//定义一个类实现Runnable接口</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyRunnable</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">       <span class="comment">//子线程任务类 </span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h2 id="优缺点-1"><a href="#优缺点-1" class="headerlink" title="优缺点"></a>优缺点</h2></li>
+<li><p>优点：只是实现接口，可以继续继承和实现接口，扩展性强。</p>
+</li>
+<li><p>缺点：编程多一层对象包装，如果线程有执行结果不可以直接返回</p>
+</li>
+</ul>
+<h2 id="方式二-匿名内部类"><a href="#方式二-匿名内部类" class="headerlink" title="方式二-匿名内部类"></a>方式二-匿名内部类</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Runnable target =<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">          <span class="meta">@Override</span></span><br><span class="line">          <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">              <span class="comment">//子线程任务</span></span><br><span class="line">          &#125;</span><br><span class="line">      &#125;;</span><br><span class="line">      <span class="comment">//把任务交给Thread处理</span></span><br><span class="line">      Thread t =<span class="keyword">new</span> Thread(target);</span><br><span class="line">      <span class="comment">//启动线程</span></span><br><span class="line">      t.start();</span><br><span class="line">      </span><br><span class="line">      <span class="comment">//还能简化</span></span><br><span class="line">      <span class="keyword">new</span> Thread(()-&gt;&#123;</span><br><span class="line">          <span class="comment">//子线程任务</span></span><br><span class="line">      &#125;).start();</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="方式三"><a href="#方式三" class="headerlink" title="方式三"></a>方式三</h2><ul>
+<li><p>前两种重写的run方法均不能直接放回结果</p>
+</li>
+<li><p>不适合返回线程执行结果的业务场景</p>
+</li>
+<li><h2 id="利用Callable、FutureTask接口实现"><a href="#利用Callable、FutureTask接口实现" class="headerlink" title="利用Callable、FutureTask接口实现"></a>利用Callable、FutureTask接口实现</h2></li>
+</ul>
+<ol>
+<li>得到任务对象<ul>
+<li>定义类实现Callable接口，重写call方法，封装要做的事</li>
+<li>用FutureTask把Callable对象封装成线程任务对象</li>
+</ul>
+</li>
+<li>把线程任务对象交给Thread处理</li>
+<li>调用Thread的start方法启动线程，执行任务</li>
+<li>调用完毕后，使用FutureTask的get方法去获取任务执行的结果</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.concurrent.Callable;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.ExecutionException;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.FutureTask;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">text</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//创建Callable任务对象</span></span><br><span class="line">        Callable&lt;String&gt; call =<span class="keyword">new</span> MyCallable();</span><br><span class="line">        <span class="comment">//把Callable任务对象封装给FutureTask对象</span></span><br><span class="line">        <span class="comment">//FutureTask实现了Runnable接口，可以交给Thread</span></span><br><span class="line">        FutureTask&lt;String&gt; f1 =<span class="keyword">new</span> FutureTask&lt;&gt;(call);</span><br><span class="line">        Thread t =<span class="keyword">new</span> Thread(f1);</span><br><span class="line">        <span class="comment">//启动线程</span></span><br><span class="line">        t.start();</span><br><span class="line">        <span class="comment">//get方法抛出异常</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            String rs=f1.get();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//定义任务类，实现Callable接口,应该申明线程任务执行完毕后的结果数据类型</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyCallable</span> <span class="keyword">implements</span> <span class="title">Callable</span>&lt;<span class="title">String</span> &gt; </span>&#123;</span><br><span class="line">    <span class="comment">//重写call方法,任务方法</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">call</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><h3 id="优缺点-2"><a href="#优缺点-2" class="headerlink" title="优缺点"></a>优缺点</h3></li>
+<li><p>优点</p>
+<ul>
+<li>线程类只实现接口，可以继续继承类和实现接口，扩展性强</li>
+<li>可以在线程执行完毕后获取线程结果</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li>编码复杂一点</li>
+</ul>
+</li>
+</ul>
+<h1 id="Thread方法"><a href="#Thread方法" class="headerlink" title="Thread方法"></a>Thread方法</h1><h2 id="获取线程名"><a href="#获取线程名" class="headerlink" title="获取线程名"></a>获取线程名</h2><ul>
+<li>getName();</li>
+<li>setName();//给这个线程一个名字</li>
+<li>currentThread();</li>
+<li>Thread.currenThread().getName();常用的线程名获取</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">t1.setName();<span class="comment">//自定一个线程名称</span></span><br><span class="line">Thread m =Thread.currenThread();</span><br><span class="line">m.getName();<span class="comment">//获取线程名称</span></span><br><span class="line">Thread.currenThread().getName();<span class="comment">//在线程类中</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Thread构造器"><a href="#Thread构造器" class="headerlink" title="Thread构造器"></a>Thread构造器</h2><p>在线程类中创建带/无参构造器</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Thread</span><span class="params">(String name)</span><span class="comment">//可以为当前线程指定名称</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Thread</span><span class="params">(Runnable target)</span><span class="comment">//把Runnable对象交给线程对象</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Thread</span><span class="params">(Runnable target,String name)</span><span class="comment">//把Runnable对象交给线程对象，并指定线程名称</span></span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="线程的休眠方法"><a href="#线程的休眠方法" class="headerlink" title="线程的休眠方法"></a>线程的休眠方法</h2><p>直接调用sleep方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Thread.sleep(时间);</span><br></pre></td></tr></table></figure>
+
+<h1 id="线程安全"><a href="#线程安全" class="headerlink" title="线程安全"></a>线程安全</h1><p>多个线程同时操作同一共享资源的时候可能出现业务安全问题，<strong>称为线程安全问题</strong></p>
+<h2 id="线程安全问题出现的原因"><a href="#线程安全问题出现的原因" class="headerlink" title="线程安全问题出现的原因"></a>线程安全问题出现的原因</h2><ul>
+<li>存在多线程并发</li>
+<li>同时访问共享资源</li>
+<li>存在修改共享资源</li>
+</ul>
+<h1 id="线程同步"><a href="#线程同步" class="headerlink" title="线程同步"></a>线程同步</h1><p>线程同步解决线程安全问题</p>
+<h2 id="方式一：同步代码块"><a href="#方式一：同步代码块" class="headerlink" title="方式一：同步代码块"></a>方式一：同步代码块</h2><ul>
+<li><h3 id="核心思想是加锁"><a href="#核心思想是加锁" class="headerlink" title="核心思想是加锁"></a>核心思想是加锁</h3></li>
+</ul>
+<p>把共享资源经行上锁，每次只能一个线程进入访问完毕后解锁，其他才能进来</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">synchronized</span>(同步锁对象)&#123;</span><br><span class="line">		<span class="comment">//操作共享的功能</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h3 id="锁对象的规范要求"><a href="#锁对象的规范要求" class="headerlink" title="锁对象的规范要求"></a>锁对象的规范要求</h3><ul>
+<li>规范上：建议使用共享资源作为锁对象</li>
+<li>对于实例方法建议使用<strong>this</strong>作为锁对象</li>
+<li>对于静态方法建议使用**字节码(类名.class)**对象作为锁对象</li>
+</ul>
+</li>
+</ul>
+<h2 id="方式二：同步方法"><a href="#方式二：同步方法" class="headerlink" title="方式二：同步方法"></a>方式二：同步方法</h2><p>在创建方法时添加synchronized关键字</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">修饰符 <span class="keyword">synchronized</span> 返回类型 方法名(形参列表)&#123;</span><br><span class="line">	操作共享资源的代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="方式三：Lock锁"><a href="#方式三：Lock锁" class="headerlink" title="方式三：Lock锁"></a>方式三：Lock锁</h2><p>定义一个final变量</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">lock();</span><br><span class="line">方法内容</span><br><span class="line">unlock();<span class="comment">//通常放在try/finally下</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+<h1 id="线程通信"><a href="#线程通信" class="headerlink" title="线程通信"></a>线程通信</h1><ul>
+<li><h4 id="三个常见方法"><a href="#三个常见方法" class="headerlink" title="三个常见方法"></a>三个常见方法</h4><ol>
+<li>void wait当前线程等待，直到另一个线程调用notify()或notifyAll()唤醒自己</li>
+<li>void notify()唤醒正在等待的对象监视器(锁对象)的单个线程</li>
+<li>void notifyAll()唤醒正在等待的对象监视器(锁对象)的所有线程</li>
+</ol>
+</li>
+<li><h4 id="上述方法应该使用当前同步锁对象进行调用"><a href="#上述方法应该使用当前同步锁对象进行调用" class="headerlink" title="上述方法应该使用当前同步锁对象进行调用"></a>上述方法应该使用当前同步锁对象进行调用</h4></li>
+</ul>
+<h1 id="线程池-重点"><a href="#线程池-重点" class="headerlink" title="线程池(重点)"></a>线程池(重点)</h1><ul>
+<li>就是一个可以复用线程的技术<ul>
+<li>创建几个固定数量线程执行任务，一个任务完成后续接任务</li>
+<li>且任务接口是Runnable和Callable</li>
+</ul>
+</li>
+</ul>
+<h2 id="线程池实现API"><a href="#线程池实现API" class="headerlink" title="线程池实现API"></a>线程池实现API</h2><ul>
+<li><h4 id="代表线程池的接口：ExcutorService"><a href="#代表线程池的接口：ExcutorService" class="headerlink" title="代表线程池的接口：ExcutorService"></a>代表线程池的接口：ExcutorService</h4></li>
+<li><h4 id="线程池关闭代码"><a href="#线程池关闭代码" class="headerlink" title="线程池关闭代码"></a>线程池关闭代码</h4><ul>
+<li>shutdownNow立即关闭</li>
+<li>shutdown等待任务执行完毕后关闭</li>
+<li>基本不关，级别等于删库跑路</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h4 id="使用线程池处理Callable任务"><a href="#使用线程池处理Callable任务" class="headerlink" title="使用线程池处理Callable任务"></a>使用线程池处理Callable任务</h4><ul>
+<li>使用ExcutorService的方法</li>
+<li>Future<T> <strong>submit</strong>(Callable<T> command)</T></T></li>
+</ul>
+</li>
+</ul>
+<h2 id="创建线程池的方式"><a href="#创建线程池的方式" class="headerlink" title="创建线程池的方式"></a>创建线程池的方式</h2><ul>
+<li><h3 id="方式一-1"><a href="#方式一-1" class="headerlink" title="方式一"></a>方式一</h3><ul>
+<li>使用<strong>ExcutorService的实现类ThreadPoolExecutor</strong>自创建一个线程池对象</li>
+<li><h3 id="构造器参数说明"><a href="#构造器参数说明" class="headerlink" title="构造器参数说明"></a><strong>构造器参数说明</strong></h3></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ThreadPoolExcutor</span><span class="params">(<span class="keyword">int</span> corePoolSize,				//参数一</span></span></span><br><span class="line"><span class="params"><span class="function">						 <span class="keyword">int</span> maximumPoolSize,			//二</span></span></span><br><span class="line"><span class="params"><span class="function">						 <span class="keyword">long</span> keepAliveTime,			//三</span></span></span><br><span class="line"><span class="params"><span class="function">						 TimeUnit unit,					//四</span></span></span><br><span class="line"><span class="params"><span class="function">						 BlockingQueue&lt;Runnable&gt; workQueue,	//五</span></span></span><br><span class="line"><span class="params"><span class="function">						 ThreadFactory threadFactory,		//六</span></span></span><br><span class="line"><span class="params"><span class="function">						 RejectedExecutionHandler handler)</span>	<span class="comment">//七</span></span></span><br></pre></td></tr></table></figure>
+
+<p>参数一：指定线程池的线程数量(核心线程)：corePoolSize  ——————&gt;不能小于0</p>
+<p>参数二：指定线程池的可支持最大线程数：maximumPoolSize————&gt;最大数量&gt;=核心线程数</p>
+<p>参数三：指定临时线程的最大存活时间：keepAliveTime————&gt;不能小于0</p>
+<p>参数四：指定存活时间的单位(秒 、分、时、t天)：unit————&gt;时间单位</p>
+<p>参数五：指定任务队列：workQueue——————&gt;不能为null</p>
+<p>参数六：指定用哪个线程工厂创建线程：threadFactory——————&gt;不能为null</p>
+<p>参数七：指定线程忙，任务满的时候，新任务来了怎么办：handler——————&gt;不能为null</p>
+<h3 id="参数七新任务拒绝策略"><a href="#参数七新任务拒绝策略" class="headerlink" title="参数七新任务拒绝策略"></a>参数七新任务拒绝策略</h3><ul>
+<li>ThreadPoolExecutor.AbortPolicy————丢弃任务，并抛出异常(默认策略)</li>
+<li>ThreadPoolExecutor.DiscardPolicy————丢弃任务，但不抛出异常(不推荐使用)</li>
+<li>ThreadPoolExecutor.DiscardOldesPolicy————抛弃队列中等待最久的任务，然后把当前任务加入到队列中</li>
+<li>ThreadPoolExecutor.CallerRunsPolicy————让主线程执行</li>
+</ul>
+<h3 id="ThreadPoolExecutor创建线程池对象示例"><a href="#ThreadPoolExecutor创建线程池对象示例" class="headerlink" title="ThreadPoolExecutor创建线程池对象示例"></a>ThreadPoolExecutor创建线程池对象示例</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ExecutorService polls =<span class="keyword">new</span> ThreadPoolExecutor(<span class="number">3</span>,<span class="number">5</span>,<span class="number">8</span>, </span><br><span class="line">               TimeUnit.SECONDS,<span class="keyword">new</span> ArrayBlockingQueue&lt;&gt;(<span class="number">6</span>), </span><br><span class="line">               Executors.defaultThreadFactory(),<span class="keyword">new</span> ThreadPoolExecutor.AbortPolicy());   </span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>创建Runnable对象，内部重写run方法，即内容</li>
+<li>使用polls.execute(Runnable对象名称)，传入Runnable对象让线程池处理</li>
+</ol>
+<ul>
+<li><h3 id="方式二-1"><a href="#方式二-1" class="headerlink" title="方式二"></a>方式二</h3><ul>
+<li>使用Executors(线程池的工具类)调用方法返回不同特点的线程池对象</li>
+</ul>
+</li>
+</ul>
+<h2 id="线程池常见面试题"><a href="#线程池常见面试题" class="headerlink" title="线程池常见面试题"></a>线程池常见面试题</h2><ul>
+<li><h4 id="临时线程什么时候创建？"><a href="#临时线程什么时候创建？" class="headerlink" title="临时线程什么时候创建？"></a>临时线程什么时候创建？</h4><ul>
+<li>新任务提交时发现核心线程都在忙，任务队列也满了，并且还可以创建临时线程，此时才会创建核心线程</li>
+</ul>
+</li>
+<li><h4 id="什么时候开始拒绝任务？"><a href="#什么时候开始拒绝任务？" class="headerlink" title="什么时候开始拒绝任务？"></a>什么时候开始拒绝任务？</h4><ul>
+<li>核心线程和临时线程都在忙，任务队列也满了，新的任务过来的时候才会开始任务拒绝</li>
+</ul>
+</li>
+</ul>
+<h1 id="定时器"><a href="#定时器" class="headerlink" title="定时器"></a>定时器</h1><ul>
+<li>是一种控制任务延时调用</li>
+</ul>
+<h2 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h2><ul>
+<li><p><strong>方式一：</strong>Timer</p>
+<ul>
+<li>public Timer()构造器，创建Timer对象</li>
+<li>Timer 属于单线程，在多个计时器的情况下，其中一个出现睡眠等情况，剩余的计时器也会被影响。且出现一个异常都会被影响</li>
+</ul>
+</li>
+<li><p><strong>方式二：</strong>ScheduledExecutorService</p>
+<ul>
+<li>创建ScheduledExecutorService线程池</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ScheduledExecutorService pool = Executors.newScheduledThreadPool(<span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>开启定时任务</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">pool.scheduleAtFixedRate(<span class="keyword">new</span> TimerTask() &#123;</span><br><span class="line">           <span class="meta">@Override</span></span><br><span class="line">           <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">               </span><br><span class="line">           &#125;</span><br><span class="line">       &#125;,<span class="number">0</span>,<span class="number">2</span>, TimeUnit.SECONDS);</span><br></pre></td></tr></table></figure></li>
+<li><p>基于线程池，某个任务的执行不会被其他任务所影响</p>
+</li>
+</ul>
+<h1 id="并发、并行"><a href="#并发、并行" class="headerlink" title="并发、并行"></a>并发、并行</h1><ul>
+<li>正在运行的程序就是一个独立的进程，线程是属于进程的，多个线程其实是并发与并行同时进行的</li>
+</ul>
+<h2 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h2><ul>
+<li>CPU同时处理线程的数量有限</li>
+<li>CPU会轮询系统的每个线程服务，由于CPU切换的速度很快，给我们的感觉这些线程在同时执行，这就是并发</li>
+</ul>
+<h2 id="并行"><a href="#并行" class="headerlink" title="并行"></a>并行</h2><ul>
+<li>在同一时刻上，同时有多个线程在被CPU处理并执行</li>
+</ul>
+<h1 id="线程的生命周期"><a href="#线程的生命周期" class="headerlink" title="线程的生命周期"></a>线程的生命周期</h1><h2 id="线程的状态"><a href="#线程的状态" class="headerlink" title="线程的状态"></a>线程的状态</h2><ul>
+<li>也就是线程从生到死的过程，以及中间经历的各种过程</li>
+</ul>
+<h2 id="java线程的状态"><a href="#java线程的状态" class="headerlink" title="java线程的状态"></a>java线程的状态</h2><ul>
+<li>6种状态都定义在Thread类的内部枚举类中</li>
+<li><strong>New新建</strong>：线程刚被创建，但是未启动</li>
+<li><strong>Runnable可运行</strong>：线程已经调用了start()等待CPU调度</li>
+<li><strong>Teminated被终止</strong>：因为run方法正常退出而死亡，或者因为没有捕获的异常终止了run方法</li>
+<li><strong>Blocked锁阻塞</strong>：线程在执行的时候未竞争到锁对象，则该线程进入Blocked状态</li>
+<li><strong>Waiting无限等待</strong>：一个线程进入Waiting状态，另一个线程调用notify或者notifyAll才能唤醒</li>
+<li>**Timed Waiting(计时等待)**：同waiting状态，有几个方法有超时参数，调用他们将进入Timed Waiting状态。带有超时参数的常用方法有Thread.sleep、Object.wait</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java SE</tag>
+        <tag>Java</tag>
+        <tag>多线程</tag>
+        <tag>Thread</tag>
+        <tag>线程安全</tag>
+        <tag>线程同步</tag>
+        <tag>线程通信</tag>
+        <tag>线程池</tag>
+        <tag>定时器</tag>
+        <tag>并发</tag>
+        <tag>并行</tag>
+        <tag>线程的生命周期</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>缓冲流、转换流、序列化、打印流、IO框架</title>
+    <url>/2022/06/30/%E7%BC%93%E5%86%B2%E6%B5%81-%E8%BD%AC%E6%8D%A2%E6%B5%81-%E5%BA%8F%E5%88%97%E5%8C%96-%E6%89%93%E5%8D%B0%E6%B5%81-IO%E6%A1%86%E6%9E%B6/</url>
+    <content><![CDATA[<h1 id="缓冲流"><a href="#缓冲流" class="headerlink" title="缓冲流"></a>缓冲流</h1><ul>
+<li>也被称为高效流或高级流。字节流可以称为原始流</li>
+<li>作用<ul>
+<li>自带8k缓冲区、可以提高读写性能</li>
+</ul>
+</li>
+</ul>
+<h2 id="字节缓冲流"><a href="#字节缓冲流" class="headerlink" title="字节缓冲流"></a>字节缓冲流</h2><h3 id="缓冲字节输入流"><a href="#缓冲字节输入流" class="headerlink" title="缓冲字节输入流"></a>缓冲字节输入流</h3><ul>
+<li><h3 id="BufferedInputStream"><a href="#BufferedInputStream" class="headerlink" title="BufferedInputStream"></a>BufferedInputStream</h3></li>
+<li><p>继承InputStream，所以read方法也同样使用，只是创建对象不一样</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InputStream is=<span class="keyword">new</span> FileInputStream(<span class="string">&quot;路径&quot;</span>);</span><br><span class="line">InputStream bis=<span class="keyword">new</span> BufferedInputStream(is);<span class="comment">//将原始管道包装成为高级流</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="缓冲字节输出流"><a href="#缓冲字节输出流" class="headerlink" title="缓冲字节输出流"></a>缓冲字节输出流</h3><ul>
+<li><h3 id="BufferedOutputStream"><a href="#BufferedOutputStream" class="headerlink" title="BufferedOutputStream"></a>BufferedOutputStream</h3><ul>
+<li>继承OutputStream，所以write方法也适用，创建对象不同</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">OutputStream os = <span class="keyword">new</span> FileOutputStream(<span class="string">&quot;路径&quot;</span>);</span><br><span class="line">OutputStream bos = <span class="keyword">new</span> BufferedOutputStream(os);<span class="comment">//包装原始流</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="字符缓冲流"><a href="#字符缓冲流" class="headerlink" title="字符缓冲流"></a>字符缓冲流</h2><h3 id="字符缓冲输入流"><a href="#字符缓冲输入流" class="headerlink" title="字符缓冲输入流"></a>字符缓冲输入流</h3><ul>
+<li><h3 id="BufferedReader"><a href="#BufferedReader" class="headerlink" title="BufferedReader"></a>BufferedReader</h3><ul>
+<li><p>继承Reader，所以Read方法同样适用，新增按行输入的方法ReadLine</p>
+</li>
+<li><p>使用独有功能不使用多态方式创建</p>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Reader fr =<span class="keyword">new</span> FileReader(<span class="string">&quot;路径&quot;</span>);</span><br><span class="line">BufferedReader br =<span class="keyword">new</span> BufferedReader(fr);<span class="comment">//包装原始流</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="独有功能"><a href="#独有功能" class="headerlink" title="独有功能"></a>独有功能</h4><ul>
+<li><h3 id="经典代码，是用于读取中文最好的代码"><a href="#经典代码，是用于读取中文最好的代码" class="headerlink" title="经典代码，是用于读取中文最好的代码"></a>经典代码，是用于读取中文最好的代码</h3></li>
+<li><h4 id="读取一整行"><a href="#读取一整行" class="headerlink" title="读取一整行"></a>读取一整行</h4></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">br.(readLine());<span class="comment">//读取完内容后再读取时会返回null</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h4 id="使用循环完成整篇的读取"><a href="#使用循环完成整篇的读取" class="headerlink" title="使用循环完成整篇的读取"></a>使用循环完成整篇的读取</h4></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String line;</span><br><span class="line"><span class="keyword">while</span>((line = br.readLine())!=<span class="keyword">null</span>)&#123;</span><br><span class="line">	System.out.println(line);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="字符缓冲输出流"><a href="#字符缓冲输出流" class="headerlink" title="字符缓冲输出流"></a>字符缓冲输出流</h3><ul>
+<li><h3 id="BufferedWriter"><a href="#BufferedWriter" class="headerlink" title="BufferedWriter"></a>BufferedWriter</h3><ul>
+<li>一样继承于Writer</li>
+<li>使用独有功能不使用多态方式创建</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Writer fw =<span class="keyword">new</span> FileWriter(<span class="string">&quot;路径&quot;</span>);<span class="comment">//追加文件还是在原始管道</span></span><br><span class="line">BufferedWriter dw = <span class="keyword">new</span> BufferedWriter(fw);<span class="comment">//包装原始管道</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="独有功能-1"><a href="#独有功能-1" class="headerlink" title="独有功能"></a>独有功能</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">bw.newLine();</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="转换流"><a href="#转换流" class="headerlink" title="转换流"></a>转换流</h1><ul>
+<li>它用于解决编码不一致，读取中文乱码的问题</li>
+</ul>
+<h2 id="字符输入转换流"><a href="#字符输入转换流" class="headerlink" title="字符输入转换流"></a>字符输入转换流</h2><ul>
+<li>InputStreamReader</li>
+<li>可以把原始的字节流按照指定编码转成字符输入流</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InPutStream is = <span class="keyword">new</span> FileReader(<span class="string">&quot;路径&quot;</span>);<span class="comment">//原始字符输入流</span></span><br><span class="line">Reader isr = <span class="keyword">new</span> InputStreamReader(is,<span class="string">&quot;编码类型&quot;</span>);<span class="comment">//以指定编码转换为字符输入流</span></span><br><span class="line">BufferedReader br =<span class="keyword">new</span> BufferedReader(isr);<span class="comment">//缓冲字符输入流</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="字符输出转换流"><a href="#字符输出转换流" class="headerlink" title="字符输出转换流"></a>字符输出转换流</h2><ul>
+<li>OutputStreamWrite</li>
+<li>按指定编码转换字符输出流</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">OutputStream os = <span class="keyword">new</span> FileOutputStream(<span class="string">&quot;路径&quot;</span>);<span class="comment">//字节输出流</span></span><br><span class="line">Writer osw = <span class="keyword">new</span> OutputStream(os,<span class="string">&quot;编码类型&quot;</span>);<span class="comment">//以指定编码转换为字符输出流</span></span><br><span class="line">BufferedWriter bw = <span class="keyword">new</span> BufferedWriter(osw);<span class="comment">//缓冲字符输出流</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="对象序列化"><a href="#对象序列化" class="headerlink" title="对象序列化"></a>对象序列化</h1><ul>
+<li>作用是：<strong>把对象数据存入到文件中去</strong></li>
+</ul>
+<h2 id="对象字节输出流"><a href="#对象字节输出流" class="headerlink" title="对象字节输出流"></a>对象字节输出流</h2><ul>
+<li><p>ObjectOutputStream</p>
+<ul>
+<li><p>把原始字节输出流包装在对象字节输出流中</p>
+</li>
+<li><p>对象如果要序列化，就必须实现Serializable接口</p>
+</li>
+<li><p>直接访问是乱码，因为这是java对象数据的保存</p>
+</li>
+<li><p>如果不想将一些对象信息经行序列化，就在对象文件中添加transient</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">transient</span> String password;<span class="comment">//对象内容的密码将不会被序列化</span></span><br></pre></td></tr></table></figure></li>
+<li><p>序列化与反序列化版本必须一致</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID =<span class="number">1</span>;<span class="comment">//在</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">student s = <span class="keyword">new</span> student(<span class="string">&quot;对象信息&quot;</span>);<span class="comment">//创建对象，这个对象必须实现Serializable接口</span></span><br><span class="line">ObjectOutputStream oos = <span class="keyword">new</span> ObjectOutputStream(<span class="keyword">new</span> FileOutputStream(<span class="string">&quot;路径&quot;</span>));<span class="comment">//对象序列化，使用对象字节输出流包装原始流</span></span><br><span class="line">oos.writeObject(s);<span class="comment">//直接调用序列化方法，传入对象</span></span><br><span class="line"><span class="comment">//最后释放资源</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="对象反序列化"><a href="#对象反序列化" class="headerlink" title="对象反序列化"></a>对象反序列化</h1><ul>
+<li>作用：以内存为基准，把存储到磁盘文件中去的对象数据，恢复成内存中的对象，成为对象反序列化</li>
+</ul>
+<h2 id="对象字节输入流"><a href="#对象字节输入流" class="headerlink" title="对象字节输入流"></a>对象字节输入流</h2><ul>
+<li><p>ObjectInputStream</p>
+<ul>
+<li>对象文件输入流包装原始流</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ObjectInputStream is = <span class="keyword">new</span> ObjectInputStream(<span class="keyword">new</span> FileInputSteam(<span class="string">&quot;路径&quot;</span>));</span><br><span class="line">student s = (student) is.readObject();<span class="comment">//进行转换</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="打印流"><a href="#打印流" class="headerlink" title="打印流"></a>打印流</h1><ul>
+<li>打印流可以实现方便、高效的打印数据到文件中去</li>
+<li>可以实现带那个什么数据就是什么数据</li>
+<li>之所以高效是因为内部包装着缓冲流</li>
+</ul>
+<h2 id="PrintStream"><a href="#PrintStream" class="headerlink" title="PrintStream"></a>PrintStream</h2><p><strong>这个在打印功能上用的多</strong></p>
+<p>它也是高级流，需要包装原始流，它也可以直接通向文件</p>
+<p>它继承字节输出流</p>
+<p>追加必须得要在原始流上增加代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">PrintStream os =<span class="keyword">new</span> PrintStream(<span class="keyword">new</span> FileOutputStream(<span class="string">&quot;路径&quot;</span>))<span class="comment">//包装原始流</span></span><br><span class="line">PrintStream ps =<span class="keyword">new</span> PrintStream(<span class="string">&quot;路径&quot;</span>);<span class="comment">//可以直接指向路径</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ps.println(<span class="string">&quot;输出的内容&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="PrintWriter"><a href="#PrintWriter" class="headerlink" title="PrintWriter"></a>PrintWriter</h2><p>它与PrintStream用法是一样</p>
+<h1 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h1><ul>
+<li>代表一个属性文件，可以把自己对象中的键值对信息存到一个属性文件中去</li>
+<li>后缀是.properties的文件即是它的属性文件</li>
+<li>它属于Map集合下的</li>
+</ul>
+<p>因为需要使用它自己的方法，所以创建对象不使用多态</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Properties pes = <span class="keyword">new</span> Prorperties();</span><br><span class="line">pes.setProperties(<span class="string">&quot;键&quot;</span>,<span class="string">&quot;值&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h3 id="保存信息到文件"><a href="#保存信息到文件" class="headerlink" title="保存信息到文件"></a>保存信息到文件</h3><ul>
+<li>它需要包装原始流，且最后需要命名后缀为.properties</li>
+<li>推荐使用字符输出流</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">pes.store(<span class="keyword">new</span> FileWriter(<span class="string">&quot;路径.properties&quot;</span>),备注信息)<span class="comment">//逗号后面可以加入信息，无影响</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h3 id="读取文件数据到对象中去"><a href="#读取文件数据到对象中去" class="headerlink" title="读取文件数据到对象中去"></a>读取文件数据到对象中去</h3></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">pes.load(<span class="keyword">new</span> FileReader(<span class="string">&quot;路径&quot;</span>));</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h3 id="调用时使用的是-getProperties"><a href="#调用时使用的是-getProperties" class="headerlink" title="调用时使用的是.getProperties"></a>调用时使用的是.getProperties</h3></li>
+</ul>
+<h1 id="I-O框架"><a href="#I-O框架" class="headerlink" title="I/O框架"></a>I/O框架</h1><p>是一组有关I/O操作的类库，可以提高I/O的效率</p>
+<p>与日志框架相似，需要进行导包后使用</p>
+<ul>
+<li>文件复制</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">IOUtils.copy(<span class="keyword">new</span> FileInputStream(<span class="string">&quot;路径&quot;</span>),<span class="keyword">new</span> FileOutputStream(<span class="string">&quot;路径&quot;</span>));</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>文件复制到某个文件夹下</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">FileUtils.copyFileToDirectory(<span class="keyword">new</span> Filt(<span class="string">&quot;原路径&quot;</span>)),<span class="keyword">new</span> File(<span class="string">&quot;指定路径&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>文件夹复制到某个文件夹下</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">FileUtils.copyDirectory(<span class="keyword">new</span> File(<span class="string">&quot;原路径&quot;</span>),<span class="keyword">new</span> File(<span class="string">&quot;指定路径&quot;</span>));</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>删除文件夹(可以删除非空的文件夹)</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">FileUtils,deleteDirectory(<span class="keyword">new</span> File(<span class="string">&quot;要删除的文件夹&quot;</span>));</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="NIO"><a href="#NIO" class="headerlink" title="NIO"></a>NIO</h1><p>java从1.7开始自己也更新了一行代码完成的操作</p>
+<ul>
+<li>复制</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Files.copy(Path.of(<span class="string">&quot;路径&quot;</span>),path.of(<span class="string">&quot;路径&quot;</span>));</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java SE</tag>
+        <tag>Java</tag>
+        <tag>I/O流</tag>
+        <tag>缓冲流</tag>
+        <tag>转换流</tag>
+        <tag>序列化</tag>
+        <tag>打印流</tag>
+        <tag>I/O框架</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网络编程</title>
+    <url>/2022/06/30/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/</url>
+    <content><![CDATA[<h1 id="网络通信"><a href="#网络通信" class="headerlink" title="网络通信"></a>网络通信</h1><ul>
+<li>三要素<ul>
+<li>ip、端口、协议</li>
+</ul>
+</li>
+</ul>
+<h2 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h2><p>分为ipv4与ipv6</p>
+<h2 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h2><p>标识计算机设备上运行的进程，被视为一个16位的二进制，范围是0~65535</p>
+<ul>
+<li><h3 id="周知端口"><a href="#周知端口" class="headerlink" title="周知端口"></a>周知端口</h3><ul>
+<li>0~1023，被预先定义的知名应用占用(如：HTTP占用80，FTP 占用21)</li>
+</ul>
+</li>
+<li><h3 id="注册端口"><a href="#注册端口" class="headerlink" title="注册端口"></a>注册端口</h3><ul>
+<li>1024~49151，分配给用户进程或某些应用程序(如：Tomcat占用8080，MySQL占用3360)</li>
+</ul>
+</li>
+<li><h3 id="动态端口"><a href="#动态端口" class="headerlink" title="动态端口"></a>动态端口</h3><ul>
+<li>49152到65535，之所以称为动态端口，是因为它一般不固定分配某种进程，而是动态分配</li>
+</ul>
+</li>
+</ul>
+<h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><ul>
+<li>连接和通信数据的规则被称为网络通信协议</li>
+<li>OSI参考模型</li>
+<li>TCP/IP参考模型<ul>
+<li>应用层(HTTP、FTP、DNS、SMTP)</li>
+<li>传输层(TCP、UDP)</li>
+<li>网络层(IP、ICMP)</li>
+<li>数据链路层+物流</li>
+</ul>
+</li>
+</ul>
+<h3 id="传输层的2个常见协议"><a href="#传输层的2个常见协议" class="headerlink" title="传输层的2个常见协议"></a>传输层的2个常见协议</h3><h4 id="TCP-传输控制协议"><a href="#TCP-传输控制协议" class="headerlink" title="TCP : 传输控制协议"></a>TCP : 传输控制协议</h4><ul>
+<li>双方必须先建立连接，它是一种<strong>面向连接</strong>的<strong>可靠通信</strong>协议</li>
+<li>传输前，采用<strong>三次握手</strong>方式建立连接，所以是可靠的</li>
+<li>在连接中可进行大数据量的传输</li>
+<li>连接发送都需要确认，且传输完毕后，还需释放已建立的连接</li>
+<li>使用常见：对信息安全要求较高的场景(文件下载、金融等数据通信)</li>
+</ul>
+<h5 id="socket类"><a href="#socket类" class="headerlink" title="socket类"></a>socket类</h5><h4 id="UDP-用户数据报协议"><a href="#UDP-用户数据报协议" class="headerlink" title="UDP : 用户数据报协议"></a>UDP : 用户数据报协议</h4><ul>
+<li><p>是一种无连接、不可靠传输的协议</p>
+</li>
+<li><p>将数据源IP、目的地IP和端口封装成数据包，不需要建立连接</p>
+</li>
+<li><p>每个包大小限制在64kb内</p>
+</li>
+<li><p>无论对方是否准备好，接受方收到也不确认，故不可靠的</p>
+</li>
+<li><p>常见：语音电话</p>
+</li>
+</ul>
+<h5 id="DatagramPacket数据包对象"><a href="#DatagramPacket数据包对象" class="headerlink" title="DatagramPacket数据包对象"></a>DatagramPacket数据包对象</h5><h1 id="InetAddress类"><a href="#InetAddress类" class="headerlink" title="InetAddress类"></a>InetAddress类</h1><h2 id="获取本地地址对象"><a href="#获取本地地址对象" class="headerlink" title="获取本地地址对象"></a>获取本地地址对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InetAddress ip1 =InetAddress.getLocalHost();</span><br><span class="line">ip1.getHostName();<span class="comment">//获取名称</span></span><br><span class="line">ip1.getHostAddress();<span class="comment">//获取ip</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="获取域名ip对象"><a href="#获取域名ip对象" class="headerlink" title="获取域名ip对象"></a>获取域名ip对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InetAddress ip2 = InetAppress.getByName(<span class="string">&quot;域名&quot;</span>);</span><br><span class="line">ip2.getHostName();<span class="comment">//获取名称</span></span><br><span class="line">ip2.getHostAddress();<span class="comment">//获取ip</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="获取公网IP对象"><a href="#获取公网IP对象" class="headerlink" title="获取公网IP对象"></a>获取公网IP对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InetAddress ip2 = InetAppress.getByName(<span class="string">&quot;公网ip&quot;</span>);</span><br><span class="line">ip2.getHostName();<span class="comment">//获取名称</span></span><br><span class="line">ip2.getHostAddress();<span class="comment">//获取ip</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="判断是否能通"><a href="#判断是否能通" class="headerlink" title="判断是否能通"></a>判断是否能通</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ip.isReachable(时间值);<span class="comment">//时间值内是否能够ping通</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java SE</tag>
+        <tag>Java</tag>
+        <tag>网络通信</tag>
       </tags>
   </entry>
 </search>

@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Request请求 - 穹仁的博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="Request获取请求数据请求行1Get/request-demo/req1?username=zhangsan HTTP/1.1
+
+
+String getMethod:获取请求方式：GET
+
+St,"> 
+    
+    <link rel="alternative" href="atom.xml" title="穹仁的博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Request请求 - 穹仁的博客"/>
+    <meta name="twitter:description" content="Request获取请求数据请求行1Get/request-demo/req1?username=zhangsan HTTP/1.1
+
+
+String getMethod:获取请求方式：GET
+
+St,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="穹仁的博客"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="Request请求 - 穹仁的博客"/>
+    <meta property="og:description" content="Request获取请求数据请求行1Get/request-demo/req1?username=zhangsan HTTP/1.1
+
+
+String getMethod:获取请求方式：GET
+
+St,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+
+
+<body class="loading">
+    <span id="config-title" style="display:none">穹仁的博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Request请求</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Request请求</h1>
+        <div class="stuff">
+            <span>六月 30, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Java-Web/" rel="tag">Java Web</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Request/" rel="tag">Request</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E8%AF%B7%E6%B1%82/" rel="tag">数据请求</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="Request获取请求数据"><a href="#Request获取请求数据" class="headerlink" title="Request获取请求数据"></a>Request获取请求数据</h1><h2 id="请求行"><a href="#请求行" class="headerlink" title="请求行"></a>请求行</h2><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Get/request-demo/req1?username=zhangsan HTTP/1.1</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><code>String getMethod</code>:获取请求方式：GET</p>
+</li>
+<li><p><code>String getContextPath()</code>：获取虚拟目录(项目访问路径)：/request-demo</p>
+</li>
+<li><p><code>StringBuffer getRequestURL()</code>：获取URL(统一资源定位符)：</p>
+<p>​        <code>http://localhost:8080/request-demo/req1</code></p>
+</li>
+<li><p><code>String getRequsetURI()</code>：获取URI(统一资源标识符)：<code>/request-demo/req1</code></p>
+</li>
+<li><p><code>String getQueryString()</code>：获取请求参数(GET方式)：</p>
+<p>​        <code>username=zhangsan&amp;password=123</code></p>
+</li>
+</ul>
+<h2 id="请求头"><a href="#请求头" class="headerlink" title="请求头"></a>请求头</h2><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">User-Agent:Mozilla/5.0 Chrome/91.0.55.72.106</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>String getHeader(String name)</code> :根据请求头名称，获取值<ul>
+<li><code>user-agent</code>获取浏览器版本信息</li>
+</ul>
+</li>
+</ul>
+<h2 id="请求体"><a href="#请求体" class="headerlink" title="请求体"></a>请求体</h2><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">username=superbaby&amp;:password=123</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>SrtvletInputStream getInputStream()</code>:获取字节输入流</li>
+<li><code>BufferedReader getReader()</code>:获取字符输入流</li>
+</ul>
+<h1 id="Request-通用方式获取请求参数"><a href="#Request-通用方式获取请求参数" class="headerlink" title="Request 通用方式获取请求参数"></a>Request 通用方式获取请求参数</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取请求方式</span></span><br><span class="line">String method=<span class="keyword">this</span>.getMethod();</span><br><span class="line"><span class="comment">//判断</span></span><br><span class="line"><span class="keyword">if</span>(<span class="string">&quot;GET&quot;</span>.equals(method))&#123;</span><br><span class="line"><span class="comment">//GET方式获取请求参数</span></span><br><span class="line">	params=<span class="keyword">this</span>,getQueryString();</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(<span class="string">&quot;POST&quot;</span>.equals(method))&#123;</span><br><span class="line"><span class="comment">//POST方式获取请求参数</span></span><br><span class="line">	BufferedReader reader = <span class="keyword">this</span>,getReader();</span><br><span class="line">	params=reader.readLine();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在doPost里添加</p>
+<p>​    <code>this.doGet(rep,resh)</code></p>
+<p>因为这个获取参数两种都能用，所以在Post中添加即可</p>
+<h2 id="相关方法"><a href="#相关方法" class="headerlink" title="相关方法"></a>相关方法</h2><ul>
+<li><p>获取所有参数Map集合</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String,String[]&gt; getParameterMap()</span><br></pre></td></tr></table></figure></li>
+<li><p>根据名称获取参数值（数组）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String[] getParameterValues(String name)</span><br></pre></td></tr></table></figure></li>
+<li><p>根据名称获取参数值（单个值）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">String <span class="title">getParameter</span><span class="params">(String name)</span></span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="解决提交中文乱码"><a href="#解决提交中文乱码" class="headerlink" title="解决提交中文乱码"></a>解决提交中文乱码</h1><h2 id="POST方式"><a href="#POST方式" class="headerlink" title="POST方式"></a>POST方式</h2><p>设置字符输入流的编码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">request.setCharacterEncoding(<span class="string">&quot;UTF-8&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><em><strong>要先设置编码，再获取请求数据，也就是把这行放在前几行</strong></em></p>
+<h2 id="GET方式"><a href="#GET方式" class="headerlink" title="GET方式"></a>GET方式</h2><p><em><strong>也是通用代码,POST也可以使用</strong></em></p>
+<p>把乱码数据进行编码，转为字节数组</p>
+<p>tomcat默认且写死的编码是ISO-8859-1所以会中文乱码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">byte</span>[] bytes =username.getBytes(StandardCharsets.ISO_8859_1);</span><br></pre></td></tr></table></figure>
+
+<p>字节数组解码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">username=<span class="keyword">new</span> String(bytes,StandardCharsets.UTF-<span class="number">8</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="请求转发"><a href="#请求转发" class="headerlink" title="请求转发"></a>请求转发</h1><p>一种在服务器内部的资源跳转方式</p>
+<ul>
+<li><p>实现方式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">req.getRequestDispatcher(<span class="string">&quot;资源B路径&quot;</span>).forward(req,resp);</span><br></pre></td></tr></table></figure></li>
+<li><p>请求转发资源间共享数据：使用Request对象</p>
+<ul>
+<li>存储数据到request域中</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setAttribute</span><span class="params">(String name,Object o)</span></span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>根据key，获取值</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Object <span class="title">getAttribute</span><span class="params">(String name)</span></span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>根据key，删除该键值对</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">removeAttribute</span><span class="params">(String name)</span></span></span><br></pre></td></tr></table></figure></li>
+</ul>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

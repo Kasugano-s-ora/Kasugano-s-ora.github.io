@@ -1,0 +1,450 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>线程 - 穹仁的博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="多线程
+指的是从软硬件实现多条执行流程的技术
+
+线程
+线程(thread)是一个程序内部的一条执行路径
+main方法执行其实就是一条单独的执行路径
+程序中如果只有一条执行路径，那么这个程序就是单线程,"> 
+    
+    <link rel="alternative" href="atom.xml" title="穹仁的博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="线程 - 穹仁的博客"/>
+    <meta name="twitter:description" content="多线程
+指的是从软硬件实现多条执行流程的技术
+
+线程
+线程(thread)是一个程序内部的一条执行路径
+main方法执行其实就是一条单独的执行路径
+程序中如果只有一条执行路径，那么这个程序就是单线程,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="穹仁的博客"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="线程 - 穹仁的博客"/>
+    <meta property="og:description" content="多线程
+指的是从软硬件实现多条执行流程的技术
+
+线程
+线程(thread)是一个程序内部的一条执行路径
+main方法执行其实就是一条单独的执行路径
+程序中如果只有一条执行路径，那么这个程序就是单线程,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+
+
+<body class="loading">
+    <span id="config-title" style="display:none">穹仁的博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">线程</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">线程</h1>
+        <div class="stuff">
+            <span>六月 30, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Java-SE/" rel="tag">Java SE</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Thread/" rel="tag">Thread</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%AE%9A%E6%97%B6%E5%99%A8/" rel="tag">定时器</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%B9%B6%E5%8F%91/" rel="tag">并发</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%B9%B6%E8%A1%8C/" rel="tag">并行</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5/" rel="tag">线程同步</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8/" rel="tag">线程安全</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/" rel="tag">线程池</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" rel="tag">线程的生命周期</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/" rel="tag">线程通信</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><ul>
+<li>指的是从软硬件实现多条执行流程的技术</li>
+</ul>
+<h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><ul>
+<li>线程(thread)是一个程序内部的一条执行路径</li>
+<li>main方法执行其实就是一条单独的执行路径</li>
+<li>程序中如果只有一条执行路径，那么这个程序就是单线程的程序</li>
+</ul>
+<h1 id="创建多线程"><a href="#创建多线程" class="headerlink" title="创建多线程"></a>创建多线程</h1><h2 id="方式一"><a href="#方式一" class="headerlink" title="方式一"></a>方式一</h2><ul>
+<li><h3 id="通过继承Thread类来代表线程"><a href="#通过继承Thread类来代表线程" class="headerlink" title="通过继承Thread类来代表线程"></a>通过继承Thread类来代表线程</h3></li>
+</ul>
+<ol>
+<li>定义一个子类继承线程类Thread</li>
+<li>重写run()方法</li>
+<li>创建线程对象</li>
+<li>调用线程对象的start()方法启动线程(启动后还是执行run方法的）</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">t</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Thread t = <span class="keyword">new</span> MyThread();	<span class="comment">//创建线程对象</span></span><br><span class="line">        t.start();<span class="comment">//启动线程</span></span><br><span class="line">        <span class="comment">//之所以不使用run是因为它会认为这是方法调用，不会当它是线程</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">extends</span> <span class="title">Thread</span></span>&#123;  <span class="comment">//继承Thread</span></span><br><span class="line">    <span class="meta">@Override</span><span class="comment">//重写run方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.run();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><ul>
+<li>优点：编码简单</li>
+<li>缺点：线程类已经继承Thread,无法继承其他类，不利于扩展</li>
+</ul>
+</li>
+<li><p>不要把主线程的内容放在子线程上面</p>
+<ul>
+<li>它会把主线程跑完才会开始启动子线程，相当于是单线程</li>
+</ul>
+</li>
+</ul>
+<h2 id="方式二"><a href="#方式二" class="headerlink" title="方式二"></a>方式二</h2><ul>
+<li><h2 id="实现Runnable接口"><a href="#实现Runnable接口" class="headerlink" title="实现Runnable接口"></a>实现Runnable接口</h2></li>
+</ul>
+<ol>
+<li>实现声明一个Runnable接口，重写run()方法</li>
+<li>创建一个MyRunnable任务对象</li>
+<li>把MyRunnable任务对象交给Thread处理</li>
+<li>调用线程对象的start方法启动线程</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">text</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//创建一个任务对象</span></span><br><span class="line">        Runnable target =<span class="keyword">new</span> MyRunnable();</span><br><span class="line">        <span class="comment">//把任务交给Thread处理</span></span><br><span class="line">        Thread t =<span class="keyword">new</span> Thread(target);</span><br><span class="line">        <span class="comment">//启动线程</span></span><br><span class="line">        t.start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//定义一个类实现Runnable接口</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyRunnable</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">       <span class="comment">//子线程任务类 </span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h2 id="优缺点-1"><a href="#优缺点-1" class="headerlink" title="优缺点"></a>优缺点</h2></li>
+<li><p>优点：只是实现接口，可以继续继承和实现接口，扩展性强。</p>
+</li>
+<li><p>缺点：编程多一层对象包装，如果线程有执行结果不可以直接返回</p>
+</li>
+</ul>
+<h2 id="方式二-匿名内部类"><a href="#方式二-匿名内部类" class="headerlink" title="方式二-匿名内部类"></a>方式二-匿名内部类</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Runnable target =<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">          <span class="meta">@Override</span></span><br><span class="line">          <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">              <span class="comment">//子线程任务</span></span><br><span class="line">          &#125;</span><br><span class="line">      &#125;;</span><br><span class="line">      <span class="comment">//把任务交给Thread处理</span></span><br><span class="line">      Thread t =<span class="keyword">new</span> Thread(target);</span><br><span class="line">      <span class="comment">//启动线程</span></span><br><span class="line">      t.start();</span><br><span class="line">      </span><br><span class="line">      <span class="comment">//还能简化</span></span><br><span class="line">      <span class="keyword">new</span> Thread(()-&gt;&#123;</span><br><span class="line">          <span class="comment">//子线程任务</span></span><br><span class="line">      &#125;).start();</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="方式三"><a href="#方式三" class="headerlink" title="方式三"></a>方式三</h2><ul>
+<li><p>前两种重写的run方法均不能直接放回结果</p>
+</li>
+<li><p>不适合返回线程执行结果的业务场景</p>
+</li>
+<li><h2 id="利用Callable、FutureTask接口实现"><a href="#利用Callable、FutureTask接口实现" class="headerlink" title="利用Callable、FutureTask接口实现"></a>利用Callable、FutureTask接口实现</h2></li>
+</ul>
+<ol>
+<li>得到任务对象<ul>
+<li>定义类实现Callable接口，重写call方法，封装要做的事</li>
+<li>用FutureTask把Callable对象封装成线程任务对象</li>
+</ul>
+</li>
+<li>把线程任务对象交给Thread处理</li>
+<li>调用Thread的start方法启动线程，执行任务</li>
+<li>调用完毕后，使用FutureTask的get方法去获取任务执行的结果</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.concurrent.Callable;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.ExecutionException;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.FutureTask;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">text</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//创建Callable任务对象</span></span><br><span class="line">        Callable&lt;String&gt; call =<span class="keyword">new</span> MyCallable();</span><br><span class="line">        <span class="comment">//把Callable任务对象封装给FutureTask对象</span></span><br><span class="line">        <span class="comment">//FutureTask实现了Runnable接口，可以交给Thread</span></span><br><span class="line">        FutureTask&lt;String&gt; f1 =<span class="keyword">new</span> FutureTask&lt;&gt;(call);</span><br><span class="line">        Thread t =<span class="keyword">new</span> Thread(f1);</span><br><span class="line">        <span class="comment">//启动线程</span></span><br><span class="line">        t.start();</span><br><span class="line">        <span class="comment">//get方法抛出异常</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            String rs=f1.get();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//定义任务类，实现Callable接口,应该申明线程任务执行完毕后的结果数据类型</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyCallable</span> <span class="keyword">implements</span> <span class="title">Callable</span>&lt;<span class="title">String</span> &gt; </span>&#123;</span><br><span class="line">    <span class="comment">//重写call方法,任务方法</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">call</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><h3 id="优缺点-2"><a href="#优缺点-2" class="headerlink" title="优缺点"></a>优缺点</h3></li>
+<li><p>优点</p>
+<ul>
+<li>线程类只实现接口，可以继续继承类和实现接口，扩展性强</li>
+<li>可以在线程执行完毕后获取线程结果</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li>编码复杂一点</li>
+</ul>
+</li>
+</ul>
+<h1 id="Thread方法"><a href="#Thread方法" class="headerlink" title="Thread方法"></a>Thread方法</h1><h2 id="获取线程名"><a href="#获取线程名" class="headerlink" title="获取线程名"></a>获取线程名</h2><ul>
+<li>getName();</li>
+<li>setName();//给这个线程一个名字</li>
+<li>currentThread();</li>
+<li>Thread.currenThread().getName();常用的线程名获取</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">t1.setName();<span class="comment">//自定一个线程名称</span></span><br><span class="line">Thread m =Thread.currenThread();</span><br><span class="line">m.getName();<span class="comment">//获取线程名称</span></span><br><span class="line">Thread.currenThread().getName();<span class="comment">//在线程类中</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Thread构造器"><a href="#Thread构造器" class="headerlink" title="Thread构造器"></a>Thread构造器</h2><p>在线程类中创建带/无参构造器</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Thread</span><span class="params">(String name)</span><span class="comment">//可以为当前线程指定名称</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Thread</span><span class="params">(Runnable target)</span><span class="comment">//把Runnable对象交给线程对象</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Thread</span><span class="params">(Runnable target,String name)</span><span class="comment">//把Runnable对象交给线程对象，并指定线程名称</span></span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="线程的休眠方法"><a href="#线程的休眠方法" class="headerlink" title="线程的休眠方法"></a>线程的休眠方法</h2><p>直接调用sleep方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Thread.sleep(时间);</span><br></pre></td></tr></table></figure>
+
+<h1 id="线程安全"><a href="#线程安全" class="headerlink" title="线程安全"></a>线程安全</h1><p>多个线程同时操作同一共享资源的时候可能出现业务安全问题，<strong>称为线程安全问题</strong></p>
+<h2 id="线程安全问题出现的原因"><a href="#线程安全问题出现的原因" class="headerlink" title="线程安全问题出现的原因"></a>线程安全问题出现的原因</h2><ul>
+<li>存在多线程并发</li>
+<li>同时访问共享资源</li>
+<li>存在修改共享资源</li>
+</ul>
+<h1 id="线程同步"><a href="#线程同步" class="headerlink" title="线程同步"></a>线程同步</h1><p>线程同步解决线程安全问题</p>
+<h2 id="方式一：同步代码块"><a href="#方式一：同步代码块" class="headerlink" title="方式一：同步代码块"></a>方式一：同步代码块</h2><ul>
+<li><h3 id="核心思想是加锁"><a href="#核心思想是加锁" class="headerlink" title="核心思想是加锁"></a>核心思想是加锁</h3></li>
+</ul>
+<p>把共享资源经行上锁，每次只能一个线程进入访问完毕后解锁，其他才能进来</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">synchronized</span>(同步锁对象)&#123;</span><br><span class="line">		<span class="comment">//操作共享的功能</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h3 id="锁对象的规范要求"><a href="#锁对象的规范要求" class="headerlink" title="锁对象的规范要求"></a>锁对象的规范要求</h3><ul>
+<li>规范上：建议使用共享资源作为锁对象</li>
+<li>对于实例方法建议使用<strong>this</strong>作为锁对象</li>
+<li>对于静态方法建议使用**字节码(类名.class)**对象作为锁对象</li>
+</ul>
+</li>
+</ul>
+<h2 id="方式二：同步方法"><a href="#方式二：同步方法" class="headerlink" title="方式二：同步方法"></a>方式二：同步方法</h2><p>在创建方法时添加synchronized关键字</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">修饰符 <span class="keyword">synchronized</span> 返回类型 方法名(形参列表)&#123;</span><br><span class="line">	操作共享资源的代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="方式三：Lock锁"><a href="#方式三：Lock锁" class="headerlink" title="方式三：Lock锁"></a>方式三：Lock锁</h2><p>定义一个final变量</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">lock();</span><br><span class="line">方法内容</span><br><span class="line">unlock();<span class="comment">//通常放在try/finally下</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+<h1 id="线程通信"><a href="#线程通信" class="headerlink" title="线程通信"></a>线程通信</h1><ul>
+<li><h4 id="三个常见方法"><a href="#三个常见方法" class="headerlink" title="三个常见方法"></a>三个常见方法</h4><ol>
+<li>void wait当前线程等待，直到另一个线程调用notify()或notifyAll()唤醒自己</li>
+<li>void notify()唤醒正在等待的对象监视器(锁对象)的单个线程</li>
+<li>void notifyAll()唤醒正在等待的对象监视器(锁对象)的所有线程</li>
+</ol>
+</li>
+<li><h4 id="上述方法应该使用当前同步锁对象进行调用"><a href="#上述方法应该使用当前同步锁对象进行调用" class="headerlink" title="上述方法应该使用当前同步锁对象进行调用"></a>上述方法应该使用当前同步锁对象进行调用</h4></li>
+</ul>
+<h1 id="线程池-重点"><a href="#线程池-重点" class="headerlink" title="线程池(重点)"></a>线程池(重点)</h1><ul>
+<li>就是一个可以复用线程的技术<ul>
+<li>创建几个固定数量线程执行任务，一个任务完成后续接任务</li>
+<li>且任务接口是Runnable和Callable</li>
+</ul>
+</li>
+</ul>
+<h2 id="线程池实现API"><a href="#线程池实现API" class="headerlink" title="线程池实现API"></a>线程池实现API</h2><ul>
+<li><h4 id="代表线程池的接口：ExcutorService"><a href="#代表线程池的接口：ExcutorService" class="headerlink" title="代表线程池的接口：ExcutorService"></a>代表线程池的接口：ExcutorService</h4></li>
+<li><h4 id="线程池关闭代码"><a href="#线程池关闭代码" class="headerlink" title="线程池关闭代码"></a>线程池关闭代码</h4><ul>
+<li>shutdownNow立即关闭</li>
+<li>shutdown等待任务执行完毕后关闭</li>
+<li>基本不关，级别等于删库跑路</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h4 id="使用线程池处理Callable任务"><a href="#使用线程池处理Callable任务" class="headerlink" title="使用线程池处理Callable任务"></a>使用线程池处理Callable任务</h4><ul>
+<li>使用ExcutorService的方法</li>
+<li>Future<T> <strong>submit</strong>(Callable<T> command)</T></T></li>
+</ul>
+</li>
+</ul>
+<h2 id="创建线程池的方式"><a href="#创建线程池的方式" class="headerlink" title="创建线程池的方式"></a>创建线程池的方式</h2><ul>
+<li><h3 id="方式一-1"><a href="#方式一-1" class="headerlink" title="方式一"></a>方式一</h3><ul>
+<li>使用<strong>ExcutorService的实现类ThreadPoolExecutor</strong>自创建一个线程池对象</li>
+<li><h3 id="构造器参数说明"><a href="#构造器参数说明" class="headerlink" title="构造器参数说明"></a><strong>构造器参数说明</strong></h3></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ThreadPoolExcutor</span><span class="params">(<span class="keyword">int</span> corePoolSize,				//参数一</span></span></span><br><span class="line"><span class="params"><span class="function">						 <span class="keyword">int</span> maximumPoolSize,			//二</span></span></span><br><span class="line"><span class="params"><span class="function">						 <span class="keyword">long</span> keepAliveTime,			//三</span></span></span><br><span class="line"><span class="params"><span class="function">						 TimeUnit unit,					//四</span></span></span><br><span class="line"><span class="params"><span class="function">						 BlockingQueue&lt;Runnable&gt; workQueue,	//五</span></span></span><br><span class="line"><span class="params"><span class="function">						 ThreadFactory threadFactory,		//六</span></span></span><br><span class="line"><span class="params"><span class="function">						 RejectedExecutionHandler handler)</span>	<span class="comment">//七</span></span></span><br></pre></td></tr></table></figure>
+
+<p>参数一：指定线程池的线程数量(核心线程)：corePoolSize  ——————&gt;不能小于0</p>
+<p>参数二：指定线程池的可支持最大线程数：maximumPoolSize————&gt;最大数量&gt;=核心线程数</p>
+<p>参数三：指定临时线程的最大存活时间：keepAliveTime————&gt;不能小于0</p>
+<p>参数四：指定存活时间的单位(秒 、分、时、t天)：unit————&gt;时间单位</p>
+<p>参数五：指定任务队列：workQueue——————&gt;不能为null</p>
+<p>参数六：指定用哪个线程工厂创建线程：threadFactory——————&gt;不能为null</p>
+<p>参数七：指定线程忙，任务满的时候，新任务来了怎么办：handler——————&gt;不能为null</p>
+<h3 id="参数七新任务拒绝策略"><a href="#参数七新任务拒绝策略" class="headerlink" title="参数七新任务拒绝策略"></a>参数七新任务拒绝策略</h3><ul>
+<li>ThreadPoolExecutor.AbortPolicy————丢弃任务，并抛出异常(默认策略)</li>
+<li>ThreadPoolExecutor.DiscardPolicy————丢弃任务，但不抛出异常(不推荐使用)</li>
+<li>ThreadPoolExecutor.DiscardOldesPolicy————抛弃队列中等待最久的任务，然后把当前任务加入到队列中</li>
+<li>ThreadPoolExecutor.CallerRunsPolicy————让主线程执行</li>
+</ul>
+<h3 id="ThreadPoolExecutor创建线程池对象示例"><a href="#ThreadPoolExecutor创建线程池对象示例" class="headerlink" title="ThreadPoolExecutor创建线程池对象示例"></a>ThreadPoolExecutor创建线程池对象示例</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ExecutorService polls =<span class="keyword">new</span> ThreadPoolExecutor(<span class="number">3</span>,<span class="number">5</span>,<span class="number">8</span>, </span><br><span class="line">               TimeUnit.SECONDS,<span class="keyword">new</span> ArrayBlockingQueue&lt;&gt;(<span class="number">6</span>), </span><br><span class="line">               Executors.defaultThreadFactory(),<span class="keyword">new</span> ThreadPoolExecutor.AbortPolicy());   </span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>创建Runnable对象，内部重写run方法，即内容</li>
+<li>使用polls.execute(Runnable对象名称)，传入Runnable对象让线程池处理</li>
+</ol>
+<ul>
+<li><h3 id="方式二-1"><a href="#方式二-1" class="headerlink" title="方式二"></a>方式二</h3><ul>
+<li>使用Executors(线程池的工具类)调用方法返回不同特点的线程池对象</li>
+</ul>
+</li>
+</ul>
+<h2 id="线程池常见面试题"><a href="#线程池常见面试题" class="headerlink" title="线程池常见面试题"></a>线程池常见面试题</h2><ul>
+<li><h4 id="临时线程什么时候创建？"><a href="#临时线程什么时候创建？" class="headerlink" title="临时线程什么时候创建？"></a>临时线程什么时候创建？</h4><ul>
+<li>新任务提交时发现核心线程都在忙，任务队列也满了，并且还可以创建临时线程，此时才会创建核心线程</li>
+</ul>
+</li>
+<li><h4 id="什么时候开始拒绝任务？"><a href="#什么时候开始拒绝任务？" class="headerlink" title="什么时候开始拒绝任务？"></a>什么时候开始拒绝任务？</h4><ul>
+<li>核心线程和临时线程都在忙，任务队列也满了，新的任务过来的时候才会开始任务拒绝</li>
+</ul>
+</li>
+</ul>
+<h1 id="定时器"><a href="#定时器" class="headerlink" title="定时器"></a>定时器</h1><ul>
+<li>是一种控制任务延时调用</li>
+</ul>
+<h2 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h2><ul>
+<li><p><strong>方式一：</strong>Timer</p>
+<ul>
+<li>public Timer()构造器，创建Timer对象</li>
+<li>Timer 属于单线程，在多个计时器的情况下，其中一个出现睡眠等情况，剩余的计时器也会被影响。且出现一个异常都会被影响</li>
+</ul>
+</li>
+<li><p><strong>方式二：</strong>ScheduledExecutorService</p>
+<ul>
+<li>创建ScheduledExecutorService线程池</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ScheduledExecutorService pool = Executors.newScheduledThreadPool(<span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>开启定时任务</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">pool.scheduleAtFixedRate(<span class="keyword">new</span> TimerTask() &#123;</span><br><span class="line">           <span class="meta">@Override</span></span><br><span class="line">           <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">               </span><br><span class="line">           &#125;</span><br><span class="line">       &#125;,<span class="number">0</span>,<span class="number">2</span>, TimeUnit.SECONDS);</span><br></pre></td></tr></table></figure></li>
+<li><p>基于线程池，某个任务的执行不会被其他任务所影响</p>
+</li>
+</ul>
+<h1 id="并发、并行"><a href="#并发、并行" class="headerlink" title="并发、并行"></a>并发、并行</h1><ul>
+<li>正在运行的程序就是一个独立的进程，线程是属于进程的，多个线程其实是并发与并行同时进行的</li>
+</ul>
+<h2 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h2><ul>
+<li>CPU同时处理线程的数量有限</li>
+<li>CPU会轮询系统的每个线程服务，由于CPU切换的速度很快，给我们的感觉这些线程在同时执行，这就是并发</li>
+</ul>
+<h2 id="并行"><a href="#并行" class="headerlink" title="并行"></a>并行</h2><ul>
+<li>在同一时刻上，同时有多个线程在被CPU处理并执行</li>
+</ul>
+<h1 id="线程的生命周期"><a href="#线程的生命周期" class="headerlink" title="线程的生命周期"></a>线程的生命周期</h1><h2 id="线程的状态"><a href="#线程的状态" class="headerlink" title="线程的状态"></a>线程的状态</h2><ul>
+<li>也就是线程从生到死的过程，以及中间经历的各种过程</li>
+</ul>
+<h2 id="java线程的状态"><a href="#java线程的状态" class="headerlink" title="java线程的状态"></a>java线程的状态</h2><ul>
+<li>6种状态都定义在Thread类的内部枚举类中</li>
+<li><strong>New新建</strong>：线程刚被创建，但是未启动</li>
+<li><strong>Runnable可运行</strong>：线程已经调用了start()等待CPU调度</li>
+<li><strong>Teminated被终止</strong>：因为run方法正常退出而死亡，或者因为没有捕获的异常终止了run方法</li>
+<li><strong>Blocked锁阻塞</strong>：线程在执行的时候未竞争到锁对象，则该线程进入Blocked状态</li>
+<li><strong>Waiting无限等待</strong>：一个线程进入Waiting状态，另一个线程调用notify或者notifyAll才能唤醒</li>
+<li>**Timed Waiting(计时等待)**：同waiting状态，有几个方法有超时参数，调用他们将进入Timed Waiting状态。带有超时参数的常用方法有Thread.sleep、Object.wait</li>
+</ul>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

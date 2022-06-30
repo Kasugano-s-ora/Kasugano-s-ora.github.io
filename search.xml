@@ -597,98 +597,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Maven</title>
-    <url>/2022/06/30/Maven/</url>
-    <content><![CDATA[<ul>
-<li>Maven是专门用于管理和构建Java项目的工具，它的主要功能有：<ul>
-<li>提供了一套标准化的项目结构</li>
-<li>提供了一套标准化的构建流程</li>
-<li>提供了一套依赖管理机制</li>
-</ul>
-</li>
-</ul>
-<h1 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h1><ol>
-<li><p>解压到目录即安装完成</p>
-</li>
-<li><p>配置环境变量 MAVEN_HOME为安装路径的bin目录</p>
-</li>
-<li><p>配置本地仓库：修改<code>conf/settings.xml</code>中的<code>&lt;localRepository&gt;</code>为一个指定目录</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;localRepository&gt;你自己创建的路径&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>例如，但是别忘了复制出来，在源文件中是被注释掉的</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;localRepository&gt;D:\Maven\mvn_resp&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure></li>
-<li><p>配置阿里云私服：修改<code>conf/settings.xml</code>中的<code>&lt;mirrors&gt;</code>标签，为其添加如下子标签：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">	&lt;id&gt;alimaven&lt;/id&gt;</span><br><span class="line">	&lt;name&gt;aliyun maven&lt;/name&gt;</span><br><span class="line">	&lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span><br><span class="line">	&lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="下载命令包"><a href="#下载命令包" class="headerlink" title="下载命令包"></a>下载命令包</h2><ol>
-<li>在安装好相应环境，与完成配置后</li>
-<li>在使用Maven所创建的项目文件夹，里面有<code>pom.xml</code>路径下，按shift加右键，打开shell窗口</li>
-<li>执行<code>mvn compile</code>、<code>mvn clean</code> 等常用命令，就会开始下载</li>
-</ol>
-<h1 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h1><h2 id="Maven常用命令"><a href="#Maven常用命令" class="headerlink" title="Maven常用命令"></a>Maven常用命令</h2><ul>
-<li>compile:编译</li>
-<li>clean：清理</li>
-<li>test：测试</li>
-<li>package：打包</li>
-<li>install：安装</li>
-</ul>
-<h2 id="Maven生命周期"><a href="#Maven生命周期" class="headerlink" title="Maven生命周期"></a>Maven生命周期</h2><ul>
-<li>Maven构建项目生命周期描述的是一次构建过程经历了多少个事件</li>
-<li>Maven对项目的生命周期划分为3套<ul>
-<li>clean：清理工作</li>
-<li>default：核心工作，如编译、测试、打包、安装等</li>
-<li>site：产生报告，发布站点等</li>
-</ul>
-</li>
-</ul>
-<h1 id="Maven坐标详解"><a href="#Maven坐标详解" class="headerlink" title="Maven坐标详解"></a>Maven坐标详解</h1><ul>
-<li>什么是坐标？<ul>
-<li>Maven中的坐标是资源的唯一标识</li>
-<li>使用坐标来定义项目或引入项目中需要的依赖</li>
-</ul>
-</li>
-<li>Maven坐标主要组成<ul>
-<li><code>groupld</code>：定义当前Maven项目隶属组织名称(通常是域名反写)</li>
-<li><code>artifactld</code>：定义当前Maven项目名称(通常是模块名称)</li>
-<li><code>version</code>：定义当前项目版本号</li>
-</ul>
-</li>
-</ul>
-<h1 id="IDEA配置Maven"><a href="#IDEA配置Maven" class="headerlink" title="IDEA配置Maven"></a>IDEA配置Maven</h1><ol>
-<li>选择IDEA中的File–&gt;Setting</li>
-<li>搜索maven</li>
-<li>设置IDEA使用本地安装的Maven，并修改配置文件路径</li>
-</ol>
-<h1 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h1><h2 id="使用坐标导入jar包"><a href="#使用坐标导入jar包" class="headerlink" title="使用坐标导入jar包"></a>使用坐标导入jar包</h2><ol>
-<li><p>在<code>pom.xml</code>中编写<code>&lt;dependencies&gt;</code>标签</p>
-</li>
-<li><p>在<code>&lt;dependencies&gt;</code>标签中使用<code>&lt;dependency&gt;</code>引入坐标</p>
-</li>
-<li><p>定义坐标的<code>groupld,artifactld,version</code></p>
-<ul>
-<li>在<code>artifactld</code>中输入你需要的jar外部依赖包</li>
-</ul>
-</li>
-<li><p>点击刷新按钮，使坐标生效</p>
-</li>
-</ol>
-<h2 id="依赖范围"><a href="#依赖范围" class="headerlink" title="依赖范围"></a>依赖范围</h2><ul>
-<li>通过设置坐标的依赖(scope)，可以设置对应jar包的作用范围：编译环境、测试环境、运行环境</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Java Web</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Java Web</tag>
-        <tag>Maven</tag>
-        <tag>项目结构</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MyBatis持久层框架</title>
     <url>/2022/06/30/MyBatis/</url>
     <content><![CDATA[<h1 id><a href="#" class="headerlink" title></a></h1><ul>
@@ -863,6 +771,98 @@
         <tag>Java Web</tag>
         <tag>Request</tag>
         <tag>数据请求</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Maven</title>
+    <url>/2022/06/30/Maven/</url>
+    <content><![CDATA[<ul>
+<li>Maven是专门用于管理和构建Java项目的工具，它的主要功能有：<ul>
+<li>提供了一套标准化的项目结构</li>
+<li>提供了一套标准化的构建流程</li>
+<li>提供了一套依赖管理机制</li>
+</ul>
+</li>
+</ul>
+<h1 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h1><ol>
+<li><p>解压到目录即安装完成</p>
+</li>
+<li><p>配置环境变量 MAVEN_HOME为安装路径的bin目录</p>
+</li>
+<li><p>配置本地仓库：修改<code>conf/settings.xml</code>中的<code>&lt;localRepository&gt;</code>为一个指定目录</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;localRepository&gt;你自己创建的路径&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>例如，但是别忘了复制出来，在源文件中是被注释掉的</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;localRepository&gt;D:\Maven\mvn_resp&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>配置阿里云私服：修改<code>conf/settings.xml</code>中的<code>&lt;mirrors&gt;</code>标签，为其添加如下子标签：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">	&lt;id&gt;alimaven&lt;/id&gt;</span><br><span class="line">	&lt;name&gt;aliyun maven&lt;/name&gt;</span><br><span class="line">	&lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span><br><span class="line">	&lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="下载命令包"><a href="#下载命令包" class="headerlink" title="下载命令包"></a>下载命令包</h2><ol>
+<li>在安装好相应环境，与完成配置后</li>
+<li>在使用Maven所创建的项目文件夹，里面有<code>pom.xml</code>路径下，按shift加右键，打开shell窗口</li>
+<li>执行<code>mvn compile</code>、<code>mvn clean</code> 等常用命令，就会开始下载</li>
+</ol>
+<h1 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h1><h2 id="Maven常用命令"><a href="#Maven常用命令" class="headerlink" title="Maven常用命令"></a>Maven常用命令</h2><ul>
+<li>compile:编译</li>
+<li>clean：清理</li>
+<li>test：测试</li>
+<li>package：打包</li>
+<li>install：安装</li>
+</ul>
+<h2 id="Maven生命周期"><a href="#Maven生命周期" class="headerlink" title="Maven生命周期"></a>Maven生命周期</h2><ul>
+<li>Maven构建项目生命周期描述的是一次构建过程经历了多少个事件</li>
+<li>Maven对项目的生命周期划分为3套<ul>
+<li>clean：清理工作</li>
+<li>default：核心工作，如编译、测试、打包、安装等</li>
+<li>site：产生报告，发布站点等</li>
+</ul>
+</li>
+</ul>
+<h1 id="Maven坐标详解"><a href="#Maven坐标详解" class="headerlink" title="Maven坐标详解"></a>Maven坐标详解</h1><ul>
+<li>什么是坐标？<ul>
+<li>Maven中的坐标是资源的唯一标识</li>
+<li>使用坐标来定义项目或引入项目中需要的依赖</li>
+</ul>
+</li>
+<li>Maven坐标主要组成<ul>
+<li><code>groupld</code>：定义当前Maven项目隶属组织名称(通常是域名反写)</li>
+<li><code>artifactld</code>：定义当前Maven项目名称(通常是模块名称)</li>
+<li><code>version</code>：定义当前项目版本号</li>
+</ul>
+</li>
+</ul>
+<h1 id="IDEA配置Maven"><a href="#IDEA配置Maven" class="headerlink" title="IDEA配置Maven"></a>IDEA配置Maven</h1><ol>
+<li>选择IDEA中的File–&gt;Setting</li>
+<li>搜索maven</li>
+<li>设置IDEA使用本地安装的Maven，并修改配置文件路径</li>
+</ol>
+<h1 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h1><h2 id="使用坐标导入jar包"><a href="#使用坐标导入jar包" class="headerlink" title="使用坐标导入jar包"></a>使用坐标导入jar包</h2><ol>
+<li><p>在<code>pom.xml</code>中编写<code>&lt;dependencies&gt;</code>标签</p>
+</li>
+<li><p>在<code>&lt;dependencies&gt;</code>标签中使用<code>&lt;dependency&gt;</code>引入坐标</p>
+</li>
+<li><p>定义坐标的<code>groupld,artifactld,version</code></p>
+<ul>
+<li>在<code>artifactld</code>中输入你需要的jar外部依赖包</li>
+</ul>
+</li>
+<li><p>点击刷新按钮，使坐标生效</p>
+</li>
+</ol>
+<h2 id="依赖范围"><a href="#依赖范围" class="headerlink" title="依赖范围"></a>依赖范围</h2><ul>
+<li>通过设置坐标的依赖(scope)，可以设置对应jar包的作用范围：编译环境、测试环境、运行环境</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java Web</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Java Web</tag>
+        <tag>Maven</tag>
+        <tag>项目结构</tag>
       </tags>
   </entry>
   <entry>
@@ -1188,6 +1188,67 @@
       </tags>
   </entry>
   <entry>
+    <title>logback日志</title>
+    <url>/2022/06/30/logback%E6%97%A5%E5%BF%97/</url>
+    <content><![CDATA[<h1 id><a href="#" class="headerlink" title></a></h1><ul>
+<li><h5 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h5><p>记录程序运行过程中的信息，并可以永久存储</p>
+</li>
+</ul>
+<p>logback官网：<a href="https://logback.qos.ch/">Logback Home (qos.ch)</a></p>
+<p>slf4j官网：<a href="https://www.slf4j.org/">SLF4J</a></p>
+<ul>
+<li>在官网中需要下载，需要的二个模块与一个使用规范</li>
+</ul>
+<ol>
+<li>logback-classic.jar</li>
+<li>logback-core.jar</li>
+<li>slf4j-api.jar</li>
+</ol>
+<p>​        还需要有一个logback.xml的核心文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">链接：https://pan.baidu.com/s/1hHG6WN9QUCRCAxCl5AIVdw?pwd=sora </span><br><span class="line">提取码：sora </span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><h5 id="基本使用方法"><a href="#基本使用方法" class="headerlink" title="基本使用方法"></a>基本使用方法</h5></li>
+</ul>
+<ol>
+<li>在项目包下新建lib目录，将这三个文件放入该目录</li>
+<li>右键lib目录添加到库</li>
+<li>把logback.xml文件粘贴至src目录下，即可使用日志</li>
+</ol>
+<h2 id="编码部分"><a href="#编码部分" class="headerlink" title="编码部分"></a>编码部分</h2><ul>
+<li>在main方法外创建Logback的日志对象(多态形式)</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Logger LOGGER = LoggerFactory.getLogger(<span class="string">&quot;Test.class&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>使用LOGGER.调用</p>
+<p>LOGGER.trace(“信息”)；</p>
+</li>
+<li><p>日志分为5个日志级别（级别高就代表具有优先输出权）</p>
+</li>
+</ul>
+<p>​        TRACE——&gt;DEBUG——&gt;INFO——&gt;WARN——&gt;ERROR     |    ALL和OFF</p>
+<p>​        按照顺序分级TRACE为最低，ERROR为最高，ALL即为全部打印，OFF即关闭，默认为DEBUG</p>
+<ul>
+<li>日志输出级别设置</li>
+</ul>
+<p>​        在logback.xml中找到<code>&lt;root level=&quot;debug&quot;&gt;</code>(默认为debug)</p>
+<p>​        在双引号中修改等级</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java SE</tag>
+        <tag>Java</tag>
+        <tag>日志</tag>
+        <tag>SLF4J</tag>
+        <tag>logback</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>方法递归</title>
     <url>/2022/06/22/%E6%96%B9%E6%B3%95%E9%80%92%E5%BD%92/</url>
     <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ul>
@@ -1260,67 +1321,6 @@
         <tag>Java SE</tag>
         <tag>Java</tag>
         <tag>方法递归</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>logback日志</title>
-    <url>/2022/06/30/logback%E6%97%A5%E5%BF%97/</url>
-    <content><![CDATA[<h1 id><a href="#" class="headerlink" title></a></h1><ul>
-<li><h5 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h5><p>记录程序运行过程中的信息，并可以永久存储</p>
-</li>
-</ul>
-<p>logback官网：<a href="https://logback.qos.ch/">Logback Home (qos.ch)</a></p>
-<p>slf4j官网：<a href="https://www.slf4j.org/">SLF4J</a></p>
-<ul>
-<li>在官网中需要下载，需要的二个模块与一个使用规范</li>
-</ul>
-<ol>
-<li>logback-classic.jar</li>
-<li>logback-core.jar</li>
-<li>slf4j-api.jar</li>
-</ol>
-<p>​        还需要有一个logback.xml的核心文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">链接：https://pan.baidu.com/s/1hHG6WN9QUCRCAxCl5AIVdw?pwd=sora </span><br><span class="line">提取码：sora </span><br></pre></td></tr></table></figure>
-
-
-
-<ul>
-<li><h5 id="基本使用方法"><a href="#基本使用方法" class="headerlink" title="基本使用方法"></a>基本使用方法</h5></li>
-</ul>
-<ol>
-<li>在项目包下新建lib目录，将这三个文件放入该目录</li>
-<li>右键lib目录添加到库</li>
-<li>把logback.xml文件粘贴至src目录下，即可使用日志</li>
-</ol>
-<h2 id="编码部分"><a href="#编码部分" class="headerlink" title="编码部分"></a>编码部分</h2><ul>
-<li>在main方法外创建Logback的日志对象(多态形式)</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Logger LOGGER = LoggerFactory.getLogger(<span class="string">&quot;Test.class&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>使用LOGGER.调用</p>
-<p>LOGGER.trace(“信息”)；</p>
-</li>
-<li><p>日志分为5个日志级别（级别高就代表具有优先输出权）</p>
-</li>
-</ul>
-<p>​        TRACE——&gt;DEBUG——&gt;INFO——&gt;WARN——&gt;ERROR     |    ALL和OFF</p>
-<p>​        按照顺序分级TRACE为最低，ERROR为最高，ALL即为全部打印，OFF即关闭，默认为DEBUG</p>
-<ul>
-<li>日志输出级别设置</li>
-</ul>
-<p>​        在logback.xml中找到<code>&lt;root level=&quot;debug&quot;&gt;</code>(默认为debug)</p>
-<p>​        在双引号中修改等级</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java SE</tag>
-        <tag>Java</tag>
-        <tag>日志</tag>
-        <tag>SLF4J</tag>
-        <tag>logback</tag>
       </tags>
   </entry>
   <entry>
@@ -1605,79 +1605,6 @@
       </tags>
   </entry>
   <entry>
-    <title>网络编程</title>
-    <url>/2022/06/30/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/</url>
-    <content><![CDATA[<h1 id="网络通信"><a href="#网络通信" class="headerlink" title="网络通信"></a>网络通信</h1><ul>
-<li>三要素<ul>
-<li>ip、端口、协议</li>
-</ul>
-</li>
-</ul>
-<h2 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h2><p>分为ipv4与ipv6</p>
-<h2 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h2><p>标识计算机设备上运行的进程，被视为一个16位的二进制，范围是0~65535</p>
-<ul>
-<li><h3 id="周知端口"><a href="#周知端口" class="headerlink" title="周知端口"></a>周知端口</h3><ul>
-<li>0~1023，被预先定义的知名应用占用(如：HTTP占用80，FTP 占用21)</li>
-</ul>
-</li>
-<li><h3 id="注册端口"><a href="#注册端口" class="headerlink" title="注册端口"></a>注册端口</h3><ul>
-<li>1024~49151，分配给用户进程或某些应用程序(如：Tomcat占用8080，MySQL占用3360)</li>
-</ul>
-</li>
-<li><h3 id="动态端口"><a href="#动态端口" class="headerlink" title="动态端口"></a>动态端口</h3><ul>
-<li>49152到65535，之所以称为动态端口，是因为它一般不固定分配某种进程，而是动态分配</li>
-</ul>
-</li>
-</ul>
-<h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><ul>
-<li>连接和通信数据的规则被称为网络通信协议</li>
-<li>OSI参考模型</li>
-<li>TCP/IP参考模型<ul>
-<li>应用层(HTTP、FTP、DNS、SMTP)</li>
-<li>传输层(TCP、UDP)</li>
-<li>网络层(IP、ICMP)</li>
-<li>数据链路层+物流</li>
-</ul>
-</li>
-</ul>
-<h3 id="传输层的2个常见协议"><a href="#传输层的2个常见协议" class="headerlink" title="传输层的2个常见协议"></a>传输层的2个常见协议</h3><h4 id="TCP-传输控制协议"><a href="#TCP-传输控制协议" class="headerlink" title="TCP : 传输控制协议"></a>TCP : 传输控制协议</h4><ul>
-<li>双方必须先建立连接，它是一种<strong>面向连接</strong>的<strong>可靠通信</strong>协议</li>
-<li>传输前，采用<strong>三次握手</strong>方式建立连接，所以是可靠的</li>
-<li>在连接中可进行大数据量的传输</li>
-<li>连接发送都需要确认，且传输完毕后，还需释放已建立的连接</li>
-<li>使用常见：对信息安全要求较高的场景(文件下载、金融等数据通信)</li>
-</ul>
-<h5 id="socket类"><a href="#socket类" class="headerlink" title="socket类"></a>socket类</h5><h4 id="UDP-用户数据报协议"><a href="#UDP-用户数据报协议" class="headerlink" title="UDP : 用户数据报协议"></a>UDP : 用户数据报协议</h4><ul>
-<li><p>是一种无连接、不可靠传输的协议</p>
-</li>
-<li><p>将数据源IP、目的地IP和端口封装成数据包，不需要建立连接</p>
-</li>
-<li><p>每个包大小限制在64kb内</p>
-</li>
-<li><p>无论对方是否准备好，接受方收到也不确认，故不可靠的</p>
-</li>
-<li><p>常见：语音电话</p>
-</li>
-</ul>
-<h5 id="DatagramPacket数据包对象"><a href="#DatagramPacket数据包对象" class="headerlink" title="DatagramPacket数据包对象"></a>DatagramPacket数据包对象</h5><h1 id="InetAddress类"><a href="#InetAddress类" class="headerlink" title="InetAddress类"></a>InetAddress类</h1><h2 id="获取本地地址对象"><a href="#获取本地地址对象" class="headerlink" title="获取本地地址对象"></a>获取本地地址对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InetAddress ip1 =InetAddress.getLocalHost();</span><br><span class="line">ip1.getHostName();<span class="comment">//获取名称</span></span><br><span class="line">ip1.getHostAddress();<span class="comment">//获取ip</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="获取域名ip对象"><a href="#获取域名ip对象" class="headerlink" title="获取域名ip对象"></a>获取域名ip对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InetAddress ip2 = InetAppress.getByName(<span class="string">&quot;域名&quot;</span>);</span><br><span class="line">ip2.getHostName();<span class="comment">//获取名称</span></span><br><span class="line">ip2.getHostAddress();<span class="comment">//获取ip</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="获取公网IP对象"><a href="#获取公网IP对象" class="headerlink" title="获取公网IP对象"></a>获取公网IP对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InetAddress ip2 = InetAppress.getByName(<span class="string">&quot;公网ip&quot;</span>);</span><br><span class="line">ip2.getHostName();<span class="comment">//获取名称</span></span><br><span class="line">ip2.getHostAddress();<span class="comment">//获取ip</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="判断是否能通"><a href="#判断是否能通" class="headerlink" title="判断是否能通"></a>判断是否能通</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ip.isReachable(时间值);<span class="comment">//时间值内是否能够ping通</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java SE</tag>
-        <tag>Java</tag>
-        <tag>网络通信</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>缓冲流、转换流、序列化、打印流、IO框架</title>
     <url>/2022/06/30/%E7%BC%93%E5%86%B2%E6%B5%81-%E8%BD%AC%E6%8D%A2%E6%B5%81-%E5%BA%8F%E5%88%97%E5%8C%96-%E6%89%93%E5%8D%B0%E6%B5%81-IO%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[<h1 id="缓冲流"><a href="#缓冲流" class="headerlink" title="缓冲流"></a>缓冲流</h1><ul>
@@ -1873,6 +1800,79 @@
         <tag>序列化</tag>
         <tag>打印流</tag>
         <tag>I/O框架</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网络编程</title>
+    <url>/2022/06/30/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/</url>
+    <content><![CDATA[<h1 id="网络通信"><a href="#网络通信" class="headerlink" title="网络通信"></a>网络通信</h1><ul>
+<li>三要素<ul>
+<li>ip、端口、协议</li>
+</ul>
+</li>
+</ul>
+<h2 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h2><p>分为ipv4与ipv6</p>
+<h2 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h2><p>标识计算机设备上运行的进程，被视为一个16位的二进制，范围是0~65535</p>
+<ul>
+<li><h3 id="周知端口"><a href="#周知端口" class="headerlink" title="周知端口"></a>周知端口</h3><ul>
+<li>0~1023，被预先定义的知名应用占用(如：HTTP占用80，FTP 占用21)</li>
+</ul>
+</li>
+<li><h3 id="注册端口"><a href="#注册端口" class="headerlink" title="注册端口"></a>注册端口</h3><ul>
+<li>1024~49151，分配给用户进程或某些应用程序(如：Tomcat占用8080，MySQL占用3360)</li>
+</ul>
+</li>
+<li><h3 id="动态端口"><a href="#动态端口" class="headerlink" title="动态端口"></a>动态端口</h3><ul>
+<li>49152到65535，之所以称为动态端口，是因为它一般不固定分配某种进程，而是动态分配</li>
+</ul>
+</li>
+</ul>
+<h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><ul>
+<li>连接和通信数据的规则被称为网络通信协议</li>
+<li>OSI参考模型</li>
+<li>TCP/IP参考模型<ul>
+<li>应用层(HTTP、FTP、DNS、SMTP)</li>
+<li>传输层(TCP、UDP)</li>
+<li>网络层(IP、ICMP)</li>
+<li>数据链路层+物流</li>
+</ul>
+</li>
+</ul>
+<h3 id="传输层的2个常见协议"><a href="#传输层的2个常见协议" class="headerlink" title="传输层的2个常见协议"></a>传输层的2个常见协议</h3><h4 id="TCP-传输控制协议"><a href="#TCP-传输控制协议" class="headerlink" title="TCP : 传输控制协议"></a>TCP : 传输控制协议</h4><ul>
+<li>双方必须先建立连接，它是一种<strong>面向连接</strong>的<strong>可靠通信</strong>协议</li>
+<li>传输前，采用<strong>三次握手</strong>方式建立连接，所以是可靠的</li>
+<li>在连接中可进行大数据量的传输</li>
+<li>连接发送都需要确认，且传输完毕后，还需释放已建立的连接</li>
+<li>使用常见：对信息安全要求较高的场景(文件下载、金融等数据通信)</li>
+</ul>
+<h5 id="socket类"><a href="#socket类" class="headerlink" title="socket类"></a>socket类</h5><h4 id="UDP-用户数据报协议"><a href="#UDP-用户数据报协议" class="headerlink" title="UDP : 用户数据报协议"></a>UDP : 用户数据报协议</h4><ul>
+<li><p>是一种无连接、不可靠传输的协议</p>
+</li>
+<li><p>将数据源IP、目的地IP和端口封装成数据包，不需要建立连接</p>
+</li>
+<li><p>每个包大小限制在64kb内</p>
+</li>
+<li><p>无论对方是否准备好，接受方收到也不确认，故不可靠的</p>
+</li>
+<li><p>常见：语音电话</p>
+</li>
+</ul>
+<h5 id="DatagramPacket数据包对象"><a href="#DatagramPacket数据包对象" class="headerlink" title="DatagramPacket数据包对象"></a>DatagramPacket数据包对象</h5><h1 id="InetAddress类"><a href="#InetAddress类" class="headerlink" title="InetAddress类"></a>InetAddress类</h1><h2 id="获取本地地址对象"><a href="#获取本地地址对象" class="headerlink" title="获取本地地址对象"></a>获取本地地址对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InetAddress ip1 =InetAddress.getLocalHost();</span><br><span class="line">ip1.getHostName();<span class="comment">//获取名称</span></span><br><span class="line">ip1.getHostAddress();<span class="comment">//获取ip</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="获取域名ip对象"><a href="#获取域名ip对象" class="headerlink" title="获取域名ip对象"></a>获取域名ip对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InetAddress ip2 = InetAppress.getByName(<span class="string">&quot;域名&quot;</span>);</span><br><span class="line">ip2.getHostName();<span class="comment">//获取名称</span></span><br><span class="line">ip2.getHostAddress();<span class="comment">//获取ip</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="获取公网IP对象"><a href="#获取公网IP对象" class="headerlink" title="获取公网IP对象"></a>获取公网IP对象</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InetAddress ip2 = InetAppress.getByName(<span class="string">&quot;公网ip&quot;</span>);</span><br><span class="line">ip2.getHostName();<span class="comment">//获取名称</span></span><br><span class="line">ip2.getHostAddress();<span class="comment">//获取ip</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="判断是否能通"><a href="#判断是否能通" class="headerlink" title="判断是否能通"></a>判断是否能通</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ip.isReachable(时间值);<span class="comment">//时间值内是否能够ping通</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java SE</tag>
+        <tag>Java</tag>
+        <tag>网络通信</tag>
       </tags>
   </entry>
 </search>

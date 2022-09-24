@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>穹仁的博客</title>
+    <url>/2022/09/24/1%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>苟日新，日日新，又日新。<br>技术永远都在不断的进步，所以每天要学会更新自己的技术。精益求精才是IT发展的动力。</p>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AOP切面编程</title>
     <url>/2022/08/10/AOP/</url>
     <content><![CDATA[<h1 id="AOP简介"><a href="#AOP简介" class="headerlink" title="AOP简介"></a>AOP简介</h1><p>面向切面编程，一种编程范式，指导开发者如何组织程序架构</p>
@@ -117,92 +129,6 @@
       </tags>
   </entry>
   <entry>
-    <title>穹仁的博客</title>
-    <url>/2022/09/24/1%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p>苟日新，日日新，又日新。<br>技术永远都在不断的进步，所以每天要学会更新自己的技术。精益求精才是IT发展的动力。</p>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IDEA的下载安装</title>
-    <url>/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h1 id><a href="#" class="headerlink" title></a></h1><p>IDEA的社区版本是免费使用的</p>
-<p>下载地址：<a href="https://www.jetbrains.com/zh-cn/idea/download/">https://www.jetbrains.com/zh-cn/idea/download/</a></p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513104247684.png" alt="image-20220513104247684"></p>
-<p>下载完成后，进行安装，选择安装路径</p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513121700061.png" alt="image-20220513121700061"></p>
-<p>进行如下的勾选，一般都是64位的操作系统。</p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513121853684.png" alt="image-20220513121853684"></p>
-<p>接着Install，到下一步</p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513121943732.png" alt="image-20220513121943732"></p>
-<p>点击finish，完成安装。</p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513122021675.png" alt="image-20220513122021675"></p>
-<h1 id="创建java程序"><a href="#创建java程序" class="headerlink" title="创建java程序"></a>创建java程序</h1><p>打开IDEA，点击New Project</p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513122444327.png" alt="image-20220513122444327"></p>
-<p>选择模块并添加JDK，如果提前配置好了JDK，他也会识别，打开折叠选项选中</p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513122624562.png" alt="image-20220513122624562"></p>
-<p>在这个折叠选项里面可以选择下载JDK,idea会给你自动建立下载</p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513122857294.png" alt="image-20220513122857294"></p>
-<p>输入简单的程序运行</p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513155100592.png" alt="image-20220513155100592"></p>
-<h1 id="JDK的下载与安装配置"><a href="#JDK的下载与安装配置" class="headerlink" title="JDK的下载与安装配置"></a>JDK的下载与安装配置</h1><p>java程序的编写运行是需要JDK才能使用的</p>
-<p>IDEA非常方便，软件内部有着JDK的下载与安装，在上面有说</p>
-<p>你也可以选择自己下载JDK使用，并配置环境变量</p>
-<p>官网下载地址：<a href="https://www.oracle.com/java/technologies/downloads/">https://www.oracle.com/java/technologies/downloads/</a></p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513151910412.png" alt="image-20220513151910412"></p>
-<ul>
-<li><p>这两种下载形式任选其一就可以了</p>
-<ul>
-<li><p>路径下不能有中文和空格</p>
-</li>
-<li><p>第一个是压缩包的形式</p>
-<ul>
-<li>解压到你想要放置的文件位置</li>
-</ul>
-</li>
-<li><p>第二个是安装程序</p>
-<ul>
-<li>更改安装路径</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>配置环境变量</p>
-<ul>
-<li>首先复制你安装路径下，文件夹内的bin目录文件</li>
-</ul>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513153524589.png" alt="image-20220513153524589"></p>
-<ul>
-<li>右键此电脑依次打开，属性——高级系统设置——环境变量</li>
-</ul>
-</li>
-</ul>
-<p>​            <img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513153149064.png" alt="image-20220513153149064"></p>
-<p>在系统变量中新建一个变量 <code>JAVA_HOME</code>值为路径</p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513154026836.png" alt="image-20220513154026836"></p>
-<p>在系统变量<code>Path</code>中新建值<code>%JAVA_Home%\bin</code></p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513154326520.png" alt="image-20220513154326520"></p>
-<p>完成后点应用，确定，保存环境配置</p>
-<p>最后在命令行中输入<code>java -version</code>即可查看是否成功，输出版本号</p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513154654438.png" alt="image-20220513154654438"></p>
-<h1 id="IDEA设置中文"><a href="#IDEA设置中文" class="headerlink" title="IDEA设置中文"></a>IDEA设置中文</h1><p>按<code>ctrl+Alt+s</code>进入设置</p>
-<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513160033457.png" alt="image-20220513160033457"></p>
-<p>下载完成后会提示你重启idea就完成了汉化插件</p>
-]]></content>
-      <categories>
-        <category>配置教程</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>File类</title>
     <url>/2022/06/21/File%E7%B1%BB/</url>
     <content><![CDATA[<h1 id="File"><a href="#File" class="headerlink" title="File"></a>File</h1><ul>
@@ -285,164 +211,86 @@
 </ul>
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>Java SE</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>Java SE</tag>
+        <tag>Java</tag>
         <tag>File类</tag>
       </tags>
   </entry>
   <entry>
-    <title>I/O流</title>
-    <url>/2022/06/21/IO%E6%B5%81/</url>
-    <content><![CDATA[<h3 id="字节流"><a href="#字节流" class="headerlink" title="字节流"></a>字节流</h3><h4 id="文件字节输入流"><a href="#文件字节输入流" class="headerlink" title="文件字节输入流"></a>文件字节输入流</h4><ul>
-<li><p>InputStream(抽象类)</p>
+    <title>IDEA的下载安装</title>
+    <url>/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h1 id><a href="#" class="headerlink" title></a></h1><p>IDEA的社区版本是免费使用的</p>
+<p>下载地址：<a href="https://www.jetbrains.com/zh-cn/idea/download/">https://www.jetbrains.com/zh-cn/idea/download/</a></p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513104247684.png" alt="image-20220513104247684"></p>
+<p>下载完成后，进行安装，选择安装路径</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513121700061.png" alt="image-20220513121700061"></p>
+<p>进行如下的勾选，一般都是64位的操作系统。</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513121853684.png" alt="image-20220513121853684"></p>
+<p>接着Install，到下一步</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513121943732.png" alt="image-20220513121943732"></p>
+<p>点击finish，完成安装。</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513122021675.png" alt="image-20220513122021675"></p>
+<h1 id="创建java程序"><a href="#创建java程序" class="headerlink" title="创建java程序"></a>创建java程序</h1><p>打开IDEA，点击New Project</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513122444327.png" alt="image-20220513122444327"></p>
+<p>选择模块并添加JDK，如果提前配置好了JDK，他也会识别，打开折叠选项选中</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513122624562.png" alt="image-20220513122624562"></p>
+<p>在这个折叠选项里面可以选择下载JDK,idea会给你自动建立下载</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513122857294.png" alt="image-20220513122857294"></p>
+<p>输入简单的程序运行</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513155100592.png" alt="image-20220513155100592"></p>
+<h1 id="JDK的下载与安装配置"><a href="#JDK的下载与安装配置" class="headerlink" title="JDK的下载与安装配置"></a>JDK的下载与安装配置</h1><p>java程序的编写运行是需要JDK才能使用的</p>
+<p>IDEA非常方便，软件内部有着JDK的下载与安装，在上面有说</p>
+<p>你也可以选择自己下载JDK使用，并配置环境变量</p>
+<p>官网下载地址：<a href="https://www.oracle.com/java/technologies/downloads/">https://www.oracle.com/java/technologies/downloads/</a></p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513151910412.png" alt="image-20220513151910412"></p>
 <ul>
-<li>实现类——FileInputStream</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InputStream is=<span class="keyword">new</span> FileInputStream(<span class="string">&quot;文件相对路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
-<li><h4 id="每次读取一个字节"><a href="#每次读取一个字节" class="headerlink" title="每次读取一个字节"></a>每次读取一个字节</h4><ul>
-<li>.read——读取一个字节返回，每次读取一滴水，读取完毕返回-1</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> b1=is.read();</span><br><span class="line">System.out.println((<span class="keyword">char</span>)b1);</span><br></pre></td></tr></table></figure></li>
-<li><h5 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h5><ul>
-<li>性能较慢</li>
-<li>读取中文字符输出无法避免乱码情况</li>
+<li><p>这两种下载形式任选其一就可以了</p>
+<ul>
+<li><p>路径下不能有中文和空格</p>
+</li>
+<li><p>第一个是压缩包的形式</p>
+<ul>
+<li>解压到你想要放置的文件位置</li>
 </ul>
 </li>
-<li><h4 id="每次读取一个字节数组"><a href="#每次读取一个字节数组" class="headerlink" title="每次读取一个字节数组"></a>每次读取一个字节<strong>数组</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">- <span class="keyword">byte</span>[] buffer=<span class="keyword">new</span> <span class="keyword">byte</span>[读取的字节数];</span><br><span class="line">- is.read =is.read(buffer);<span class="comment">//可以将这个字节数组当作为水桶</span></span><br><span class="line">String rs =<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len2)<span class="comment">//解码，读取多少倒多少</span></span><br></pre></td></tr></table></figure>
-
+<li><p>第二个是安装程序</p>
 <ul>
-<li>改进使用循环，优化性能</li>
+<li>更改安装路径</li>
 </ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">byte</span>[] buffer=<span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">3</span>];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="keyword">while</span>((len=is.read(buffer))!=-<span class="number">1</span>)&#123;</span><br><span class="line">	System.out.print(<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>读取中文字符输出无法避免出现乱码</p>
-</li>
-</ul>
-<ul>
-<li><h4 id="每次读取完全部字节"><a href="#每次读取完全部字节" class="headerlink" title="每次读取完全部字节"></a>每次读取完全部字节</h4></li>
-<li><p>解决字节流输出中文乱码问题</p>
-<ul>
-<li><p>方法一：定义的字节数组与文件大小刚刚好一样大</p>
-</li>
-<li><p>方法二：官方api—-is.readAllBytes();</p>
-</li>
-</ul>
-</li>
-<li><p>如果文件过大，定义的字节数组可能会引起内存溢出</p>
-</li>
-</ul>
-<h4 id="文件字节输出流"><a href="#文件字节输出流" class="headerlink" title="文件字节输出流"></a>文件字节输出流</h4><ul>
-<li><p>OutputStream(抽象类)</p>
-<ul>
-<li>FileOutputStream(实现类)</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">OutputStream os =<span class="keyword">new</span> FileOutputStream(<span class="string">&quot;路径&quot;</span>)<span class="comment">//没有文件会自动创建</span></span><br></pre></td></tr></table></figure></li>
-<li><h4 id="一个字节写入-write方法"><a href="#一个字节写入-write方法" class="headerlink" title="一个字节写入(write方法)"></a>一个字节写入(write方法)</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">os.write(<span class="string">&quot;写入字节&quot;</span>);<span class="comment">//默认是写1个字节</span></span><br><span class="line">os.flush;<span class="comment">//写数据需要刷新</span></span><br><span class="line">os.close;<span class="comment">//释放资源，包含刷新，关闭后流就不可以使用了</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>因为默认1个，所有直接写入中文会是乱码</li>
-</ul>
-</li>
-<li><h4 id="写入一个字节数组"><a href="#写入一个字节数组" class="headerlink" title="写入一个字节数组"></a>写入一个字节数组</h4><ul>
-<li>可以通过写入字节数组，将字节数组传入解决</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">byte</span>[] buffer=<span class="string">&quot;中文输入&quot;</span>.getBytes();</span><br><span class="line">os.write(buffer);</span><br></pre></td></tr></table></figure></li>
-<li><h4 id="写入字节数组的一部分"><a href="#写入字节数组的一部分" class="headerlink" title="写入字节数组的一部分"></a>写入字节数组的一部分</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">os.write(buffer,<span class="number">0</span>,<span class="number">3</span>);<span class="comment">//输入字符数组0-3的内容,按字节计算</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li><h4 id="需要注意的点"><a href="#需要注意的点" class="headerlink" title="需要注意的点"></a>需要注意的点</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">os.write(<span class="string">&quot;\r\n&quot;</span>.getBytes());<span class="comment">//使用\r\n的兼容性更好</span></span><br></pre></td></tr></table></figure>
-
-<p> 它会先清空之前的数据，写入新数据</p>
-<ul>
-<li>追加文件api</li>
-</ul>
-   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">OutputStream os =new FileOutputStream(&quot;路径&quot;,true)//路径后加true就追加</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="文件拷贝"><a href="#文件拷贝" class="headerlink" title="文件拷贝"></a>文件拷贝</h3><ol>
-<li>创建一个字节输入管道与原文件相通</li>
-<li>创建一个字节输出管道与目标文件相通</li>
-<li>定义一个字节数组转移数据</li>
-<li>关闭流</li>
-</ol>
-<ul>
-<li>可以拷贝所有文件</li>
-</ul>
-<h1 id="资源释放"><a href="#资源释放" class="headerlink" title="资源释放"></a>资源释放</h1><ul>
-<li><h4 id="try-catch-finally"><a href="#try-catch-finally" class="headerlink" title="try-catch-finally"></a>try-catch-finally</h4><ul>
-<li><p>被finally控制的语句最终一定会执行，除非JVM终止</p>
-<ul>
-<li>在try外部申明流为空，在内部赋予数值</li>
-<li>在finally里面加入两个try-catch对输入与输出流释放，并经行非空校验(if判断)</li>
-</ul>
-</li>
-<li><p>finally内不要放return，他会抢掉try-catch的return</p>
 </li>
 </ul>
 </li>
-<li><h4 id="try-catch-resouce"><a href="#try-catch-resouce" class="headerlink" title="try-catch-resouce"></a>try-catch-resouce</h4><ul>
-<li>try后面放置资源对象，他会自动调用源对象的close方法</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>(资源对象)&#123;</span><br><span class="line"><span class="comment">//实现Closeable/AutoCloseable接口的类对象才是资源</span></span><br><span class="line">&#125;<span class="keyword">catch</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="字符流"><a href="#字符流" class="headerlink" title="字符流"></a>字符流</h3><h4 id="文件字符输入流"><a href="#文件字符输入流" class="headerlink" title="文件字符输入流"></a>文件字符输入流</h4><ul>
-<li><p>Reader(抽象类)</p>
+<li><p>配置环境变量</p>
 <ul>
-<li>FileReader(实现类)</li>
+<li>首先复制你安装路径下，文件夹内的bin目录文件</li>
 </ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Reader fr=<span class="keyword">new</span> FileReader(<span class="string">&quot;路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
-<li><h4 id="每次读取一个字符"><a href="#每次读取一个字符" class="headerlink" title="每次读取一个字符"></a>每次读取一个字符</h4><ul>
-<li>.read——读取一个字符返回，每次读取一滴水，读取完毕返回-1</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> b1=is.read();</span><br><span class="line">System.out.println((<span class="keyword">char</span>)b1);</span><br></pre></td></tr></table></figure>
-
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513153524589.png" alt="image-20220513153524589"></p>
 <ul>
-<li>可以使用循环优化</li>
+<li>右键此电脑依次打开，属性——高级系统设置——环境变量</li>
 </ul>
 </li>
-<li><h5 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h5><ul>
-<li>性能较慢</li>
-<li>读取中文字符不会乱码情况</li>
 </ul>
-</li>
-<li><h4 id="每次读取一个字符数组"><a href="#每次读取一个字符数组" class="headerlink" title="每次读取一个字符数组"></a>每次读取一个字符<strong>数组</strong></h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">- <span class="keyword">char</span>[] buffer=<span class="keyword">new</span> <span class="keyword">char</span>[读取的字节数];</span><br><span class="line">- fr.read =fr.read(buffer);<span class="comment">//可以将这个字节数组当作为水桶</span></span><br><span class="line">String rs =<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len2)<span class="comment">//解码，读取多少倒多少</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>改进使用循环，优化性能</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">char</span>[] buffer=<span class="keyword">new</span> <span class="keyword">char</span>[<span class="number">3</span>];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="keyword">while</span>((len=fr.read(buffer))!=-<span class="number">1</span>)&#123;</span><br><span class="line">	System.out.print(<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h4 id="文件字符输出流"><a href="#文件字符输出流" class="headerlink" title="文件字符输出流"></a>文件字符输出流</h4><ul>
-<li><p>Writer(抽象类)</p>
-<ul>
-<li>FileWriter(实现类)</li>
-</ul>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Writer fw =<span class="keyword">new</span> FileWriter(<span class="string">&quot;路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li><h4 id="一个字符写入-write方法"><a href="#一个字符写入-write方法" class="headerlink" title="一个字符写入(write方法)"></a>一个字符写入(write方法)</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">fw.write(<span class="string">&quot;写入字节&quot;</span>);<span class="comment">//默认是写1个字节</span></span><br><span class="line">fw.flush;<span class="comment">//写数据需要刷新</span></span><br><span class="line">fw.close;<span class="comment">//释放资源，包含刷新，关闭后流就不可以使用了</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li><h4 id="写入一个字符串"><a href="#写入一个字符串" class="headerlink" title="写入一个字符串"></a>写入一个字符串</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">fw.write(<span class="string">&quot;字符串内容&quot;</span>);</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li><h4 id="写入一个字符数组"><a href="#写入一个字符数组" class="headerlink" title="写入一个字符数组"></a>写入一个字符数组</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">char</span>[] chars=<span class="string">&quot;字符串内容&quot;</span>.tochatArray();</span><br><span class="line">fw.write(chars);</span><br></pre></td></tr></table></figure></li>
-<li><h4 id="写入字符数组的一部分"><a href="#写入字符数组的一部分" class="headerlink" title="写入字符数组的一部分"></a>写入字符数组的一部分</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">fw.write(buffer,<span class="number">0</span>,<span class="number">3</span>);<span class="comment">//输入字符数组0-3的内容，按字符算</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h1 id="字节流、字符流如何选择使用"><a href="#字节流、字符流如何选择使用" class="headerlink" title="字节流、字符流如何选择使用"></a>字节流、字符流如何选择使用</h1><ul>
-<li>字节流适合做文字的拷贝(音视频，文本)</li>
-<li>字节流不适合读取中文内容输出</li>
-<li>字符流适合做文本文件的操作(读，写)</li>
-</ul>
+<p>​            <img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513153149064.png" alt="image-20220513153149064"></p>
+<p>在系统变量中新建一个变量 <code>JAVA_HOME</code>值为路径</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513154026836.png" alt="image-20220513154026836"></p>
+<p>在系统变量<code>Path</code>中新建值<code>%JAVA_Home%\bin</code></p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513154326520.png" alt="image-20220513154326520"></p>
+<p>完成后点应用，确定，保存环境配置</p>
+<p>最后在命令行中输入<code>java -version</code>即可查看是否成功，输出版本号</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513154654438.png" alt="image-20220513154654438"></p>
+<h1 id="IDEA设置中文"><a href="#IDEA设置中文" class="headerlink" title="IDEA设置中文"></a>IDEA设置中文</h1><p>按<code>ctrl+Alt+s</code>进入设置</p>
+<p><img src="/2021/12/31/IDEA%E7%BC%96%E8%AF%91%E5%99%A8%E5%AE%89%E8%A3%85/image-20220513160033457.png" alt="image-20220513160033457"></p>
+<p>下载完成后会提示你重启idea就完成了汉化插件</p>
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>配置教程</category>
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>Java SE</tag>
-        <tag>I/O流</tag>
+        <tag>IDEA</tag>
       </tags>
   </entry>
   <entry>
@@ -713,6 +561,158 @@
       </tags>
   </entry>
   <entry>
+    <title>I/O流</title>
+    <url>/2022/06/21/IO%E6%B5%81/</url>
+    <content><![CDATA[<h3 id="字节流"><a href="#字节流" class="headerlink" title="字节流"></a>字节流</h3><h4 id="文件字节输入流"><a href="#文件字节输入流" class="headerlink" title="文件字节输入流"></a>文件字节输入流</h4><ul>
+<li><p>InputStream(抽象类)</p>
+<ul>
+<li>实现类——FileInputStream</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">InputStream is=<span class="keyword">new</span> FileInputStream(<span class="string">&quot;文件相对路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+<li><h4 id="每次读取一个字节"><a href="#每次读取一个字节" class="headerlink" title="每次读取一个字节"></a>每次读取一个字节</h4><ul>
+<li>.read——读取一个字节返回，每次读取一滴水，读取完毕返回-1</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> b1=is.read();</span><br><span class="line">System.out.println((<span class="keyword">char</span>)b1);</span><br></pre></td></tr></table></figure></li>
+<li><h5 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h5><ul>
+<li>性能较慢</li>
+<li>读取中文字符输出无法避免乱码情况</li>
+</ul>
+</li>
+<li><h4 id="每次读取一个字节数组"><a href="#每次读取一个字节数组" class="headerlink" title="每次读取一个字节数组"></a>每次读取一个字节<strong>数组</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">- <span class="keyword">byte</span>[] buffer=<span class="keyword">new</span> <span class="keyword">byte</span>[读取的字节数];</span><br><span class="line">- is.read =is.read(buffer);<span class="comment">//可以将这个字节数组当作为水桶</span></span><br><span class="line">String rs =<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len2)<span class="comment">//解码，读取多少倒多少</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>改进使用循环，优化性能</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">byte</span>[] buffer=<span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">3</span>];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="keyword">while</span>((len=is.read(buffer))!=-<span class="number">1</span>)&#123;</span><br><span class="line">	System.out.print(<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>读取中文字符输出无法避免出现乱码</p>
+</li>
+</ul>
+<ul>
+<li><h4 id="每次读取完全部字节"><a href="#每次读取完全部字节" class="headerlink" title="每次读取完全部字节"></a>每次读取完全部字节</h4></li>
+<li><p>解决字节流输出中文乱码问题</p>
+<ul>
+<li><p>方法一：定义的字节数组与文件大小刚刚好一样大</p>
+</li>
+<li><p>方法二：官方api—-is.readAllBytes();</p>
+</li>
+</ul>
+</li>
+<li><p>如果文件过大，定义的字节数组可能会引起内存溢出</p>
+</li>
+</ul>
+<h4 id="文件字节输出流"><a href="#文件字节输出流" class="headerlink" title="文件字节输出流"></a>文件字节输出流</h4><ul>
+<li><p>OutputStream(抽象类)</p>
+<ul>
+<li>FileOutputStream(实现类)</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">OutputStream os =<span class="keyword">new</span> FileOutputStream(<span class="string">&quot;路径&quot;</span>)<span class="comment">//没有文件会自动创建</span></span><br></pre></td></tr></table></figure></li>
+<li><h4 id="一个字节写入-write方法"><a href="#一个字节写入-write方法" class="headerlink" title="一个字节写入(write方法)"></a>一个字节写入(write方法)</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">os.write(<span class="string">&quot;写入字节&quot;</span>);<span class="comment">//默认是写1个字节</span></span><br><span class="line">os.flush;<span class="comment">//写数据需要刷新</span></span><br><span class="line">os.close;<span class="comment">//释放资源，包含刷新，关闭后流就不可以使用了</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>因为默认1个，所有直接写入中文会是乱码</li>
+</ul>
+</li>
+<li><h4 id="写入一个字节数组"><a href="#写入一个字节数组" class="headerlink" title="写入一个字节数组"></a>写入一个字节数组</h4><ul>
+<li>可以通过写入字节数组，将字节数组传入解决</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">byte</span>[] buffer=<span class="string">&quot;中文输入&quot;</span>.getBytes();</span><br><span class="line">os.write(buffer);</span><br></pre></td></tr></table></figure></li>
+<li><h4 id="写入字节数组的一部分"><a href="#写入字节数组的一部分" class="headerlink" title="写入字节数组的一部分"></a>写入字节数组的一部分</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">os.write(buffer,<span class="number">0</span>,<span class="number">3</span>);<span class="comment">//输入字符数组0-3的内容,按字节计算</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li><h4 id="需要注意的点"><a href="#需要注意的点" class="headerlink" title="需要注意的点"></a>需要注意的点</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">os.write(<span class="string">&quot;\r\n&quot;</span>.getBytes());<span class="comment">//使用\r\n的兼容性更好</span></span><br></pre></td></tr></table></figure>
+
+<p> 它会先清空之前的数据，写入新数据</p>
+<ul>
+<li>追加文件api</li>
+</ul>
+   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">OutputStream os =new FileOutputStream(&quot;路径&quot;,true)//路径后加true就追加</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="文件拷贝"><a href="#文件拷贝" class="headerlink" title="文件拷贝"></a>文件拷贝</h3><ol>
+<li>创建一个字节输入管道与原文件相通</li>
+<li>创建一个字节输出管道与目标文件相通</li>
+<li>定义一个字节数组转移数据</li>
+<li>关闭流</li>
+</ol>
+<ul>
+<li>可以拷贝所有文件</li>
+</ul>
+<h1 id="资源释放"><a href="#资源释放" class="headerlink" title="资源释放"></a>资源释放</h1><ul>
+<li><h4 id="try-catch-finally"><a href="#try-catch-finally" class="headerlink" title="try-catch-finally"></a>try-catch-finally</h4><ul>
+<li><p>被finally控制的语句最终一定会执行，除非JVM终止</p>
+<ul>
+<li>在try外部申明流为空，在内部赋予数值</li>
+<li>在finally里面加入两个try-catch对输入与输出流释放，并经行非空校验(if判断)</li>
+</ul>
+</li>
+<li><p>finally内不要放return，他会抢掉try-catch的return</p>
+</li>
+</ul>
+</li>
+<li><h4 id="try-catch-resouce"><a href="#try-catch-resouce" class="headerlink" title="try-catch-resouce"></a>try-catch-resouce</h4><ul>
+<li>try后面放置资源对象，他会自动调用源对象的close方法</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>(资源对象)&#123;</span><br><span class="line"><span class="comment">//实现Closeable/AutoCloseable接口的类对象才是资源</span></span><br><span class="line">&#125;<span class="keyword">catch</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="字符流"><a href="#字符流" class="headerlink" title="字符流"></a>字符流</h3><h4 id="文件字符输入流"><a href="#文件字符输入流" class="headerlink" title="文件字符输入流"></a>文件字符输入流</h4><ul>
+<li><p>Reader(抽象类)</p>
+<ul>
+<li>FileReader(实现类)</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Reader fr=<span class="keyword">new</span> FileReader(<span class="string">&quot;路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+<li><h4 id="每次读取一个字符"><a href="#每次读取一个字符" class="headerlink" title="每次读取一个字符"></a>每次读取一个字符</h4><ul>
+<li>.read——读取一个字符返回，每次读取一滴水，读取完毕返回-1</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> b1=is.read();</span><br><span class="line">System.out.println((<span class="keyword">char</span>)b1);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>可以使用循环优化</li>
+</ul>
+</li>
+<li><h5 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h5><ul>
+<li>性能较慢</li>
+<li>读取中文字符不会乱码情况</li>
+</ul>
+</li>
+<li><h4 id="每次读取一个字符数组"><a href="#每次读取一个字符数组" class="headerlink" title="每次读取一个字符数组"></a>每次读取一个字符<strong>数组</strong></h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">- <span class="keyword">char</span>[] buffer=<span class="keyword">new</span> <span class="keyword">char</span>[读取的字节数];</span><br><span class="line">- fr.read =fr.read(buffer);<span class="comment">//可以将这个字节数组当作为水桶</span></span><br><span class="line">String rs =<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len2)<span class="comment">//解码，读取多少倒多少</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>改进使用循环，优化性能</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">char</span>[] buffer=<span class="keyword">new</span> <span class="keyword">char</span>[<span class="number">3</span>];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="keyword">while</span>((len=fr.read(buffer))!=-<span class="number">1</span>)&#123;</span><br><span class="line">	System.out.print(<span class="keyword">new</span> String(buffer,<span class="number">0</span>,len))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="文件字符输出流"><a href="#文件字符输出流" class="headerlink" title="文件字符输出流"></a>文件字符输出流</h4><ul>
+<li><p>Writer(抽象类)</p>
+<ul>
+<li>FileWriter(实现类)</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Writer fw =<span class="keyword">new</span> FileWriter(<span class="string">&quot;路径&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li><h4 id="一个字符写入-write方法"><a href="#一个字符写入-write方法" class="headerlink" title="一个字符写入(write方法)"></a>一个字符写入(write方法)</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">fw.write(<span class="string">&quot;写入字节&quot;</span>);<span class="comment">//默认是写1个字节</span></span><br><span class="line">fw.flush;<span class="comment">//写数据需要刷新</span></span><br><span class="line">fw.close;<span class="comment">//释放资源，包含刷新，关闭后流就不可以使用了</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li><h4 id="写入一个字符串"><a href="#写入一个字符串" class="headerlink" title="写入一个字符串"></a>写入一个字符串</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">fw.write(<span class="string">&quot;字符串内容&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li><h4 id="写入一个字符数组"><a href="#写入一个字符数组" class="headerlink" title="写入一个字符数组"></a>写入一个字符数组</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">char</span>[] chars=<span class="string">&quot;字符串内容&quot;</span>.tochatArray();</span><br><span class="line">fw.write(chars);</span><br></pre></td></tr></table></figure></li>
+<li><h4 id="写入字符数组的一部分"><a href="#写入字符数组的一部分" class="headerlink" title="写入字符数组的一部分"></a>写入字符数组的一部分</h4> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">fw.write(buffer,<span class="number">0</span>,<span class="number">3</span>);<span class="comment">//输入字符数组0-3的内容，按字符算</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="字节流、字符流如何选择使用"><a href="#字节流、字符流如何选择使用" class="headerlink" title="字节流、字符流如何选择使用"></a>字节流、字符流如何选择使用</h1><ul>
+<li>字节流适合做文字的拷贝(音视频，文本)</li>
+<li>字节流不适合读取中文内容输出</li>
+<li>字符流适合做文本文件的操作(读，写)</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java SE</category>
+      </categories>
+      <tags>
+        <tag>Java SE</tag>
+        <tag>Java</tag>
+        <tag>I/O流</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Maven</title>
     <url>/2022/06/30/Maven/</url>
     <content><![CDATA[<ul>
@@ -802,43 +802,6 @@
         <tag>Java Web</tag>
         <tag>Maven</tag>
         <tag>项目结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MyBatisPlus</title>
-    <url>/2022/08/27/MyBatisPlus/</url>
-    <content><![CDATA[<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
-<li><p>通过SpringBoot创建框架</p>
-</li>
-<li><p>导入坐标</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3,4,1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>配置jdbc参数（applition.yml）</p>
-</li>
-<li><p>制作实体类于表结构（类名与表名对应，属性名与字段名对应）</p>
-</li>
-<li><p>定义数据接口，继承<code>BaseMapper&lt;User&gt;</code>User是泛型</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Mapper</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserDao</span> <span class="keyword">extends</span> <span class="title">BaseMapper</span>&lt;<span class="title">User</span>&gt;</span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>注入dao接口，实现功能</p>
-</li>
-</ol>
-<h1 id="MP分页查询功能"><a href="#MP分页查询功能" class="headerlink" title="MP分页查询功能"></a>MP分页查询功能</h1><ol>
-<li><p>设置分页拦截器作为Spring管理的bean</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MpCongfig</span></span>&#123;</span><br><span class="line">	<span class="meta">@Bean</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> MybatisPlusInterceptor <span class="title">pageInterceptor</span><span class="params">()</span></span>&#123;</span><br><span class="line">		MybatisPlusInterceptor interceptor=<span class="keyword">new</span> MybatisPlusInterceptor();</span><br><span class="line">		interceptor.addInnerInterceptor(<span class="keyword">new</span> PaginationInnerInterceptor())</span><br><span class="line">		<span class="keyword">return</span> interceptor;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>执行分页查询</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">IPage page = <span class="keyword">new</span> Page(<span class="number">2</span>,<span class="number">3</span>);</span><br><span class="line">userDap.selectPage(page,<span class="keyword">null</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;当前页码：&quot;</span>+page.getCurrent());</span><br><span class="line">System.out.println(<span class="string">&quot;每页数据总量：&quot;</span>+page.getSize());</span><br><span class="line">System.out.println(<span class="string">&quot;总页数：&quot;</span>+page.getPages());</span><br><span class="line">System.out.println(<span class="string">&quot;数据总量：&quot;</span>+page.getTotal());</span><br><span class="line">System.out.println(<span class="string">&quot;当前页数据：&quot;</span>+page.getRecords());</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="条件查询——设置查询条件"><a href="#条件查询——设置查询条件" class="headerlink" title="条件查询——设置查询条件"></a>条件查询——设置查询条件</h1><ul>
-<li><p>格式一：常规格式</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">QueryWrapper&lt;User&gt; qw =<span class="keyword">new</span> QueryWrapper&lt;User&gt;();</span><br><span class="line"><span class="comment">//查询年龄大于等于18岁，小于65岁的用户</span></span><br><span class="line">qw.lt(<span class="string">&quot;age&quot;</span>,<span class="number">65</span>);</span><br><span class="line">qw.ge(<span class="string">&quot;age&quot;</span>,<span class="number">18</span>);</span><br><span class="line">List&lt;User&gt; userList=userDao.selectList(qw);</span><br><span class="line">System.out.println(userList);</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Spring</category>
-      </categories>
-      <tags>
-        <tag>轻量级框架</tag>
-        <tag>MyBatis</tag>
-        <tag>简化开发</tag>
       </tags>
   </entry>
   <entry>
@@ -1019,6 +982,43 @@
       </tags>
   </entry>
   <entry>
+    <title>MyBatisPlus</title>
+    <url>/2022/08/27/MyBatisPlus/</url>
+    <content><![CDATA[<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
+<li><p>通过SpringBoot创建框架</p>
+</li>
+<li><p>导入坐标</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3,4,1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>配置jdbc参数（applition.yml）</p>
+</li>
+<li><p>制作实体类于表结构（类名与表名对应，属性名与字段名对应）</p>
+</li>
+<li><p>定义数据接口，继承<code>BaseMapper&lt;User&gt;</code>User是泛型</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Mapper</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserDao</span> <span class="keyword">extends</span> <span class="title">BaseMapper</span>&lt;<span class="title">User</span>&gt;</span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>注入dao接口，实现功能</p>
+</li>
+</ol>
+<h1 id="MP分页查询功能"><a href="#MP分页查询功能" class="headerlink" title="MP分页查询功能"></a>MP分页查询功能</h1><ol>
+<li><p>设置分页拦截器作为Spring管理的bean</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MpCongfig</span></span>&#123;</span><br><span class="line">	<span class="meta">@Bean</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> MybatisPlusInterceptor <span class="title">pageInterceptor</span><span class="params">()</span></span>&#123;</span><br><span class="line">		MybatisPlusInterceptor interceptor=<span class="keyword">new</span> MybatisPlusInterceptor();</span><br><span class="line">		interceptor.addInnerInterceptor(<span class="keyword">new</span> PaginationInnerInterceptor())</span><br><span class="line">		<span class="keyword">return</span> interceptor;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>执行分页查询</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">IPage page = <span class="keyword">new</span> Page(<span class="number">2</span>,<span class="number">3</span>);</span><br><span class="line">userDap.selectPage(page,<span class="keyword">null</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;当前页码：&quot;</span>+page.getCurrent());</span><br><span class="line">System.out.println(<span class="string">&quot;每页数据总量：&quot;</span>+page.getSize());</span><br><span class="line">System.out.println(<span class="string">&quot;总页数：&quot;</span>+page.getPages());</span><br><span class="line">System.out.println(<span class="string">&quot;数据总量：&quot;</span>+page.getTotal());</span><br><span class="line">System.out.println(<span class="string">&quot;当前页数据：&quot;</span>+page.getRecords());</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="条件查询——设置查询条件"><a href="#条件查询——设置查询条件" class="headerlink" title="条件查询——设置查询条件"></a>条件查询——设置查询条件</h1><ul>
+<li><p>格式一：常规格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">QueryWrapper&lt;User&gt; qw =<span class="keyword">new</span> QueryWrapper&lt;User&gt;();</span><br><span class="line"><span class="comment">//查询年龄大于等于18岁，小于65岁的用户</span></span><br><span class="line">qw.lt(<span class="string">&quot;age&quot;</span>,<span class="number">65</span>);</span><br><span class="line">qw.ge(<span class="string">&quot;age&quot;</span>,<span class="number">18</span>);</span><br><span class="line">List&lt;User&gt; userList=userDao.selectList(qw);</span><br><span class="line">System.out.println(userList);</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Spring</category>
+      </categories>
+      <tags>
+        <tag>轻量级框架</tag>
+        <tag>MyBatis</tag>
+        <tag>简化开发</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Response响应</title>
     <url>/2022/06/30/Response/</url>
     <content><![CDATA[<h1 id="Response设置响应数据"><a href="#Response设置响应数据" class="headerlink" title="Response设置响应数据"></a>Response设置响应数据</h1><ul>
@@ -1157,174 +1157,6 @@
         <tag>Java</tag>
         <tag>Java Web</tag>
         <tag>Servlet</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring</title>
-    <url>/2022/07/04/Spring/</url>
-    <content><![CDATA[<h1 id="Spring-Framework"><a href="#Spring-Framework" class="headerlink" title="Spring Framework"></a>Spring Framework</h1><p>它是Spring生态圈中最基础的项目，是其他项目的根基</p>
-<p>![系统架构](E:/%E5%AD%A6%E4%B9%A0/Spring/Spring/Spring Framework.png)</p>
-<h2 id="核心容器"><a href="#核心容器" class="headerlink" title="核心容器"></a>核心容器</h2><p>Core Container  用于存放java对象</p>
-<ul>
-<li>IoC(Inversion of Control) 控制反转<ul>
-<li>使用对象时，由主动new产生对象转换为由外部提供对象，此过程中对象的创建控制权由程序转移到外部，这种思想称为控制反转</li>
-<li>IoC容器负责对象的创建，初始化等一系列工作，被创建或被管理的对象在IoC容器中统称为<strong>Bean</strong></li>
-</ul>
-</li>
-<li>DI（Dependency Injection）依赖注入<ul>
-<li>在容器中建立bean与bean之间的依赖关系的整个过程，称为依赖注入</li>
-</ul>
-</li>
-</ul>
-<p>​    </p>
-<h2 id="IoC-Inversion-of-Control-控制反转"><a href="#IoC-Inversion-of-Control-控制反转" class="headerlink" title="IoC(Inversion of Control) 控制反转"></a>IoC(Inversion of Control) 控制反转</h2><ul>
-<li><p>IoC使用方法</p>
-<ol>
-<li><p>导入Spring坐标</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-context<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.10.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>定义Spring管理的类（接口）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">BookDao</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">save</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BookServiceImpl</span> <span class="keyword">implements</span> <span class="title">BookService</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> BookDao bookDao=<span class="keyword">new</span> BookDaoImpl();</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">save</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;book service save ...&quot;</span>);</span><br><span class="line">        bookDao.save();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-<li><p>创建Spring配置文件，配置对应类作为Spring管理的bean</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- xml文件名可以是applicationContext.xml --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.dao.impl.BookDaoImpl&quot;</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookService&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.service.impl.BookServiceImpl&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>初始化IoC容器，通过容器获取bean</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">App2</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        ApplicationContext ctx= <span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">&quot;applicationContext.xml&quot;</span>);</span><br><span class="line">        BookService bookService= (BookService) ctx.getBean(<span class="string">&quot;bookService&quot;</span>);</span><br><span class="line">        bookService.save();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-</ul>
-<h2 id="DI（Dependency-Injection）依赖注入"><a href="#DI（Dependency-Injection）依赖注入" class="headerlink" title="DI（Dependency Injection）依赖注入"></a>DI（Dependency Injection）依赖注入</h2><ol>
-<li><p>在IoC基础上，删除使用new形式创建对象的的代码</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BookServiceImpl</span> <span class="keyword">implements</span> <span class="title">BookService</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> BookDao bookDao;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">save</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;book service save ...&quot;</span>);</span><br><span class="line">        bookDao.save();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>提供依赖对象对应的setter方法</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setBookDao</span><span class="params">(BookDao bookDao)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.bookDao = bookDao;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>配置service与dao之间的关系</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookService&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.service.impl.BookServiceImpl&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;bookDao&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="bean的配置"><a href="#bean的配置" class="headerlink" title="bean的配置"></a>bean的配置</h1><ul>
-<li><h3 id="bean的基础配置"><a href="#bean的基础配置" class="headerlink" title="bean的基础配置"></a>bean的基础配置</h3></li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.dao.impl.BookDaoImpl&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>id是唯一标识，class是文件位置</p>
-<ul>
-<li><h3 id="bean的别名配置"><a href="#bean的别名配置" class="headerlink" title="bean的别名配置"></a>bean的别名配置</h3></li>
-</ul>
-<p>可以定义多个，使用逗号，空格，分号分隔</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">name</span>=<span class="string">&quot;dao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.dao.impl.BookDaoImpl&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>常见的使用异常，获取bean无论是通过id还是name获取，如果无法获取到，将抛出如下异常</p>
-<p><code>NoSuchBeanDefinitionException: No bean named &#39;service&#39; available</code></p>
-<p>查看bean的配置与别名的填写是否有误即可</p>
-<ul>
-<li><h3 id="bean作用范围配置"><a href="#bean作用范围配置" class="headerlink" title="bean作用范围配置"></a>bean作用范围配置</h3></li>
-</ul>
-<p><code>score</code>标签定义作用范围</p>
-<ul>
-<li>singleton：单例（默认）</li>
-<li>prototype：非单例</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">name</span>=<span class="string">&quot;dao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.dao.impl.BookDaoImpl&quot;</span> <span class="attr">scope</span>=<span class="string">&quot;prototype&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>适合交给容器管理的bean<ul>
-<li>表现层对象</li>
-<li>业务层对象</li>
-<li>数据层对象</li>
-<li>工具对象</li>
-</ul>
-</li>
-<li>不适合交给容器进行管理的bean<ul>
-<li>封装实体的域对象</li>
-</ul>
-</li>
-</ul>
-<h2 id="bean的实例化方式"><a href="#bean的实例化方式" class="headerlink" title="bean的实例化方式"></a>bean的实例化方式</h2><ul>
-<li><h3 id="使用构造方法实例化bean（常用）"><a href="#使用构造方法实例化bean（常用）" class="headerlink" title="使用构造方法实例化bean（常用）"></a>使用构造方法实例化bean（常用）</h3><ul>
-<li><p>提供可访问的构造方法</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BookDaoImpl</span> <span class="keyword">implements</span> <span class="title">BookDao</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">BookDaoImpl</span><span class="params">()</span></span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">save</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;book dao save ...&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>配置</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">name</span>=<span class="string">&quot;dao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.dao.impl.BookDaoImpl&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>无参构造方法如果不存在，将抛出异常<code>BeanCreationException</code></p>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><h3 id="使用静态工厂实例化bean（了解）"><a href="#使用静态工厂实例化bean（了解）" class="headerlink" title="使用静态工厂实例化bean（了解）"></a>使用静态工厂实例化bean（了解）</h3><ul>
-<li><p>静态工厂</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">OrderDaoFactory</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> OrderDao <span class="title">getOtderDao</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> OrederDaoImpl();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>配置</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;orderDao&quot;</span> <span class="attr">factory-method</span>=<span class="string">&quot;getOrderDao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.factory.OrderDaoFactory&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>factory-method</code>是用来指明，创建对象所使用的方法</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h3 id="使用实例工厂实例化bean（了解）"><a href="#使用实例工厂实例化bean（了解）" class="headerlink" title="使用实例工厂实例化bean（了解）"></a>使用实例工厂实例化bean（了解）</h3><ul>
-<li><p>实例工厂</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserDaoFactory</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span>  UserDao <span class="title">getUserDao</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> UserDaoImpl();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>配置</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;userDaoFactory&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.factory.UserDaoFactory&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;userDao&quot;</span> <span class="attr">factory-method</span>=<span class="string">&quot;getUserDao&quot;</span> <span class="attr">factory-bean</span>=<span class="string">&quot;userDaoFactory&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><h3 id="使用FactoryBean实例化bean-实用"><a href="#使用FactoryBean实例化bean-实用" class="headerlink" title="使用FactoryBean实例化bean(实用)"></a>使用FactoryBean实例化bean(实用)</h3><ul>
-<li><p>实例化工厂类，实现FactoryBean接口，复写抽象类</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">UserDaoFactoryBean</span> <span class="keyword">implements</span> <span class="title">FactoryBean</span>&lt;<span class="title">UserDao</span>&gt;</span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> UserDao <span class="title">getObject</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> UserDaoImpl();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> Class&lt;?&gt; getObjectType()&#123;</span><br><span class="line">		<span class="keyword">return</span> UserDao.class;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>配置</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;userDao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.factory.UserDaoFactoryBean&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-<h2 id="自动装配"><a href="#自动装配" class="headerlink" title="自动装配"></a>自动装配</h2><ol>
-<li>需要保留接口实现类中的setter方法</li>
-<li>在spring配置文件中加入 <code>autowire</code>按需进行自动装配</li>
-</ol>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;xxx&quot;</span> <span class="attr">class</span>=<span class="string">&quot;xxx&quot;</span> <span class="attr">autowire</span>=<span class="string">&quot;byType&quot;</span>&gt;</span> <span class="comment">&lt;!-- 按类型装配 --!&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>自动装配用于引用类型依赖注入，不能对简单类型进行操作</li>
-<li>使用按类型装配时（byType）必须保障容器中相同的bean唯一，推荐使用</li>
-<li>使用按名称装配时（byName）必须保障容器中具有指定名称的bean，因变量名与配置耦合，不推荐使用</li>
-<li>自动装配优先级低于setter注入与构造器注入，同时出现时自动装配配置失效</li>
-</ul>
-<h1 id="bean的获取"><a href="#bean的获取" class="headerlink" title="bean的获取"></a>bean的获取</h1><ul>
-<li>方式一：使用bean名称获取</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">BookDao bookDao= (BookDao) context.getBean(<span class="string">&quot;bookDao&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>方式二：使用bean名称获取并指定类型</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">BookDao bookDao1=context.getBean(<span class="string">&quot;bookDao&quot;</span>,BookDao.class);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>方式三：使用bean类型获取</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">BookDao bookDao2=context.getBean(BookDao.class);</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h1 id="基本总结"><a href="#基本总结" class="headerlink" title="基本总结"></a>基本总结</h1><h2 id="bean相关"><a href="#bean相关" class="headerlink" title="bean相关"></a>bean相关</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span></span></span><br><span class="line"><span class="tag">		<span class="attr">id</span>=<span class="string">&quot;bookDao&quot;</span>		&lt;!<span class="attr">--</span> <span class="attr">bean</span>的<span class="attr">Id</span> <span class="attr">--</span>&gt;</span></span><br><span class="line">		name=&quot;dao bookDaoImpl&quot;  <span class="comment">&lt;!-- bean的别名 --&gt;</span></span><br><span class="line">		class=&quot;dao.impl.BookDaoimpl&quot; <span class="comment">&lt;!-- bean类型，位置 --&gt;</span></span><br><span class="line">		scope=&quot;singleton&quot;		<span class="comment">&lt;!-- 控制bean的实例数量 --&gt;</span></span><br><span class="line">		init-method=&quot;init&quot; <span class="comment">&lt;!-- 生命周期初始化方法 --&gt;</span></span><br><span class="line">		destroy-method=&quot;destory&quot; <span class="comment">&lt;!-- 生命周期销毁方法 --&gt;</span></span><br><span class="line">		autowire=&quot;byType&quot; <span class="comment">&lt;!-- 自动装配类型 --&gt;</span></span><br><span class="line">		factory-method=&quot;getInstance&quot; <span class="comment">&lt;!-- bean工厂方法，引用于静态工厂 --&gt;</span></span><br><span class="line">		factory-bean=&quot;dao.impl.BookDaoimpl&quot; <span class="comment">&lt;!-- 实例工厂bean --&gt;</span></span><br><span class="line">		lazy-init=&quot;true&quot;	<span class="comment">&lt;!-- 控制bean延迟加载 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="依赖注入"><a href="#依赖注入" class="headerlink" title="依赖注入"></a>依赖注入</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookservice&quot;</span> <span class="attr">class</span>=<span class="string">&quot;service.impl.Bookserviceimpl&quot;</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 构造器注入引用类型 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;bookDao&quot;</span> /&gt;</span>  </span><br><span class="line">	</span><br><span class="line">	<span class="comment">&lt;!-- 构造器注入简单类型 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">&quot;msg&quot;</span> <span class="attr">value</span>=<span class="string">&quot;WARN&quot;</span> /&gt;</span>  </span><br><span class="line">	</span><br><span class="line">	<span class="comment">&lt;!-- 类型匹配与索引匹配 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">type</span>=<span class="string">&quot;java.lang.String&quot;</span> <span class="attr">index</span>=<span class="string">&quot;3&quot;</span> <span class="attr">value</span>=<span class="string">&quot;WARN&quot;</span> /&gt;</span>  </span><br><span class="line">	</span><br><span class="line">	<span class="comment">&lt;!-- setter注入引用类型 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;bookDao&quot;</span>/&gt;</span> </span><br><span class="line">  </span><br><span class="line">  <span class="comment">&lt;!-- setter注入简单类型 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;msg&quot;</span> <span class="attr">value</span>=<span class="string">&quot;WARN&quot;</span> /&gt;</span> </span><br><span class="line">  </span><br><span class="line">  <span class="comment">&lt;!-- setter注入集合类型 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;names&quot;</span>&gt;</span> </span><br><span class="line">      	<span class="tag">&lt;<span class="name">list</span>&gt;</span></span><br><span class="line">      		<span class="tag">&lt;<span class="name">value</span>&gt;</span>itcast<span class="tag">&lt;/<span class="name">value</span>&gt;</span>		<span class="comment">&lt;!-- 集合注入简单类型 --&gt;</span></span><br><span class="line">      		<span class="tag">&lt;<span class="name">ref</span> <span class="attr">bean</span>=<span class="string">&quot;dataSource&quot;</span>/&gt;</span>	<span class="comment">&lt;!-- 集合注入引用类型 --&gt;</span></span><br><span class="line">      	<span class="tag">&lt;/<span class="name">list</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Spring</category>
-      </categories>
-      <tags>
-        <tag>Spring</tag>
-        <tag>轻量级框架</tag>
-        <tag>IOC</tag>
       </tags>
   </entry>
   <entry>
@@ -1501,6 +1333,174 @@
         <tag>Spring</tag>
         <tag>轻量级框架</tag>
         <tag>SpringMVC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring</title>
+    <url>/2022/07/04/Spring/</url>
+    <content><![CDATA[<h1 id="Spring-Framework"><a href="#Spring-Framework" class="headerlink" title="Spring Framework"></a>Spring Framework</h1><p>它是Spring生态圈中最基础的项目，是其他项目的根基</p>
+<p>![系统架构](E:/%E5%AD%A6%E4%B9%A0/Spring/Spring/Spring Framework.png)</p>
+<h2 id="核心容器"><a href="#核心容器" class="headerlink" title="核心容器"></a>核心容器</h2><p>Core Container  用于存放java对象</p>
+<ul>
+<li>IoC(Inversion of Control) 控制反转<ul>
+<li>使用对象时，由主动new产生对象转换为由外部提供对象，此过程中对象的创建控制权由程序转移到外部，这种思想称为控制反转</li>
+<li>IoC容器负责对象的创建，初始化等一系列工作，被创建或被管理的对象在IoC容器中统称为<strong>Bean</strong></li>
+</ul>
+</li>
+<li>DI（Dependency Injection）依赖注入<ul>
+<li>在容器中建立bean与bean之间的依赖关系的整个过程，称为依赖注入</li>
+</ul>
+</li>
+</ul>
+<p>​    </p>
+<h2 id="IoC-Inversion-of-Control-控制反转"><a href="#IoC-Inversion-of-Control-控制反转" class="headerlink" title="IoC(Inversion of Control) 控制反转"></a>IoC(Inversion of Control) 控制反转</h2><ul>
+<li><p>IoC使用方法</p>
+<ol>
+<li><p>导入Spring坐标</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-context<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.10.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>定义Spring管理的类（接口）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">BookDao</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">save</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BookServiceImpl</span> <span class="keyword">implements</span> <span class="title">BookService</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> BookDao bookDao=<span class="keyword">new</span> BookDaoImpl();</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">save</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;book service save ...&quot;</span>);</span><br><span class="line">        bookDao.save();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>创建Spring配置文件，配置对应类作为Spring管理的bean</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- xml文件名可以是applicationContext.xml --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.dao.impl.BookDaoImpl&quot;</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookService&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.service.impl.BookServiceImpl&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>初始化IoC容器，通过容器获取bean</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">App2</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        ApplicationContext ctx= <span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">&quot;applicationContext.xml&quot;</span>);</span><br><span class="line">        BookService bookService= (BookService) ctx.getBean(<span class="string">&quot;bookService&quot;</span>);</span><br><span class="line">        bookService.save();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ul>
+<h2 id="DI（Dependency-Injection）依赖注入"><a href="#DI（Dependency-Injection）依赖注入" class="headerlink" title="DI（Dependency Injection）依赖注入"></a>DI（Dependency Injection）依赖注入</h2><ol>
+<li><p>在IoC基础上，删除使用new形式创建对象的的代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BookServiceImpl</span> <span class="keyword">implements</span> <span class="title">BookService</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> BookDao bookDao;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">save</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;book service save ...&quot;</span>);</span><br><span class="line">        bookDao.save();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>提供依赖对象对应的setter方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setBookDao</span><span class="params">(BookDao bookDao)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.bookDao = bookDao;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>配置service与dao之间的关系</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookService&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.service.impl.BookServiceImpl&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;bookDao&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="bean的配置"><a href="#bean的配置" class="headerlink" title="bean的配置"></a>bean的配置</h1><ul>
+<li><h3 id="bean的基础配置"><a href="#bean的基础配置" class="headerlink" title="bean的基础配置"></a>bean的基础配置</h3></li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.dao.impl.BookDaoImpl&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>id是唯一标识，class是文件位置</p>
+<ul>
+<li><h3 id="bean的别名配置"><a href="#bean的别名配置" class="headerlink" title="bean的别名配置"></a>bean的别名配置</h3></li>
+</ul>
+<p>可以定义多个，使用逗号，空格，分号分隔</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">name</span>=<span class="string">&quot;dao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.dao.impl.BookDaoImpl&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>常见的使用异常，获取bean无论是通过id还是name获取，如果无法获取到，将抛出如下异常</p>
+<p><code>NoSuchBeanDefinitionException: No bean named &#39;service&#39; available</code></p>
+<p>查看bean的配置与别名的填写是否有误即可</p>
+<ul>
+<li><h3 id="bean作用范围配置"><a href="#bean作用范围配置" class="headerlink" title="bean作用范围配置"></a>bean作用范围配置</h3></li>
+</ul>
+<p><code>score</code>标签定义作用范围</p>
+<ul>
+<li>singleton：单例（默认）</li>
+<li>prototype：非单例</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">name</span>=<span class="string">&quot;dao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.dao.impl.BookDaoImpl&quot;</span> <span class="attr">scope</span>=<span class="string">&quot;prototype&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>适合交给容器管理的bean<ul>
+<li>表现层对象</li>
+<li>业务层对象</li>
+<li>数据层对象</li>
+<li>工具对象</li>
+</ul>
+</li>
+<li>不适合交给容器进行管理的bean<ul>
+<li>封装实体的域对象</li>
+</ul>
+</li>
+</ul>
+<h2 id="bean的实例化方式"><a href="#bean的实例化方式" class="headerlink" title="bean的实例化方式"></a>bean的实例化方式</h2><ul>
+<li><h3 id="使用构造方法实例化bean（常用）"><a href="#使用构造方法实例化bean（常用）" class="headerlink" title="使用构造方法实例化bean（常用）"></a>使用构造方法实例化bean（常用）</h3><ul>
+<li><p>提供可访问的构造方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BookDaoImpl</span> <span class="keyword">implements</span> <span class="title">BookDao</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">BookDaoImpl</span><span class="params">()</span></span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">save</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;book dao save ...&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">name</span>=<span class="string">&quot;dao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.dao.impl.BookDaoImpl&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>无参构造方法如果不存在，将抛出异常<code>BeanCreationException</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h3 id="使用静态工厂实例化bean（了解）"><a href="#使用静态工厂实例化bean（了解）" class="headerlink" title="使用静态工厂实例化bean（了解）"></a>使用静态工厂实例化bean（了解）</h3><ul>
+<li><p>静态工厂</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">OrderDaoFactory</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> OrderDao <span class="title">getOtderDao</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> OrederDaoImpl();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;orderDao&quot;</span> <span class="attr">factory-method</span>=<span class="string">&quot;getOrderDao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.factory.OrderDaoFactory&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>factory-method</code>是用来指明，创建对象所使用的方法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="使用实例工厂实例化bean（了解）"><a href="#使用实例工厂实例化bean（了解）" class="headerlink" title="使用实例工厂实例化bean（了解）"></a>使用实例工厂实例化bean（了解）</h3><ul>
+<li><p>实例工厂</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserDaoFactory</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span>  UserDao <span class="title">getUserDao</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> UserDaoImpl();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;userDaoFactory&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.factory.UserDaoFactory&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;userDao&quot;</span> <span class="attr">factory-method</span>=<span class="string">&quot;getUserDao&quot;</span> <span class="attr">factory-bean</span>=<span class="string">&quot;userDaoFactory&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h3 id="使用FactoryBean实例化bean-实用"><a href="#使用FactoryBean实例化bean-实用" class="headerlink" title="使用FactoryBean实例化bean(实用)"></a>使用FactoryBean实例化bean(实用)</h3><ul>
+<li><p>实例化工厂类，实现FactoryBean接口，复写抽象类</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span>  <span class="title">UserDaoFactoryBean</span> <span class="keyword">implements</span> <span class="title">FactoryBean</span>&lt;<span class="title">UserDao</span>&gt;</span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> UserDao <span class="title">getObject</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> UserDaoImpl();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> Class&lt;?&gt; getObjectType()&#123;</span><br><span class="line">		<span class="keyword">return</span> UserDao.class;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;userDao&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.example.factory.UserDaoFactoryBean&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h2 id="自动装配"><a href="#自动装配" class="headerlink" title="自动装配"></a>自动装配</h2><ol>
+<li>需要保留接口实现类中的setter方法</li>
+<li>在spring配置文件中加入 <code>autowire</code>按需进行自动装配</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;xxx&quot;</span> <span class="attr">class</span>=<span class="string">&quot;xxx&quot;</span> <span class="attr">autowire</span>=<span class="string">&quot;byType&quot;</span>&gt;</span> <span class="comment">&lt;!-- 按类型装配 --!&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>自动装配用于引用类型依赖注入，不能对简单类型进行操作</li>
+<li>使用按类型装配时（byType）必须保障容器中相同的bean唯一，推荐使用</li>
+<li>使用按名称装配时（byName）必须保障容器中具有指定名称的bean，因变量名与配置耦合，不推荐使用</li>
+<li>自动装配优先级低于setter注入与构造器注入，同时出现时自动装配配置失效</li>
+</ul>
+<h1 id="bean的获取"><a href="#bean的获取" class="headerlink" title="bean的获取"></a>bean的获取</h1><ul>
+<li>方式一：使用bean名称获取</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">BookDao bookDao= (BookDao) context.getBean(<span class="string">&quot;bookDao&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>方式二：使用bean名称获取并指定类型</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">BookDao bookDao1=context.getBean(<span class="string">&quot;bookDao&quot;</span>,BookDao.class);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>方式三：使用bean类型获取</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">BookDao bookDao2=context.getBean(BookDao.class);</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="基本总结"><a href="#基本总结" class="headerlink" title="基本总结"></a>基本总结</h1><h2 id="bean相关"><a href="#bean相关" class="headerlink" title="bean相关"></a>bean相关</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span></span></span><br><span class="line"><span class="tag">		<span class="attr">id</span>=<span class="string">&quot;bookDao&quot;</span>		&lt;!<span class="attr">--</span> <span class="attr">bean</span>的<span class="attr">Id</span> <span class="attr">--</span>&gt;</span></span><br><span class="line">		name=&quot;dao bookDaoImpl&quot;  <span class="comment">&lt;!-- bean的别名 --&gt;</span></span><br><span class="line">		class=&quot;dao.impl.BookDaoimpl&quot; <span class="comment">&lt;!-- bean类型，位置 --&gt;</span></span><br><span class="line">		scope=&quot;singleton&quot;		<span class="comment">&lt;!-- 控制bean的实例数量 --&gt;</span></span><br><span class="line">		init-method=&quot;init&quot; <span class="comment">&lt;!-- 生命周期初始化方法 --&gt;</span></span><br><span class="line">		destroy-method=&quot;destory&quot; <span class="comment">&lt;!-- 生命周期销毁方法 --&gt;</span></span><br><span class="line">		autowire=&quot;byType&quot; <span class="comment">&lt;!-- 自动装配类型 --&gt;</span></span><br><span class="line">		factory-method=&quot;getInstance&quot; <span class="comment">&lt;!-- bean工厂方法，引用于静态工厂 --&gt;</span></span><br><span class="line">		factory-bean=&quot;dao.impl.BookDaoimpl&quot; <span class="comment">&lt;!-- 实例工厂bean --&gt;</span></span><br><span class="line">		lazy-init=&quot;true&quot;	<span class="comment">&lt;!-- 控制bean延迟加载 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="依赖注入"><a href="#依赖注入" class="headerlink" title="依赖注入"></a>依赖注入</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;bookservice&quot;</span> <span class="attr">class</span>=<span class="string">&quot;service.impl.Bookserviceimpl&quot;</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 构造器注入引用类型 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;bookDao&quot;</span> /&gt;</span>  </span><br><span class="line">	</span><br><span class="line">	<span class="comment">&lt;!-- 构造器注入简单类型 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">&quot;msg&quot;</span> <span class="attr">value</span>=<span class="string">&quot;WARN&quot;</span> /&gt;</span>  </span><br><span class="line">	</span><br><span class="line">	<span class="comment">&lt;!-- 类型匹配与索引匹配 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">type</span>=<span class="string">&quot;java.lang.String&quot;</span> <span class="attr">index</span>=<span class="string">&quot;3&quot;</span> <span class="attr">value</span>=<span class="string">&quot;WARN&quot;</span> /&gt;</span>  </span><br><span class="line">	</span><br><span class="line">	<span class="comment">&lt;!-- setter注入引用类型 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;bookDao&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;bookDao&quot;</span>/&gt;</span> </span><br><span class="line">  </span><br><span class="line">  <span class="comment">&lt;!-- setter注入简单类型 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;msg&quot;</span> <span class="attr">value</span>=<span class="string">&quot;WARN&quot;</span> /&gt;</span> </span><br><span class="line">  </span><br><span class="line">  <span class="comment">&lt;!-- setter注入集合类型 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;names&quot;</span>&gt;</span> </span><br><span class="line">      	<span class="tag">&lt;<span class="name">list</span>&gt;</span></span><br><span class="line">      		<span class="tag">&lt;<span class="name">value</span>&gt;</span>itcast<span class="tag">&lt;/<span class="name">value</span>&gt;</span>		<span class="comment">&lt;!-- 集合注入简单类型 --&gt;</span></span><br><span class="line">      		<span class="tag">&lt;<span class="name">ref</span> <span class="attr">bean</span>=<span class="string">&quot;dataSource&quot;</span>/&gt;</span>	<span class="comment">&lt;!-- 集合注入引用类型 --&gt;</span></span><br><span class="line">      	<span class="tag">&lt;/<span class="name">list</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Spring</category>
+      </categories>
+      <tags>
+        <tag>Spring</tag>
+        <tag>轻量级框架</tag>
+        <tag>IOC</tag>
       </tags>
   </entry>
   <entry>
@@ -1742,6 +1742,101 @@
       </tags>
   </entry>
   <entry>
+    <title>Spring整合</title>
+    <url>/2022/08/10/Spring%E6%95%B4%E5%90%88/</url>
+    <content><![CDATA[<h1 id="表现层数据封装"><a href="#表现层数据封装" class="headerlink" title="表现层数据封装"></a>表现层数据封装</h1><p>设置统一数据返回结果类</p>
+<ul>
+<li><p>前端接收数据格式</p>
+<ul>
+<li><p>创建模型类，封装数据到data属性中</p>
+</li>
+<li><p>封装操作结果到code属性中</p>
+</li>
+<li><p>封装特殊消息到message（msg）</p>
+<p>Result类中的字段并不是固定的，可以根据需要自行增减</p>
+<p>提供若干个<strong>构造方法</strong>，方便操作</p>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Result</span></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> Object data;</span><br><span class="line">	<span class="keyword">private</span> Integer code;</span><br><span class="line">	<span class="keyword">private</span> String msg;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<ul>
+<li><p>设置统一数据返回结果编码</p>
+<p>Code类的常量设计也不是固定的，可以根据需要自行增减</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Code</span></span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer SAVE_OK=<span class="number">20011</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer DELETE_OK=<span class="number">20021</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer UPDATE_OK=<span class="number">20031</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer GET_OK=<span class="number">20041</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer SAVE_ERR=<span class="number">20010</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer DELETE_ERR=<span class="number">20020</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer UPDATE_ERR=<span class="number">20030</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer GET_ERR=<span class="number">20040</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>根据情况设定合理的Result</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/books&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BookController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> BookService bookService;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">		方法的返回值类型是创建的模型类</span></span><br><span class="line"><span class="comment">	*/</span></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/&#123;id&#125;&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Result <span class="title">getById</span><span class="params">(<span class="meta">@PathVariable</span> Integer id)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//提供的服务操作</span></span><br><span class="line">        Book book = bookService.getById(id);</span><br><span class="line">        Integer code = book != <span class="keyword">null</span> ? Code.GET : Code.GET_ERR;</span><br><span class="line">        String msg = book != <span class="keyword">null</span> ? <span class="string">&quot;&quot;</span> : <span class="string">&quot;查询失败请重试&quot;</span>;</span><br><span class="line">        <span class="comment">//值为模型类里的对应构造器</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Result(code,book,msg);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="异常处理器"><a href="#异常处理器" class="headerlink" title="异常处理器"></a>异常处理器</h1><p>集中的、统一的处理项目中出现的异常</p>
+<p>创建在表现层（controller）创建异常类</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RestControllerAdvice</span>	<span class="comment">//为Rest风格开发的控制类做增强</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ProjectExceptionAdvice</span></span>&#123;</span><br><span class="line">    <span class="comment">//设置指定异常的处理方案，功能等同于控制方法，出现异常后终止原始控制器执行，并转入当前方法执行</span></span><br><span class="line">	<span class="meta">@ExceptionHandler(Exception.class)</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Result <span class="title">doException</span><span class="params">(Excepion ex)</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> Result(<span class="number">666</span>,<span class="keyword">null</span>,<span class="string">&quot;异常&quot;</span>);<span class="comment">//返回Result方法</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="项目异常分类"><a href="#项目异常分类" class="headerlink" title="项目异常分类"></a>项目异常分类</h1><ul>
+<li><h3 id="业务异常（BusinessException）"><a href="#业务异常（BusinessException）" class="headerlink" title="业务异常（BusinessException）"></a>业务异常（BusinessException）</h3><ul>
+<li>规范的用户行为产生的异常</li>
+<li>不规范的用户行为操作产生的异常</li>
+</ul>
+</li>
+<li><h2 id="系统异常（SystemException）"><a href="#系统异常（SystemException）" class="headerlink" title="系统异常（SystemException）"></a>系统异常（SystemException）</h2><ul>
+<li>项目运行过程中可预计且无法避免的异常</li>
+</ul>
+</li>
+<li><h2 id="其他异常（Exception）"><a href="#其他异常（Exception）" class="headerlink" title="其他异常（Exception）"></a>其他异常（Exception）</h2><ul>
+<li>编译人员未预期到的异常</li>
+</ul>
+</li>
+</ul>
+<h1 id="项目异常处理方案"><a href="#项目异常处理方案" class="headerlink" title="项目异常处理方案"></a>项目异常处理方案</h1><ul>
+<li><h3 id="业务异常（BusinessException）-1"><a href="#业务异常（BusinessException）-1" class="headerlink" title="业务异常（BusinessException）"></a>业务异常（BusinessException）</h3><ul>
+<li>发送对应消息传递给用户，提醒规范操作</li>
+</ul>
+</li>
+<li><h3 id="系统异常（SystemException）-1"><a href="#系统异常（SystemException）-1" class="headerlink" title="系统异常（SystemException）"></a>系统异常（SystemException）</h3><ul>
+<li>发送固定消息传递给用户，安抚用户</li>
+<li>发送特定消息给运维人员，提醒维护</li>
+<li>记录日志</li>
+</ul>
+</li>
+<li><h3 id="其他异常（Exception）-1"><a href="#其他异常（Exception）-1" class="headerlink" title="其他异常（Exception）"></a>其他异常（Exception）</h3><ul>
+<li>发送固定消息传递给用户，安抚用户</li>
+<li>发送特定消息给编程人员，提醒维护（纳入预期范围内）</li>
+<li>记录日志</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li><p>自定义项目系统级异常</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.ssm.exception;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SystemException</span> <span class="keyword">extends</span> <span class="title">RuntimeException</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Integer code;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Integer <span class="title">getCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> code;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setCode</span><span class="params">(Integer code)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SystemException</span><span class="params">(String message, Throwable cause, Integer code)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(message, cause);</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SystemException</span><span class="params">(String message, Integer code)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(message);</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>自定义项目业务级异常</p>
+<ol>
+<li>同上，类名不同</li>
+</ol>
+</li>
+<li><p>自定义异常编码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer SYSTEM_UNKNOW_ERROR = <span class="number">50001</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer SYSTEM_TIMEOUT_ERROR = <span class="number">50002</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer PROJECT_VALIDATE_ERROR = <span class="number">60001</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer PROJECT_BUSINESS_ERROR = <span class="number">60002</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>触发自定义异常</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>()&#123;</span><br><span class="line">	<span class="keyword">throw</span> <span class="keyword">new</span> BusinessException(Code.PROJECT_VALIDATE_ERROR,<span class="string">&quot;消息&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>拦截并处理异常</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RestControllerAdvice</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ProjectExceptionAdvice</span> </span>&#123;</span><br><span class="line">    <span class="meta">@ExceptionHandler(SystemException.class)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Result <span class="title">doSystemException</span><span class="params">(SystemException ex)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Result(ex.getCode(),<span class="keyword">null</span>,ex.getMessage());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExceptionHandler(BusinessException.class)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Result <span class="title">doBusinessException</span><span class="params">(BusinessException ex)</span></span>&#123;</span><br><span class="line">        <span class="comment">//记录日志</span></span><br><span class="line">        <span class="comment">//发送邮件给开发人员</span></span><br><span class="line">        <span class="comment">//发送短信给运维人员</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Result(ex.getCode(),<span class="keyword">null</span>,ex.getMessage());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@ExceptionHandler(Exception.class)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Result <span class="title">doException</span><span class="params">(Exception ex)</span></span>&#123;</span><br><span class="line">        <span class="comment">//记录日志</span></span><br><span class="line">        <span class="comment">//发送邮件给开发人员</span></span><br><span class="line">        <span class="comment">//发送短信给运维人员</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Result(Code.SYSTEM_UNKNOW_ERROR,<span class="keyword">null</span>,<span class="string">&quot;消息&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Spring</category>
+      </categories>
+      <tags>
+        <tag>Spring</tag>
+        <tag>轻量级框架</tag>
+        <tag>Spring Mvc</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Spring注解开发</title>
     <url>/2022/08/07/Spring%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91/</url>
     <content><![CDATA[<h1 id="使用注解开发定义bean"><a href="#使用注解开发定义bean" class="headerlink" title="使用注解开发定义bean"></a>使用注解开发定义bean</h1><ul>
@@ -1892,98 +1987,41 @@
       </tags>
   </entry>
   <entry>
-    <title>Spring整合</title>
-    <url>/2022/08/10/Spring%E6%95%B4%E5%90%88/</url>
-    <content><![CDATA[<h1 id="表现层数据封装"><a href="#表现层数据封装" class="headerlink" title="表现层数据封装"></a>表现层数据封装</h1><p>设置统一数据返回结果类</p>
+    <title>Tomcat安装配置</title>
+    <url>/2022/06/30/Tomcat/</url>
+    <content><![CDATA[<h1 id="Tomcat安装使用"><a href="#Tomcat安装使用" class="headerlink" title="Tomcat安装使用"></a>Tomcat安装使用</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>Tomcat下载是绿色版，直接解压至指定路径即可（非中文路径下）</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p><code>conf</code>目录下的<code>logging.properties</code>是Tomcat的设置</p>
+<p>解决控制台乱码可以在这个文件里，找到如下字段，并改为GBK格式即可</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">java.util.logging.ConsoleHandler.encoding = GBK</span><br></pre></td></tr></table></figure>
+
+
+
+<p><code>bin</code>目录下的s<code>tartup.bat</code>是Tomcat的启动文件</p>
 <ul>
-<li><p>前端接收数据格式</p>
-<ul>
-<li><p>创建模型类，封装数据到data属性中</p>
-</li>
-<li><p>封装操作结果到code属性中</p>
-</li>
-<li><p>封装特殊消息到message（msg）</p>
-<p>Result类中的字段并不是固定的，可以根据需要自行增减</p>
-<p>提供若干个<strong>构造方法</strong>，方便操作</p>
-</li>
+<li>后缀bat是windows的处理文件</li>
+<li>后缀sh是Liunx的处理文件</li>
 </ul>
-</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Result</span></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> Object data;</span><br><span class="line">	<span class="keyword">private</span> Integer code;</span><br><span class="line">	<span class="keyword">private</span> String msg;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="pom-xml相关标签配置信息"><a href="#pom-xml相关标签配置信息" class="headerlink" title="pom.xml相关标签配置信息"></a>pom.xml相关标签配置信息</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">packaging</span>&gt;</span>war<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span>	<span class="comment">&lt;!-- 将文件打包格式设置为war，默认jar 放在文件开头的version下面 -</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">&lt;configuration&gt;		&lt;!-- 放在插件信息version下面 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">port</span>&gt;</span>80<span class="tag">&lt;/<span class="name">port</span>&gt;</span>	<span class="comment">&lt;!-- 更改默认端口号 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">path</span>&gt;</span>/<span class="tag">&lt;/<span class="name">path</span>&gt;</span>	<span class="comment">&lt;!-- 更改网址默认的后缀路径 --&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
 
+<h1 id="在IDEA中配置Tomcat"><a href="#在IDEA中配置Tomcat" class="headerlink" title="在IDEA中配置Tomcat"></a>在IDEA中配置Tomcat</h1><h2 id="通过骨架创建Tomcat"><a href="#通过骨架创建Tomcat" class="headerlink" title="通过骨架创建Tomcat"></a>通过骨架创建Tomcat</h2><p>创建新模块时，选择Maven，勾选从原型创建，找到<code>webapp</code>并创建</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">org.apache.maven.archetypes:maven-archetype-webapp</span><br></pre></td></tr></table></figure>
 
+<p>删除不需要的<code>pom.xml</code>里的内容</p>
+<p>在main包下补全目录，java目录，resources目录</p>
+<h2 id="通过Maven插件创建"><a href="#通过Maven插件创建" class="headerlink" title="通过Maven插件创建"></a>通过Maven插件创建</h2><p>创建Maven模块，在pom.xml中导入Tomcat插件</p>
+<p>可以使用快捷键alt+insert，选择插件模板，输入Tomcat依赖信息</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.tomcat.maven<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>tomcat7-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<ul>
-<li><p>设置统一数据返回结果编码</p>
-<p>Code类的常量设计也不是固定的，可以根据需要自行增减</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Code</span></span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer SAVE_OK=<span class="number">20011</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer DELETE_OK=<span class="number">20021</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer UPDATE_OK=<span class="number">20031</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer GET_OK=<span class="number">20041</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer SAVE_ERR=<span class="number">20010</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer DELETE_ERR=<span class="number">20020</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer UPDATE_ERR=<span class="number">20030</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer GET_ERR=<span class="number">20040</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>根据情况设定合理的Result</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/books&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BookController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> BookService bookService;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">		方法的返回值类型是创建的模型类</span></span><br><span class="line"><span class="comment">	*/</span></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/&#123;id&#125;&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Result <span class="title">getById</span><span class="params">(<span class="meta">@PathVariable</span> Integer id)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//提供的服务操作</span></span><br><span class="line">        Book book = bookService.getById(id);</span><br><span class="line">        Integer code = book != <span class="keyword">null</span> ? Code.GET : Code.GET_ERR;</span><br><span class="line">        String msg = book != <span class="keyword">null</span> ? <span class="string">&quot;&quot;</span> : <span class="string">&quot;查询失败请重试&quot;</span>;</span><br><span class="line">        <span class="comment">//值为模型类里的对应构造器</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Result(code,book,msg);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h1 id="异常处理器"><a href="#异常处理器" class="headerlink" title="异常处理器"></a>异常处理器</h1><p>集中的、统一的处理项目中出现的异常</p>
-<p>创建在表现层（controller）创建异常类</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RestControllerAdvice</span>	<span class="comment">//为Rest风格开发的控制类做增强</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ProjectExceptionAdvice</span></span>&#123;</span><br><span class="line">    <span class="comment">//设置指定异常的处理方案，功能等同于控制方法，出现异常后终止原始控制器执行，并转入当前方法执行</span></span><br><span class="line">	<span class="meta">@ExceptionHandler(Exception.class)</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Result <span class="title">doException</span><span class="params">(Excepion ex)</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> Result(<span class="number">666</span>,<span class="keyword">null</span>,<span class="string">&quot;异常&quot;</span>);<span class="comment">//返回Result方法</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="项目异常分类"><a href="#项目异常分类" class="headerlink" title="项目异常分类"></a>项目异常分类</h1><ul>
-<li><h3 id="业务异常（BusinessException）"><a href="#业务异常（BusinessException）" class="headerlink" title="业务异常（BusinessException）"></a>业务异常（BusinessException）</h3><ul>
-<li>规范的用户行为产生的异常</li>
-<li>不规范的用户行为操作产生的异常</li>
-</ul>
-</li>
-<li><h2 id="系统异常（SystemException）"><a href="#系统异常（SystemException）" class="headerlink" title="系统异常（SystemException）"></a>系统异常（SystemException）</h2><ul>
-<li>项目运行过程中可预计且无法避免的异常</li>
-</ul>
-</li>
-<li><h2 id="其他异常（Exception）"><a href="#其他异常（Exception）" class="headerlink" title="其他异常（Exception）"></a>其他异常（Exception）</h2><ul>
-<li>编译人员未预期到的异常</li>
-</ul>
-</li>
-</ul>
-<h1 id="项目异常处理方案"><a href="#项目异常处理方案" class="headerlink" title="项目异常处理方案"></a>项目异常处理方案</h1><ul>
-<li><h3 id="业务异常（BusinessException）-1"><a href="#业务异常（BusinessException）-1" class="headerlink" title="业务异常（BusinessException）"></a>业务异常（BusinessException）</h3><ul>
-<li>发送对应消息传递给用户，提醒规范操作</li>
-</ul>
-</li>
-<li><h3 id="系统异常（SystemException）-1"><a href="#系统异常（SystemException）-1" class="headerlink" title="系统异常（SystemException）"></a>系统异常（SystemException）</h3><ul>
-<li>发送固定消息传递给用户，安抚用户</li>
-<li>发送特定消息给运维人员，提醒维护</li>
-<li>记录日志</li>
-</ul>
-</li>
-<li><h3 id="其他异常（Exception）-1"><a href="#其他异常（Exception）-1" class="headerlink" title="其他异常（Exception）"></a>其他异常（Exception）</h3><ul>
-<li>发送固定消息传递给用户，安抚用户</li>
-<li>发送特定消息给编程人员，提醒维护（纳入预期范围内）</li>
-<li>记录日志</li>
-</ul>
-</li>
-</ul>
-<ol>
-<li><p>自定义项目系统级异常</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.ssm.exception;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SystemException</span> <span class="keyword">extends</span> <span class="title">RuntimeException</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Integer code;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Integer <span class="title">getCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> code;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setCode</span><span class="params">(Integer code)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SystemException</span><span class="params">(String message, Throwable cause, Integer code)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(message, cause);</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SystemException</span><span class="params">(String message, Integer code)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(message);</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-<li><p>自定义项目业务级异常</p>
-<ol>
-<li>同上，类名不同</li>
-</ol>
-</li>
-<li><p>自定义异常编码</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer SYSTEM_UNKNOW_ERROR = <span class="number">50001</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer SYSTEM_TIMEOUT_ERROR = <span class="number">50002</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer PROJECT_VALIDATE_ERROR = <span class="number">60001</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Integer PROJECT_BUSINESS_ERROR = <span class="number">60002</span>;</span><br></pre></td></tr></table></figure></li>
-<li><p>触发自定义异常</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>()&#123;</span><br><span class="line">	<span class="keyword">throw</span> <span class="keyword">new</span> BusinessException(Code.PROJECT_VALIDATE_ERROR,<span class="string">&quot;消息&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>拦截并处理异常</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RestControllerAdvice</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ProjectExceptionAdvice</span> </span>&#123;</span><br><span class="line">    <span class="meta">@ExceptionHandler(SystemException.class)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Result <span class="title">doSystemException</span><span class="params">(SystemException ex)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Result(ex.getCode(),<span class="keyword">null</span>,ex.getMessage());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExceptionHandler(BusinessException.class)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Result <span class="title">doBusinessException</span><span class="params">(BusinessException ex)</span></span>&#123;</span><br><span class="line">        <span class="comment">//记录日志</span></span><br><span class="line">        <span class="comment">//发送邮件给开发人员</span></span><br><span class="line">        <span class="comment">//发送短信给运维人员</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Result(ex.getCode(),<span class="keyword">null</span>,ex.getMessage());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@ExceptionHandler(Exception.class)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Result <span class="title">doException</span><span class="params">(Exception ex)</span></span>&#123;</span><br><span class="line">        <span class="comment">//记录日志</span></span><br><span class="line">        <span class="comment">//发送邮件给开发人员</span></span><br><span class="line">        <span class="comment">//发送短信给运维人员</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Result(Code.SYSTEM_UNKNOW_ERROR,<span class="keyword">null</span>,<span class="string">&quot;消息&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
 ]]></content>
       <categories>
-        <category>Spring</category>
+        <category>Java Web</category>
       </categories>
       <tags>
-        <tag>Spring</tag>
-        <tag>轻量级框架</tag>
-        <tag>Spring Mvc</tag>
+        <tag>Java</tag>
+        <tag>Java Web</tag>
+        <tag>Servlet容器</tag>
       </tags>
   </entry>
   <entry>
@@ -2130,44 +2168,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Tomcat安装配置</title>
-    <url>/2022/06/30/Tomcat/</url>
-    <content><![CDATA[<h1 id="Tomcat安装使用"><a href="#Tomcat安装使用" class="headerlink" title="Tomcat安装使用"></a>Tomcat安装使用</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>Tomcat下载是绿色版，直接解压至指定路径即可（非中文路径下）</p>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p><code>conf</code>目录下的<code>logging.properties</code>是Tomcat的设置</p>
-<p>解决控制台乱码可以在这个文件里，找到如下字段，并改为GBK格式即可</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">java.util.logging.ConsoleHandler.encoding = GBK</span><br></pre></td></tr></table></figure>
-
-
-
-<p><code>bin</code>目录下的s<code>tartup.bat</code>是Tomcat的启动文件</p>
-<ul>
-<li>后缀bat是windows的处理文件</li>
-<li>后缀sh是Liunx的处理文件</li>
-</ul>
-<h2 id="pom-xml相关标签配置信息"><a href="#pom-xml相关标签配置信息" class="headerlink" title="pom.xml相关标签配置信息"></a>pom.xml相关标签配置信息</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">packaging</span>&gt;</span>war<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span>	<span class="comment">&lt;!-- 将文件打包格式设置为war，默认jar 放在文件开头的version下面 -</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">&lt;configuration&gt;		&lt;!-- 放在插件信息version下面 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">port</span>&gt;</span>80<span class="tag">&lt;/<span class="name">port</span>&gt;</span>	<span class="comment">&lt;!-- 更改默认端口号 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">path</span>&gt;</span>/<span class="tag">&lt;/<span class="name">path</span>&gt;</span>	<span class="comment">&lt;!-- 更改网址默认的后缀路径 --&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="在IDEA中配置Tomcat"><a href="#在IDEA中配置Tomcat" class="headerlink" title="在IDEA中配置Tomcat"></a>在IDEA中配置Tomcat</h1><h2 id="通过骨架创建Tomcat"><a href="#通过骨架创建Tomcat" class="headerlink" title="通过骨架创建Tomcat"></a>通过骨架创建Tomcat</h2><p>创建新模块时，选择Maven，勾选从原型创建，找到<code>webapp</code>并创建</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">org.apache.maven.archetypes:maven-archetype-webapp</span><br></pre></td></tr></table></figure>
-
-<p>删除不需要的<code>pom.xml</code>里的内容</p>
-<p>在main包下补全目录，java目录，resources目录</p>
-<h2 id="通过Maven插件创建"><a href="#通过Maven插件创建" class="headerlink" title="通过Maven插件创建"></a>通过Maven插件创建</h2><p>创建Maven模块，在pom.xml中导入Tomcat插件</p>
-<p>可以使用快捷键alt+insert，选择插件模板，输入Tomcat依赖信息</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.tomcat.maven<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>tomcat7-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Java Web</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Java Web</tag>
-        <tag>Servlet容器</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>logback日志</title>
     <url>/2022/06/30/logback%E6%97%A5%E5%BF%97/</url>
     <content><![CDATA[<h1 id><a href="#" class="headerlink" title></a></h1><ul>
@@ -2218,11 +2218,11 @@
 <p>​        在双引号中修改等级</p>
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>Java SE</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>Java SE</tag>
+        <tag>Java</tag>
         <tag>日志</tag>
         <tag>SLF4J</tag>
         <tag>logback</tag>
@@ -2463,11 +2463,11 @@
 </ul>
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>Java SE</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>Java SE</tag>
+        <tag>Java</tag>
         <tag>方法递归</tag>
       </tags>
   </entry>
@@ -2735,11 +2735,11 @@
 </ul>
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>Java SE</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>Java SE</tag>
+        <tag>Java</tag>
         <tag>多线程</tag>
         <tag>Thread</tag>
         <tag>线程安全</tag>
@@ -2937,11 +2937,11 @@
 
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>Java SE</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>Java SE</tag>
+        <tag>Java</tag>
         <tag>I/O流</tag>
         <tag>缓冲流</tag>
         <tag>转换流</tag>
@@ -3015,11 +3015,11 @@
 
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>Java SE</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>Java SE</tag>
+        <tag>Java</tag>
         <tag>网络通信</tag>
       </tags>
   </entry>

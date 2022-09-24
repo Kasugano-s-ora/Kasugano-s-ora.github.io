@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AOP切面编程 - 穹仁的博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="AOP简介面向切面编程，一种编程范式，指导开发者如何组织程序架构
+作用：在不惊动原始设计的基础上为其功能增强
+Spring理念：无入侵式/无侵入式
+连接点（JoinPoint）
+原始方法称为连接点
+,"> 
+    
+    <link rel="alternative" href="atom.xml" title="穹仁的博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="AOP切面编程 - 穹仁的博客"/>
+    <meta name="twitter:description" content="AOP简介面向切面编程，一种编程范式，指导开发者如何组织程序架构
+作用：在不惊动原始设计的基础上为其功能增强
+Spring理念：无入侵式/无侵入式
+连接点（JoinPoint）
+原始方法称为连接点
+,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="穹仁的博客"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="AOP切面编程 - 穹仁的博客"/>
+    <meta property="og:description" content="AOP简介面向切面编程，一种编程范式，指导开发者如何组织程序架构
+作用：在不惊动原始设计的基础上为其功能增强
+Spring理念：无入侵式/无侵入式
+连接点（JoinPoint）
+原始方法称为连接点
+,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+
+
+<body class="loading">
+    <span id="config-title" style="display:none">穹仁的博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">AOP切面编程</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">AOP切面编程</h1>
+        <div class="stuff">
+            <span>八月 10, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/AOP/" rel="tag">AOP</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Spring/" rel="tag">Spring</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%A1%86%E6%9E%B6/" rel="tag">轻量级框架</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="AOP简介"><a href="#AOP简介" class="headerlink" title="AOP简介"></a>AOP简介</h1><p>面向切面编程，一种编程范式，指导开发者如何组织程序架构</p>
+<p>作用：<strong>在不惊动原始设计</strong>的基础上为其功能增强</p>
+<p>Spring理念：无入侵式/无侵入式</p>
+<h2 id="连接点（JoinPoint）"><a href="#连接点（JoinPoint）" class="headerlink" title="连接点（JoinPoint）"></a>连接点（JoinPoint）</h2><ul>
+<li>原始方法称为连接点</li>
+<li>程序执行过程中的任意位置，力度为执行方法抛出异常、设置变量等</li>
+<li>在SpringAOP中，理解为方法的执行</li>
+</ul>
+<h2 id="切入点（Pointcut）"><a href="#切入点（Pointcut）" class="headerlink" title="切入点（Pointcut）"></a>切入点（Pointcut）</h2><ul>
+<li><p>在连接点上追加功能的叫切入点</p>
+</li>
+<li><p>匹配连接点的式子</p>
+</li>
+<li><p>在SpringAOP中，一个切入点可以只描述一个具体方法，也可以匹配多个方法</p>
+<ul>
+<li>一个具体方法：dao包下的接口中无形参无返回值的save方法</li>
+<li>匹配多个方法：所有的save方法，所有的get开头的方法，所有以Dao结尾的接口中的任意方法，所有带有一个参数的方法</li>
+</ul>
+</li>
+<li><p><strong>切入点表达式标准格式：</strong>动作关键字（访问修饰符 返回值 包名.类/接口名.方法名（参数）异常名）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">execution(* com.text.service.*Service.*(..))</span><br></pre></td></tr></table></figure></li>
+<li><p>切入点表达式描述<strong>通配符</strong>，用于快速描述，范围描述</p>
+<ul>
+<li><code>*</code>：匹配任意符号</li>
+<li><code>..</code>：匹配多个连续的任意符号</li>
+<li><code>+</code>：匹配子类类型</li>
+</ul>
+</li>
+<li><p>切入点表达式书写技巧</p>
+<ol>
+<li>按<strong>标准规范</strong>开发</li>
+<li>查询操作的返回值建议使用<code>*</code>匹配</li>
+<li>减少使用<code>..</code>的形式描述包</li>
+<li>对接口进行描述，使用<code>*</code>表示模块名，例如UserService的匹配描述为*Service</li>
+<li>方法名书写保留动词，例如get，使用<code>*</code>表示名词，例如getById匹配描述为getBy*</li>
+<li>参数根据实际情况灵活调整</li>
+</ol>
+</li>
+</ul>
+<h2 id="通知-（Advice）"><a href="#通知-（Advice）" class="headerlink" title="通知 （Advice）"></a>通知 （Advice）</h2><ul>
+<li>创建的类称为通知类</li>
+<li>同样的功能（共性功能）称为通知</li>
+<li>在切入点处执行的操作，也就是共性功能</li>
+<li>在SpringAOP中，功能最终以方法的形式呈现</li>
+</ul>
+<ul>
+<li>切面（Aspect）        通知与切入点绑定的关系叫切面</li>
+</ul>
+<h1 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h1><ol>
+<li><p>pom.xml导包</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.aspectj<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>aspectjweaver<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.9.9.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>创建通知类</p>
+</li>
+<li><p>新建方法，方法体放入通知内容（功能内容）</p>
+</li>
+<li><p>在通知类中，使用注解配置相应SpringAOP</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span>	</span><br><span class="line"><span class="meta">@Aspect</span>		<span class="comment">//告知spring，下面的内容是AOP</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Myc</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//定义切入点，输入&quot;execution(返回类型 路径.方法())&quot;</span></span><br><span class="line">    <span class="meta">@Pointcut(&quot;execution(void Aop.dao.BookDao.un())&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">F</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Before(&quot;F()&quot;)</span>	<span class="comment">//这个注解用于需要的功能（通知），里面填入上面的方法名与括号</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">M</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(System.currentTimeMillis());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>设置SpringConfig对应注解</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@ComponentScan(&quot;Aop&quot;)</span></span><br><span class="line"><span class="meta">@EnableAspectJAutoProxy</span>	<span class="comment">//对应通知类的@Aspect	</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringConfig</span> </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="AOP通知类型"><a href="#AOP通知类型" class="headerlink" title="AOP通知类型"></a>AOP通知类型</h1><ul>
+<li><p><code>@Before</code>前置通知：在原始切入点方法前运行</p>
+</li>
+<li><p><code>@After</code>后置通知：在原始切入点方法后运行</p>
+</li>
+<li><p><code>@Around</code>环绕通知：在原始切入点方法前后运行</p>
+<ul>
+<li><p>通过参数<code>ProceedingjoinPoint</code>对原始方法进行调用</p>
+</li>
+<li><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a><strong>注意事项</strong></h3><ol>
+<li>环绕通知必须依赖形参<code>ProceedingJoinPoint</code>才能实现对原始方法的调用，进而实现原始方法调用前后同时添加通知</li>
+<li>通知中如何未使用<code>ProceedingJoinPoint</code>对原始方法经行调用将跳过原始方法的执行</li>
+<li>对原始方法的调用可以不接收返回值，通知方法设置为void即可，如果接收返回值，必须设定为**<code>Object</code>**类型</li>
+<li>原始方法的返回值如果是void类型，通知方法的返回值类型可以设置成void也可以设置成Object</li>
+<li>由于无法预知原始方法运行后是否会抛出异常，因此环绕通知方法必须抛出<code>Throwable</code>对象</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Around(&quot;F()&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">A</span><span class="params">(ProceedingJoinPoint pjp)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;before&quot;</span>);</span><br><span class="line">    Object p = pjpt.proceed();</span><br><span class="line">    System.out.println(<span class="string">&quot;after&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> p;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>@AfterReturning</code>：当前通知方法在原始切入点方法<strong>正常执行完毕后</strong>运行</p>
+</li>
+<li><p><code>@AfterThrowing</code>：当前通知方法在原始切入点方法运行<strong>抛出异常后</strong>执行</p>
+</li>
+</ul>
+<h1 id="原始方法属性获取"><a href="#原始方法属性获取" class="headerlink" title="原始方法属性获取"></a>原始方法属性获取</h1><ul>
+<li><p>在<code>ProceedingJoinPoint</code>中会获取原始方法</p>
+<ul>
+<li>获取包路径、类名等信息通过<code>Signature</code>相应的<code>get</code>方法获取属性信息</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">A</span><span class="params">(ProceedingJoinPoint pjpt)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">Signature signature=pjpt.getSignature();</span><br><span class="line">    String className = String.valueOf(signature.getDeclaringType());</span><br><span class="line">    String name = signature.getName();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="AOP通知获取数据"><a href="#AOP通知获取数据" class="headerlink" title="AOP通知获取数据"></a>AOP通知获取数据</h1><h2 id="获取参数数据"><a href="#获取参数数据" class="headerlink" title="获取参数数据"></a>获取参数数据</h2><ul>
+<li><p>​    <code>JoinPoint</code>对象描述了连接点方法的运行状态，可以获取到原始方法的调用参数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Before(&quot;F()&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">M</span><span class="params">(JoinPoint jp)</span></span>&#123;</span><br><span class="line">        Object[] args = jp.getArgs();</span><br><span class="line">        System.out.println(Arrays.toString(args));</span><br><span class="line">        System.out.println(System.currentTimeMillis());</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>ProceedJointPoint</code>是<code>JoinPoint</code>的子类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Around(&quot;F()&quot;)</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Object <span class="title">A</span><span class="params">(ProceedingJoinPoint pjpt)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">  </span><br><span class="line">       System.out.println(<span class="string">&quot;before&quot;</span>);</span><br><span class="line">       Object[] args = pjpt.getArgs();</span><br><span class="line">       System.out.println(Arrays.toString(args));</span><br><span class="line">       Object p = pjpt.proceed();</span><br><span class="line">       System.out.println(<span class="string">&quot;after&quot;</span>);</span><br><span class="line">       <span class="keyword">return</span> p;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="获取返回值数据"><a href="#获取返回值数据" class="headerlink" title="获取返回值数据"></a>获取返回值数据</h2><ul>
+<li><p>抛出异常后通知可以获取切入点方法中出现的异常信息，使用形参可以接收对应的异常对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@AfterReturning(value = &quot;F()&quot;,returning = &quot;ret&quot;)</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AR</span><span class="params">(String ret)</span></span>&#123;</span><br><span class="line">       System.out.println(ret);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>环绕通知中可以手工书写对原始方法的调用，得到的结果即为原始方法的返回值</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Around(&quot;F()&quot;)</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Object <span class="title">A</span><span class="params">(ProceedingJoinPoint pjpt)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">   	Object p = pjpt.proceed();</span><br><span class="line">       <span class="keyword">return</span> p;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Spring事务 - 穹仁的博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="Spring添加管理事务
+在业务层接口上添加Spring事务管理
+1234public interface AccountService &amp;#123;    @Transactional    pu,"> 
+    
+    <link rel="alternative" href="atom.xml" title="穹仁的博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Spring事务 - 穹仁的博客"/>
+    <meta name="twitter:description" content="Spring添加管理事务
+在业务层接口上添加Spring事务管理
+1234public interface AccountService &amp;#123;    @Transactional    pu,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="穹仁的博客"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="Spring事务 - 穹仁的博客"/>
+    <meta property="og:description" content="Spring添加管理事务
+在业务层接口上添加Spring事务管理
+1234public interface AccountService &amp;#123;    @Transactional    pu,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+
+
+<body class="loading">
+    <span id="config-title" style="display:none">穹仁的博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Spring事务</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Spring事务</h1>
+        <div class="stuff">
+            <span>八月 13, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Spring/" rel="tag">Spring</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E4%BA%8B%E5%8A%A1/" rel="tag">事务</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%A1%86%E6%9E%B6/" rel="tag">轻量级框架</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="Spring添加管理事务"><a href="#Spring添加管理事务" class="headerlink" title="Spring添加管理事务"></a>Spring添加管理事务</h1><ol>
+<li><p>在业务层接口上添加Spring事务管理</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">AccountService</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Transactional</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">transfer</span><span class="params">(String out,String in,Double money)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>spring注解式事务通常添加在业务层接口中，而不会添加到业务层实现类中，降低耦合</li>
+<li>注解式事务可以添加到业务方法上表示当前方法开启事务，也可以添加到接口上表示当前接口上表示当前接口所有方法开启事务</li>
+</ul>
+</li>
+<li><p>设置事务管理器</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> PlatformTransactionManager <span class="title">transactionManager</span><span class="params">(DataSource dataSource)</span></span>&#123;</span><br><span class="line">    DataSourceTransactionManager ptm=<span class="keyword">new</span> DataSourceTransactionManager();</span><br><span class="line">    ptm.setDataSource(dataSource);</span><br><span class="line">    <span class="keyword">return</span> ptm;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>开启注解式事务驱动</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@ComponentScan(&quot;shiwu&quot;)</span></span><br><span class="line"><span class="meta">@PropertySource(&quot;classpath:jdbc.properties&quot;)</span></span><br><span class="line"><span class="meta">@Import(&#123;jdbcConfig.class,MybatisConfig.class&#125;)</span></span><br><span class="line"><span class="meta">@EnableTransactionManagement</span>	<span class="comment">//这个注解开启</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringConfig</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="事务相关配置"><a href="#事务相关配置" class="headerlink" title="事务相关配置"></a>事务相关配置</h1><table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">作用</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">readOnly</td>
+<td align="center">设置是否只读事务</td>
+<td align="center">readOnly=true 只读事务</td>
+</tr>
+<tr>
+<td align="center">timeout</td>
+<td align="center">设置事务超时时间</td>
+<td align="center">timeout= -1（永不超时）</td>
+</tr>
+<tr>
+<td align="center">rollbackFor</td>
+<td align="center">设置事务回滚异常（class）</td>
+<td align="center">rollbackFor={NullPointException.class}</td>
+</tr>
+<tr>
+<td align="center">rollbackForClassName</td>
+<td align="center">设置事务回滚异常（String）</td>
+<td align="center">同上格式为字符串</td>
+</tr>
+<tr>
+<td align="center">noRollbackFor</td>
+<td align="center">设置事务不回滚异常（class）</td>
+<td align="center">noRollbackFor={NullPointException.class}</td>
+</tr>
+<tr>
+<td align="center">noRollbackForClassName</td>
+<td align="center">设置事务不回滚异常（String）</td>
+<td align="center">同上格式为字符串</td>
+</tr>
+<tr>
+<td align="center">propagation</td>
+<td align="center">设置事务传播</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p>在<code>@Transactional</code>中添加相应属性,多个属性逗号隔开</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">AccountService</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Transactional(readOnly = true)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">transfer</span><span class="params">(String out,String in,Double money)</span> </span></span><br><span class="line"><span class="function">&#125;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="事务传播行为"><a href="#事务传播行为" class="headerlink" title="事务传播行为"></a>事务传播行为</h1><table>
+<thead>
+<tr>
+<th align="center">传播属性</th>
+<th align="center">事务管理员</th>
+<th align="center">事务协调员</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Required（默认）</td>
+<td align="center">开启T</td>
+<td align="center">加入T</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">无</td>
+<td align="center">新建T2</td>
+</tr>
+<tr>
+<td align="center">Requires_New</td>
+<td align="center">开启T</td>
+<td align="center">新建T2</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">无</td>
+<td align="center">新建T2</td>
+</tr>
+<tr>
+<td align="center">Supports</td>
+<td align="center">开启T</td>
+<td align="center">加入T</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">无</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">Not_Supported</td>
+<td align="center">开启T</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">无</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">Mandatory</td>
+<td align="center">开启T</td>
+<td align="center">加入T</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">无</td>
+<td align="center">ERROR</td>
+</tr>
+<tr>
+<td align="center">Never</td>
+<td align="center">开启T</td>
+<td align="center">ERROR</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">无</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">Nested</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p>在<code>@Transactional</code>中添加相应属性,</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">LogService</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Transactional(propagation = Propagation.REQUIRES_NEW)</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">log</span> <span class="params">(String out,String in,Double money)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SpringBoot - 穹仁的博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="基础配置
+SpringBoot提供了多种属性配置方式，在resources目录下创建相关文件
+
+修改默认端口
+
+application.properties
+1server.port=80
+appl,"> 
+    
+    <link rel="alternative" href="atom.xml" title="穹仁的博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="SpringBoot - 穹仁的博客"/>
+    <meta name="twitter:description" content="基础配置
+SpringBoot提供了多种属性配置方式，在resources目录下创建相关文件
+
+修改默认端口
+
+application.properties
+1server.port=80
+appl,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="穹仁的博客"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="SpringBoot - 穹仁的博客"/>
+    <meta property="og:description" content="基础配置
+SpringBoot提供了多种属性配置方式，在resources目录下创建相关文件
+
+修改默认端口
+
+application.properties
+1server.port=80
+appl,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+
+
+<body class="loading">
+    <span id="config-title" style="display:none">穹仁的博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">SpringBoot</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">SpringBoot</h1>
+        <div class="stuff">
+            <span>八月 27, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Spring/" rel="tag">Spring</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%AE%80%E5%8C%96%E5%BC%80%E5%8F%91/" rel="tag">简化开发</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%A1%86%E6%9E%B6/" rel="tag">轻量级框架</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h1><ul>
+<li><p>SpringBoot提供了多种属性配置方式，在resources目录下创建相关文件</p>
+<ul>
+<li><p>修改默认端口</p>
+</li>
+<li><p>application.properties</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">server.port=80</span><br></pre></td></tr></table></figure></li>
+<li><p>application.yml</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">	port: 81</span><br></pre></td></tr></table></figure></li>
+<li><p>application.yaml</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">	port: 82</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h1 id="yaml数据读取"><a href="#yaml数据读取" class="headerlink" title="yaml数据读取"></a>yaml数据读取</h1><ul>
+<li>yaml文件</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">lesson:</span> <span class="string">SpringBoot</span></span><br><span class="line"></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line">	<span class="attr">prot:</span> <span class="number">80</span></span><br><span class="line">	</span><br><span class="line"><span class="attr">enterprise:</span></span><br><span class="line">	<span class="attr">name:</span> <span class="string">ppx</span></span><br><span class="line">	<span class="attr">subject:</span> </span><br><span class="line">		<span class="bullet">-</span> <span class="string">java</span></span><br><span class="line">		<span class="bullet">-</span> <span class="string">前端</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="单个数据"><a href="#单个数据" class="headerlink" title="单个数据"></a>单个数据</h2><ul>
+<li><p>使用@Value读取单个数据，属性名引用方式：<code>$&#123;一级属性名.二级属性名...&#125;</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/books&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BookController</span></span>&#123;</span><br><span class="line">	<span class="meta">@Value(&quot;$&#123;lesson&#125;&quot;)</span></span><br><span class="line">	<span class="keyword">private</span> String lessonName;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="多个数据"><a href="#多个数据" class="headerlink" title="多个数据"></a>多个数据</h2><ul>
+<li><p>封装全部数据到Environment对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/books&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BookController</span></span>&#123;</span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> Environment env;</span><br><span class="line">	<span class="comment">//读取</span></span><br><span class="line">	env.getProperty(<span class="string">&quot;lesson&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="多环境开发"><a href="#多环境开发" class="headerlink" title="多环境开发"></a>多环境开发</h1><ul>
+<li><p>多环境启动</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#设置启用配置为：pro</span></span><br><span class="line"><span class="string">spring：</span></span><br><span class="line">	<span class="attr">profiles:</span></span><br><span class="line">		<span class="attr">active:</span> <span class="string">pro</span></span><br><span class="line"><span class="comment">#用---分隔</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="comment">#pro环境</span></span><br><span class="line"><span class="string">spring：</span></span><br><span class="line">	<span class="attr">profiles:</span> <span class="string">pro</span></span><br><span class="line"><span class="comment">#具体参数							spring：</span></span><br><span class="line"><span class="attr">server:</span>							      <span class="string">config：</span>	</span><br><span class="line">	<span class="attr">port:</span> <span class="number">80</span> <span class="string">&lt;-过时格式</span>		     <span class="string">推荐格式-&gt;</span> <span class="attr">activate:</span></span><br><span class="line"><span class="string">---</span>											<span class="attr">on-profile:</span> <span class="string">pro</span></span><br><span class="line"><span class="comment">#test环境</span></span><br><span class="line"><span class="string">spring：</span></span><br><span class="line">	<span class="attr">profiles:</span> <span class="string">test</span></span><br><span class="line">	</span><br><span class="line"><span class="attr">server:</span></span><br><span class="line">	<span class="attr">port:</span> <span class="number">81</span></span><br></pre></td></tr></table></figure></li>
+<li><p>带参数启动SpringBoot</p>
+<ul>
+<li>命令行，临时设置</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar springboot.jar --spring.profiles.acticve=test</span><br></pre></td></tr></table></figure></li>
+<li><p>注意点</p>
+<ol>
+<li>打包之前（package）执行清理（clean）避免出现错误</li>
+<li>注意打包的编码格式</li>
+<li>设置中搜索<code>encodings</code></li>
+<li>注意project Encoding的编码格式，更改为UTF-8</li>
+<li>重开文件确认无误后再进行打包</li>
+</ol>
+</li>
+</ul>
+<h2 id="配置文件分类"><a href="#配置文件分类" class="headerlink" title="配置文件分类"></a>配置文件分类</h2><ul>
+<li><p>SpringBoot中4级配置文件</p>
+<p>​    1级：    file：cofig/application.yml                [级别最高]</p>
+<p>​    2级：    file：application.yml</p>
+<p>​    3级：    classpath：    cofig/application.yml</p>
+<p>​    4级：    classpath：    application.yml            [级别最低]</p>
+</li>
+<li><p>作用：</p>
+<ul>
+<li>1、2级留做系统打包后设置通用属性</li>
+<li>3、4级用于系统开发阶段设置通用属性</li>
+</ul>
+</li>
+</ul>
+<h1 id="SpringBoot整合MyBatis"><a href="#SpringBoot整合MyBatis" class="headerlink" title="SpringBoot整合MyBatis"></a>SpringBoot整合MyBatis</h1><ol>
+<li><p>创建模块，选择Spring初始化</p>
+</li>
+<li><p>勾选需要使用的技术集（MyBatis、MySQL）</p>
+</li>
+<li><p>在application.yml中设置数据源参数</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">	<span class="attr">datasource:</span></span><br><span class="line">		<span class="attr">type:</span> <span class="string">com.alibaba.druid.pool.DruidDataSource</span></span><br><span class="line">		<span class="attr">driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line">		<span class="attr">url:</span> <span class="string">jdbc:mysql://localhost:3306/db1</span></span><br><span class="line">		<span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">		<span class="attr">password:</span> <span class="string">&quot;205205&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>定义数据层接口于映射配置</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Mapper</span>	<span class="comment">//主要</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserDao</span></span>&#123;</span><br><span class="line">	<span class="meta">@Select(&quot;select * from user&quot;)</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> List&lt;User&gt; <span class="title">getAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
